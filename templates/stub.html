@@ -6,24 +6,41 @@
 
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
-    <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
+    <!- Try building a new body here ->
+    <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: cursive,cursive;font-size: x-large">
         <div class="col-12">
-            <p>Hello, {{name}}!</p>
+            <p>Namaste, {{name}}!</p>
         </div>
         <div class="col-12">
             <form action="/greet" id="greet" method="POST" >
                 <label for="name">Type a greeting name?</label>
                 <input name="name" id="name">
-                <input type="submit" value="Greetings!">
+                <input type="submit" value="Namaste!">
             </form>
         </div>
-        <div class="col-12">
-            <img src="/static/assets/PythonFlask.jpeg" style="height: 400px" >
-        </div>
+         <div class="col-12">
+            <img src="/static/16714-birthday-cake-600x600.jpeg" style="height: 200px"
+            align="right">
+         </div>
     </div>
+
 {% endblock %}
 
-<!- This is turning off birds background from base.html -->
+<!-- Setting up a block replacement to customize background to RINGS -->
 {% block background %}
+    <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
+    <script>
+        VANTA.HALO({
+            el: "body",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00
+        })
+
+    </script>
+
 {% endblock %}
 
