@@ -30,11 +30,19 @@ def hawkers():
 
 @app.route('/Mahima/')
 def stub():
-    return render_template("Mahima.html")
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("Mahima.html", name=name)
+    # starting and empty input default
+    return render_template("Mahima.html", name="World")
 
 @app.route('/grayGreet/')
 def grayGreet():
     return render_template("grayGreet.html")
+
+
 
 @app.route('/Nayana2', methods=['GET', 'POST'])
 def greet():
