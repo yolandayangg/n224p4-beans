@@ -32,6 +32,9 @@ def hawkers():
 def stub():
     return render_template("Mahima.html")
 
+@app.route('/gray_greet/')
+def stub():
+    return render_template("gray_greet.html")
 
 @app.route('/Nayana2', methods=['GET', 'POST'])
 def greet():
