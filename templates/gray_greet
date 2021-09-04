@@ -1,0 +1,32 @@
+{% extends "layouts/base.html" %}
+{% set project = "Gray's Greet Page" %}
+
+{% block body %}
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <style>
+    #grayGreet {
+      margin-top: 1rem;
+    }
+  </style>
+    <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
+
+      <div class="col-12">
+        <p>Hello world ! :D</p>
+      </div>
+
+      <div class="col-12">
+        <form action="/greet" id="greet" method="POST" >
+          <label for="name">Type a greeting name:</label>
+          <input name="name" id="name">
+          <input type="submit" value="Greetings!">
+        </form>
+      </div>
+
+      <div class="col-12">
+        <img src="https://user-images.githubusercontent.com/57303754/132082258-c09cf755-c5ae-4c8a-8a21-5a2c4b5fca86.png" style="width: 200px" id="grayGreet">
+     </div>
+   </div>
+{% endblock %}
+
+{% block background %}
+{% endblock %}
