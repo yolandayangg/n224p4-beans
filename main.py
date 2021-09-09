@@ -28,7 +28,7 @@ def hawkers():
     return render_template("hawkers.html")
 
 
-@app.route('/Mahima/')
+@app.route('/Mahima/', methods=['GET', 'POST'])
 def stub():
     # submit button has been pushed
     if request.form:
@@ -54,7 +54,12 @@ def greet():
     # starting and empty input default
     return render_template("Nayana2.html", name="World")
 
+@app.route('/binary/')
+def binary():
+    return render_template("binary.html")
+
 
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True, port=5180)
+
