@@ -1,6 +1,6 @@
 Owls, [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1), [Github repo contributers](https://github.com/wangzi190/flask_portfolio/graphs/contributors)
 
-[Pairs and Journals]()
+[Pairs and Journals](https://drive.google.com/drive/folders/1OO_uDmH_A1tTisIU9VoWnIfKt1gEUctu?usp=sharing)
 
 Gray Zhuang, 57303754, [tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190), [scrum board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3Awangzi190), [commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190), [profile](https://github.com/wangzi190)
 
@@ -36,7 +36,7 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 ###README Task CSP 
 |Name|GitHub ID|Tasks|Scrum Board|Commits|Profile|
 |----|---------|-----|-----------|-------|-------|
-|Nayana|34925114|[Nayana's Tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Anayanav)|[Nayana's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3Anayanav)|[Nayana's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=Nayanav)|[Nayana's Profile](https://github.com/Nayanav)|
-|Mahima|89278005|[Mahima's Tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Amahimak19)|[Mahima's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3Amahimak19)|[Mahima's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=mahimak19)|[Mahima's Profile](https://github.com/mahimak19)|
-|Gray|57303754|[Gray's Tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190)|[Gray's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3Awangzi190)|[Gray's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190)|[Gray's Profile](https://github.com/wangzi190)|
-|Gabe|89223461|[Gabe's Tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
+|Nayana|@Nayanav|[Nayana's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3ANayanav+is%3Aopen)|[Nayana's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Anayanav)|[Nayana's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=Nayanav)|[Nayana's Profile](https://github.com/Nayanav)|
+|Mahima|@mahimak19|[Mahima's Tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Amahimak19)|[Mahima's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3Amahimak19)|[Mahima's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=mahimak19)|[Mahima's Profile](https://github.com/mahimak19)|
+|Gray|@wangzi190|[Gray's Tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190)|[Gray's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3Awangzi190)|[Gray's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190)|[Gray's Profile](https://github.com/wangzi190)|
+|Gabe|@Gabrielboudreau|[Gabe's Tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
