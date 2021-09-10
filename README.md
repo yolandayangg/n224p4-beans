@@ -8,6 +8,8 @@ Gabriel Boudreau, 89223461, [tasks](https://github.com/wangzi190/flask_portfolio
 
 Mahima Krovvidy, 89278005, [tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Amahimak19), [scrum board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3Amahimak19), [commits](https://github.com/mahimak19/flask_portfolio/commits?author=mahimak19), [profile](https://github.com/mahimak19)
 
+Nayana Vallamkondu, 34925114, [tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Anayanav), [scrum board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3Anayanav), [commits](https://github.com/Nayanav/flask_portfolio/commits?author=Nayanav), [profile](https://github.com/Nayanav)
+
 ## [Flask Portfolio Starter (from which we are referencing for our own project)](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
 Runtime link: https://portfolio.nighthawkcodingsociety.com/
 
