@@ -1,5 +1,7 @@
 Owls, [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1), [Github repo contributers](https://github.com/wangzi190/flask_portfolio/graphs/contributors)
+
 [Pairs and Journals]()
+
 Gray Zhuang, 57303754, [tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190), [scrum board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3Awangzi190), [commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190), [profile](https://github.com/wangzi190)
 
 ## [Flask Portfolio Starter (from which we are referencing for our own project)](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
