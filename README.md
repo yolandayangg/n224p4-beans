@@ -4,7 +4,7 @@ Owls, [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1), [G
 
 Gray Zhuang, 57303754, [tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190), [scrum board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3Awangzi190), [commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190), [profile](https://github.com/wangzi190)
 
-Gabriel Boudreau, 89223461, [tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau), [scrum board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3A+gabrielboudreau), [commits](https://github.com/GabrielBoudreau/flask_portfolio/commits?author=GabrielBoudreau), [profile](https://github.com/Gabrielboudreau)
+Gabriel Boudreau, 89223461, [tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau), [scrum board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3A+gabrielboudreau), [commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau), [profile](https://github.com/Gabrielboudreau)
 
 Mahima Krovvidy, 89278005, [tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Amahimak19), [scrum board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3Amahimak19), [commits](https://github.com/wangzi190/flask_portfolio/commits?author=mahimak19), [profile](https://github.com/mahimak19)
 
