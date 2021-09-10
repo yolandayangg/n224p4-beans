@@ -6,6 +6,8 @@ Gray Zhuang, 57303754, [tasks](https://github.com/wangzi190/flask_portfolio/proj
 
 Gabriel Boudreau, 89223461, [tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau), [scrum board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3A+gabrielboudreau), [commits](https://github.com/GabrielBoudreau/flask_portfolio/commits?author=GabrielBoudreau), [profile](https://github.com/Gabrielboudreau)
 
+Mahima Krovvidy, 89278005, [tasks](https://github.com/mahimak19/flask_portfolio/projects/1?card_filter_query=assignee%3Amahimak19), [scrum board](https://github.com/mahimak19/flask_portfolio/projects/1?card_filter_query=author%3Amahimak19), [commits](https://github.com/mahimak19/flask_portfolio/commits?author=mahimak19), [profile](https://github.com/mahimak19)
+
 ## [Flask Portfolio Starter (from which we are referencing for our own project)](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
 Runtime link: https://portfolio.nighthawkcodingsociety.com/
 
