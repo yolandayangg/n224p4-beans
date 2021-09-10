@@ -24,3 +24,11 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 #### As of for now, we have our flask project open on IltelliJ, and manipulated the code to match the general layout we plan on using for our website. Some of these changes include:
 * Customization changes (e.g. changing the name of the website from "Nighthawk Coding Society" to "DNHS Women's Health Awareness")
 * Editing the names of the different tabs on navbar.html to "Home", "About", "Outreach", "Sign Up" (with the exception of our mini-lab pages at the end)
+
+###README Task CSP 
+|Name|GitHub ID|Tasks|Scrum Board|Commits|Profile|
+|----|---------|-----|-----------|-------|-------|
+|Nayana|34925114|[Nayana's Tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Anayanav)|[Nayana's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3Anayanav)|[Nayana's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=Nayanav)|[Nayana's Profile](https://github.com/Nayanav)|
+|Mahima|89278005|[Mahima's Tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Amahimak19)|[Mahima's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3Amahimak19)|[Mahima's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=mahimak19)|[Mahima's Profile](https://github.com/mahimak19)|
+|Gray|57303754|[Gray's Tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190)|[Gray's Tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3Awangzi190)|[Gray's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190)|[Gray's Profile](https://github.com/wangzi190)|
+|Gabe|89223461|[Gabe's Tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
