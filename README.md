@@ -2,13 +2,15 @@ Owls, [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1), [G
 
 [Pairs and Journals](https://drive.google.com/drive/folders/1OO_uDmH_A1tTisIU9VoWnIfKt1gEUctu?usp=sharing)
 
-Gray Zhuang, 57303754, [tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190), [scrum board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3Awangzi190), [commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190), [profile](https://github.com/wangzi190)
+### README Task CSP 
+|Name|GitHub ID|Tasks|Scrum Board|Commits|Profile|
+|----|---------|-----|-----------|-------|-------|
+|Nayana|@Nayanav|[Nayana's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3ANayanav+is%3Aopen)|[Nayana's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Anayanav)|[Nayana's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=Nayanav)|[Nayana's Profile](https://github.com/Nayanav)|
+|Mahima|@mahimak19|[Mahima's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3Amahimak19+is%3Aopen)|[Mahima's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Amahimak19)|[Mahima's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=mahimak19)|[Mahima's Profile](https://github.com/mahimak19)|
+|Gray|@wangzi190|[Gray's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3Awangzi190+is%3Aopen)|[Gray's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190)|[Gray's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190)|[Gray's Profile](https://github.com/wangzi190)|
+|Gabe|@Gabrielboudreau|[Gabe's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3AGabrielboudreau+is%3Aopen)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
 
-Gabriel Boudreau, 89223461, [tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau), [scrum board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3A+gabrielboudreau), [commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau), [profile](https://github.com/Gabrielboudreau)
 
-Mahima Krovvidy, 89278005, [tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Amahimak19), [scrum board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3Amahimak19), [commits](https://github.com/wangzi190/flask_portfolio/commits?author=mahimak19), [profile](https://github.com/mahimak19)
-
-Nayana Vallamkondu, 34925114, [tasks](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Anayanav), [scrum board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=author%3Anayanav), [commits](https://github.com/wangzi190/flask_portfolio/commits?author=Nayanav), [profile](https://github.com/Nayanav)
 
 ## [Flask Portfolio Starter (from which we are referencing for our own project)](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
 Runtime link: https://portfolio.nighthawkcodingsociety.com/
@@ -33,10 +35,3 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 * Customization changes (e.g. changing the name of the website from "Nighthawk Coding Society" to "DNHS Women's Health Awareness")
 * Editing the names of the different tabs on navbar.html to "Home", "About", "Outreach", "Sign Up" (with the exception of our mini-lab pages at the end)
 
-### README Task CSP 
-|Name|GitHub ID|Tasks|Scrum Board|Commits|Profile|
-|----|---------|-----|-----------|-------|-------|
-|Nayana|@Nayanav|[Nayana's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3ANayanav+is%3Aopen)|[Nayana's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Anayanav)|[Nayana's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=Nayanav)|[Nayana's Profile](https://github.com/Nayanav)|
-|Mahima|@mahimak19|[Mahima's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3Amahimak19+is%3Aopen)|[Mahima's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Amahimak19)|[Mahima's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=mahimak19)|[Mahima's Profile](https://github.com/mahimak19)|
-|Gray|@wangzi190|[Gray's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3Awangzi190+is%3Aopen)|[Gray's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190)|[Gray's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190)|[Gray's Profile](https://github.com/wangzi190)|
-|Gabe|@Gabrielboudreau|[Gabe's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3AGabrielboudreau+is%3Aopen)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
