@@ -35,4 +35,11 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 * Customization changes (e.g. changing the name of the website from "Nighthawk Coding Society" to "DNHS Women's Health Awareness")
 * Editing the names of the different tabs on navbar.html to "Home", "About", "Outreach", "Sign Up" (with the exception of our mini-lab pages at the end)
 
-
+### Tasks Accomplished so Far
+* Brainstormed possible website ideas, final decision was creating a website for the DNHS Women's Health Awareness Club 
+* Made a wireframe of the website and a full project mockup afterwards 
+* Changed the names of the website to "DNHS Women's Health Awareness" and the names of the pages to reflect what we want the page to look like 
+* Created greet pages and customized them 
+* Learned about binary and made a page with binary math and conversions
+* Made a chart and put hyperlinks through markdown to organize our work 
+* [Overview video](https://youtu.be/z6-6m7LFtjk)
