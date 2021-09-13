@@ -37,8 +37,9 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 
 ### Tasks Accomplished so Far
 **Week 1:** 
-*Brainstormed possible website ideas, final decision was creating a website for the DNHS Women's Health Awareness Club 
+* Brainstormed possible website ideas, final decision was creating a website for the DNHS Women's Health Awareness Club 
 * [Journal 0](https://youtu.be/A7jPotTP5gI)
+
 **Week 2:** 
 * Made a wireframe of the website and a full project mockup afterwards 
 * Changed the names of the website to "DNHS Women's Health Awareness" and the names of the pages to reflect what we want the page to look like 
