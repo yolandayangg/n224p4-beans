@@ -38,11 +38,15 @@ def stub():
     # starting and empty input default
     return render_template("Mahima.html", name="World")
 
-@app.route('/grayGreet/')
+@app.route('/grayGreet/', methods=['GET', 'POST'])
 def grayGreet():
-    return render_template("grayGreet.html")
-
-
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("grayGreet.html", name=name)
+    # starting and empty input default
+    return render_template("grayGreet.html", name="World")
 
 @app.route('/Nayana2', methods=['GET', 'POST'])
 def greet():
