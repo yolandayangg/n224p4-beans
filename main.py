@@ -12,20 +12,20 @@ def index():
     return render_template("index.html")
 
 
-# connects /kangaroos path to render kangaroos.html
-@app.route('/kangaroos/')
+# connects /kangaroos path to render volunteering.html
+@app.route('/volunteering/')
 def kangaroos():
-    return render_template("kangaroos.html")
+    return render_template("volunteering.html")
 
 
 @app.route('/walruses/')
 def walruses():
-    return render_template("walruses.html")
+    return render_template("signup.html")
 
 
-@app.route('/hawkers/')
+@app.route('/outreach/')
 def hawkers():
-    return render_template("hawkers.html")
+    return render_template("outreach.html")
 
 
 @app.route('/Mahima/', methods=['GET', 'POST'])

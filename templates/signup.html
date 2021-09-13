@@ -1,0 +1,12 @@
+<!-- Extending the project layout, as this file will do minor customizations -->
+{% extends "layouts/project.html" %}
+
+<!-- Setting up variables to customize "project" details to be specific to walruses -->
+{% set project = "Sign up here!" %}
+
+<!-- Setting up a block replacement to customize background to RINGS -->
+{% block background %}
+    <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vanta.rings.min.js') }}"></script>
+
+{% endblock %}
