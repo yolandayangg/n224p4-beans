@@ -14,8 +14,8 @@
 <!-- Hack: Set bulbs and pass as variables via Python render_template
            add new images (ie PNGs) to project -->
 <!-- use your PNGs as default -->
-{% set imgBulbOn = "/static/assets/bulb_on.gif" %}
-{% set imgBulbOff = "/static/assets/bulb_off.png" %}
+{% set imgCloudOn = "/static/assets/lighning cloud.png" %}
+{% set imgCloudOff = "/static/assets/normal cloud.png" %}
 {% set msgTurnOn = "Turn On" %}
 {% set msgTurnOff = "Turn Off" %}
 
@@ -44,6 +44,7 @@
      DOM assignment by converting decimal https://www.w3schools.com/jsref/jsref_fromcharcode.asp
      below ASCII for more ideas of where to make changes
      */
+
   }
 
   // algorithm to convert decimal to base using division and remainder
@@ -68,16 +69,16 @@
   function toggleBit(i) {
     //alert("Digit action: " + i );
     const dig = document.getElementById('digit' + i);
-    const image = document.getElementById('bulb' + i);
+    const image = document.getElementById('cloud' + i);
     const butt = document.getElementById('butt' + i);
     // Change digit and visual
-    if (image.src.match("{{ imgBulbOn }}")) {
+    if (image.src.match("{{ imgCloudOn }}")) {
       dig.value = 0;
-      image.src = "{{ imgBulbOff }}";
+      image.src = "{{ imgCloudOff }}";
       butt.innerHTML = "{{ msgTurnOn }}";
     } else {
       dig.value = 1;
-      image.src = "{{ imgBulbOn }}";
+      image.src = "{{ imgCloudOn }}";
       butt.innerHTML = "{{ msgTurnOff }}";
     }
     // Binary numbers
@@ -103,10 +104,10 @@
       let digit = binary.substr(i, 1);
       document.getElementById('digit' + i).value = digit;
       if (digit === "1") {
-        document.getElementById('bulb' + i).src = "{{ imgBulbOn }}";
+        document.getElementById('cloud' + i).src = "{{ imgCloudOn }}";
         document.getElementById('butt' + i).innerHTML = "{{ msgTurnOff }}";
       } else {
-        document.getElementById('bulb' + i).src = "{{ imgBulbOff }}";
+        document.getElementById('cloud' + i).src = "{{ imgCloudOff }}";
         document.getElementById('butt' + i).innerHTML = "{{ msgTurnOn }}";
       }
     }
@@ -147,7 +148,7 @@
       <table class="table">
         <tr>
           {% for i in range(BITS) %}
-            <td><img class="img-responsive py-3" id="bulb{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+            <td><img class="img-responsive py-3" id="cloud{{i}}" src="{{ imgCloudOff }}" alt="" width="40" height="Auto">
               <button type="button" id="butt{{i}}" onclick="toggleBit('{{i}}')">{{ msgTurnOn }}</button>
             </td>
           {% endfor %}
