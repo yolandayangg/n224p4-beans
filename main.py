@@ -58,12 +58,20 @@ def greet():
     # starting and empty input default
     return render_template("Nayana2.html", name="World")
 
+@app.route('/gabriel', methods=['GET', 'POST'])
+def gabriel():
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("gabriel.html", name=name)
+    # starting and empty input default
+    return render_template("gabriel.html", name="World")
+
 @app.route('/binary/')
 def binary():
     return render_template("binary.html")
 
 
-# runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True, port=5180)
-
