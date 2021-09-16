@@ -72,6 +72,14 @@ def gabriel():
 def binary():
     return render_template("binary.html")
 
+@app.route('/aboutme/')
+def aboutme():
+    return render_template("aboutme.html")
+
+@app.route('/minilabs/')
+def minilabs():
+    return render_template("minilabs.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5180)
