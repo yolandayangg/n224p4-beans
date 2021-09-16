@@ -43,7 +43,10 @@
     /* Hack: show ASCII printable character(s) for each 8 bits
      DOM assignment by converting decimal https://www.w3schools.com/jsref/jsref_fromcharcode.asp
      below ASCII for more ideas of where to make changes
+
      */
+    document.getElementById('ASCII').innerHTML = String.fromCharCode(binary)
+
 
   }
 
@@ -130,6 +133,7 @@
         <th>Decimal</th>
         <!-- Hack: display ASCII label for printable character(s)  -->
         <th>Minus</th>
+        <th>ASCII</th>
       </tr>
       <tr>
         <td><button type="button" id="add1" onclick="add(1)">+1</button></td>

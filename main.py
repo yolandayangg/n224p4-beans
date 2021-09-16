@@ -18,7 +18,7 @@ def kangaroos():
     return render_template("volunteering.html")
 
 
-@app.route('/walruses/')
+@app.route('/signup/')
 def walruses():
     return render_template("signup.html")
 
