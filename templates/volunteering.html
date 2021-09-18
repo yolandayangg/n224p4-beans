@@ -1,5 +1,5 @@
 <!-- Extending the project layout, as this file will do minor customizations -->
-<!--{% extends "layouts/project.html" %}-->
+{% include "layouts/navbar.html" %}
 
 <!-- Setting up variables to customize "project" details to be specific to volunteering -->
 {% set project = "Volunteering" %}
@@ -10,16 +10,20 @@
 
 <!-- Setting up a block replacement to customize background to RINGS -->
 {% block background %}
-    <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
-<!--    <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
-    <script>
-        VANTA.HALO({
-            el: "body",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00
-        })
-    </script>
+    <head>
+    <h1 style="color: darkblue; text-align: center; position: center; font-size:100px; padding-top: 50px; font-family: 'Century Schoolbook'">Volunteering</h1>
+
+    </head>
+    <body style="background: lightpink">
+    <p style="font-size: xx-large; font-family: 'Century Schoolbook'; text-align: center">
+        We will be volunteering in places like the Scripps Hospital, the San Diego Blood Bank, Homeless shelters and much more!
+
+    </p>
+    <p style="font-size: xx-large; font-family: 'Century Schoolbook'; text-align: center">
+        Sign up here for opportunities!
+    </p>
+    </body>
+
+
+
 {% endblock %}
