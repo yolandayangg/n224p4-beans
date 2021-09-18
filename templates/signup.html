@@ -1,12 +1,31 @@
 <!-- Extending the project layout, as this file will do minor customizations -->
-{% extends "layouts/project.html" %}
+{% include "layouts/navbar.html" %}
 
 <!-- Setting up variables to customize "project" details to be specific to walruses -->
 {% set project = "Sign up here!" %}
 
 <!-- Setting up a block replacement to customize background to RINGS -->
 {% block background %}
-    <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='vanta.rings.min.js') }}"></script>
+    <head>
+        <h1 style="color: darkblue; text-align: center; position: center; font-size:75px; padding-top: 0px; font-family: 'Century Schoolbook'">Sign Up Here!</h1>
+
+    </head>
+    <body style="background: lightpink">
+    <p style="font-size: xx-large; font-family: 'Century Schoolbook'; text-align: center">
+        Click on the Google Form Below to sign up as a member!
+        <a href="https://forms.gle/Af3RGDabYwiqn6Gq9">Member Form</a>
+
+    </p>
+    <p style="font-size: xx-large; font-family: 'Century Schoolbook'; text-align: center">
+        Leadership Role questionnaire:
+    </p>
+    <ul class="a">
+        <li>Why do you want to join WHA?</li>
+        <li>Have you taken on any leadership roles before? If so, what were your most valuable experiences that changed you as a person?</li>
+        <li>If you were the president of the WHA, what activities and events would you do and why?</li>
+        <li>Why do you think womens' health issues are stigmatized in our society?</li>
+
+    </ul>
+    </body>
 
 {% endblock %}
