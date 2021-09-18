@@ -54,7 +54,7 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 * Nayana: 
   * Time boxed README: Take 30 minutes
   * About Me Page:
-    * Tasks
+    * Tasks (CSS elements)
       * Adding pictures
       * Adding descriptions 
     * Time to complete: 1 hour, finish by Wednesday
