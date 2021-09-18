@@ -49,3 +49,36 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 * Learned about binary and made a page with binary math and conversions
 * Made a chart and put hyperlinks through markdown to organize our work 
 * [Overview video](https://youtu.be/z6-6m7LFtjk)
+
+**Week 4:**
+* Nayana: 
+  * Time boxed README: Take 30 minutes
+  * About Me Page:
+    * Tasks
+      * Adding pictures
+      * Adding descriptions 
+    * Time to complete: 1 hour, finish by Wednesday
+  * Grid Page 
+    * Tasks
+        * Create 3x3 grid
+        * Change grid background, columns, and row colors to match color scheme of website
+        * Clean the up the dropdown so it is more organized and mini-labs are hyperlinked in the grid page
+    * Time to complete: 2 hours, finish by Thursday
+* Gray: 
+  * Add ASCII converting element to the math mini-lab from the week prior along with Mahima 
+  * Changing HTML DOM with Javascript 
+    * Add visuals to greet page to make it more interactive and eye-catching 
+    * Time to complete: 2.5 hours, finish by Thursday 
+* Mahima:
+  * Reaching out to team members and assign individual technical tasks 
+    * Time to complete: 10 minutes, Finish by Monday 
+  * Add ASCII converting element to the math mini-lab from the week prior along with Gray
+    * Time to complete: 1 hour, Finish by Thursday 
+  * Add aditional information relevant to the website we are making
+    * More information about the club 
+    * Time to complete: 1 hour, Finish by Thursday
+* Gabe: 
+  * Finish greet page and push code 
+    * Time to complete: 40 minutes, Finish by Monday
+  * Complete the binary hacks 
+    * Time to complete: 4 hours, Finish by Thursday 
