@@ -1,55 +1,67 @@
-
+{% extends "layouts/base.html" %}
 {% set project = "Gray's Greet Page" %}
 
 {% block body %}
-  <link href="style.css" rel="stylesheet" type="text/css"/>
-  <body style="background-color:#74d36b;">
-  <style>
-    #grayGreet {
-      margin-top: 1rem;
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<body style="background-color:#74d36b;">
+<style>
+  #grayGreet {
+    margin-top: 3.5rem;
+  }
+  .colorButton {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+</style>
+
+<script>
+  colorChange = function(id) {
+    switch(id) {
+      case "red":
+        document.getElementById("grayGreet").src = "https://user-images.githubusercontent.com/57303754/133853569-aa7a7dbc-696b-421f-9588-986b1ca7b371.png";
+        document.getElementById("grayGreet").style.marginTop = "2.2rem";
+        document.body.style.backgroundColor = "#e66565";
+        break;
+      case "green":
+        document.getElementById("grayGreet").src = "https://user-images.githubusercontent.com/57303754/132082258-c09cf755-c5ae-4c8a-8a21-5a2c4b5fca86.png"
+        document.getElementById("grayGreet").style.marginTop = "3.5rem";
+        document.body.style.backgroundColor = "#74d36b";
+        break;
+      case "blue":
+        document.getElementById("grayGreet").src = "https://user-images.githubusercontent.com/57303754/133853578-6ac90b17-2b81-49fd-ab99-155d19bf88c9.png";
+        document.getElementById("grayGreet").style.marginTop = "3.5rem";
+        document.body.style.backgroundColor = "#7089ed";
+        break;
     }
-    #buttonDOM {
-      margin-left: 4rem;
-    }
-  </style>
+  };
+</script>
 
-  <script>
-    let b = 0;
-    buttonChange = function(id) {
-      if (b == 0) {
-        document.getElementById(id).style.filter = "brightness(82%)";
-        b = 1;
-      } else if (b == 1) {
-        document.getElementById(id).style.filter = "brightness(100%)";
-        b = 0;
-      }
-    };
-  </script>
-
-    <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
-
-      <div class="col-12">
-        <p>Hello world ! :D</p>
-      </div>
-
-      <div class="col-12">
-        <form action="/greet" id="greet" method="POST" >
-          <label for="name">Type a greeting name:</label>
-          <input name="name" id="name">
-          <input type="submit" value="Greetings!">
-        </form>
-      </div>
-
-      <div class="col-12">
-        <img src="https://user-images.githubusercontent.com/57303754/132082258-c09cf755-c5ae-4c8a-8a21-5a2c4b5fca86.png" style="width: 200px" id="grayGreet">
-     </div>
-   </div>
+<div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
 
   <div class="col-12">
-    <img src="https://user-images.githubusercontent.com/57303754/107140737-fd7d3d00-68d8-11eb-8390-b9c2809940d9.png" onclick="buttonChange(id)" style="width: 100px" id="buttonDOM">
+    <p>Hello world ! :D</p>
   </div>
+
+  <div class="col-12">
+    <form action="/greet" id="greet" method="POST" >
+      <label for="name">Type a greeting name:</label>
+      <input name="name" id="name">
+      <input type="submit" value="Greetings!">
+    </form>
+  </div>
+
+  <div class="col-12">
+    <img src="https://user-images.githubusercontent.com/57303754/132082258-c09cf755-c5ae-4c8a-8a21-5a2c4b5fca86.png" style="width: 200px" id="grayGreet">
+  </div>
+</div>
+
+<div class="col-12">
+  <img src="https://user-images.githubusercontent.com/57303754/133853467-8a2409d0-13f5-463c-b5e4-282c22485515.png" style="width: 75px" onclick="colorChange(id)" id="red" class="colorButton">
+  <img src="https://user-images.githubusercontent.com/57303754/133853483-8d13f672-a1a0-4e3a-b090-e66ed5525f10.png" style="width: 75px" onclick="colorChange(id)" id="green" class="colorButton">
+  <img src="https://user-images.githubusercontent.com/57303754/133853503-8f377dd9-c2bf-4d1c-8610-f67a7b5a9620.png" style="width: 75px" onclick="colorChange(id)" id="blue" class="colorButton">
+</div>
 
 {% endblock %}
 
 {% block background %}
-{% endblock %} 
+{% endblock %}
