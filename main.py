@@ -74,15 +74,17 @@ def binary():
     if request.form:
         bits = request.form.get("bits")
         if len(bits) !=0:
-            return render_template("binary.html", bits=int(bits))
+            return render_template("binary.html", int(bits))
         #
-    return render_template("binary.html", bits=8)
+    return render_template("binary.html", bits= 8)
 
 @app.route('/aboutme/')
 def aboutme():
-
-        #
     return render_template("aboutme.html")
+
+@app.route('/RGB/')
+def redGreenBlue():
+    return render_template("RGB.html")
 
 @app.route('/minilabs/')
 def minilabs():
