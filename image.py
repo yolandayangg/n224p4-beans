@@ -18,10 +18,10 @@ def image_formatter(img, img_type):
 
 
 # color_data prepares a series of images for data analysis
-def image_data(path=Path("static/assets/"), img_list=None):  # path of static images is defaulted
+def image_data(path=Path("/static/assets/"), img_list=None):  # path of static images is defaulted
     if img_list is None:  # color_dict is defined with defaults
         img_list = [
-            {'source': "Eliana", 'label': "Lake Valley", 'file': "mountain_scenery.jpeg"}
+            {'source': "Eliana", 'label': "Lake Valley", 'file': "mountain_scenery.jpg"}
 
         ]
     # gather analysis data and meta data for each image, adding attributes to each row in table
@@ -65,7 +65,7 @@ def image_data(path=Path("static/assets/"), img_list=None):  # path of static im
 
 # run this as standalone tester to see data printed in terminal
 if __name__ == "__main__":
-    local_path = Path("static/assets/")
+    local_path = Path("/static/assets/")
     img_test = [
         {'source': "Eliana", 'label': "Lake Valley", 'file': "mountain_scenery.jpg"}
     ]

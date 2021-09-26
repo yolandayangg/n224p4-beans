@@ -83,16 +83,16 @@ def aboutme():
     return render_template("aboutme.html")
 
 @app.route('/RGB/')
-def redGreenBlue():
-    return render_template("RGB.html")
+def RGB():
+    return render_template('rgb.html', images=image_data(Path))
+    path = Path (app.root_path) / "static" / "assets"
+
+
 
 @app.route('/minilabs/')
 def minilabs():
     return render_template("minilabs.html")
 
-@app.route('/rgb/')
-def rgb():
-    return render_template("rgb.html", images=image_data())
 
 
 
