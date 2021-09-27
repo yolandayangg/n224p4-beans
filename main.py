@@ -84,8 +84,7 @@ def aboutme():
 
 @app.route('/RGB/')
 def RGB():
-    return render_template('rgb.html', images=image_data(Path))
-    path = Path (app.root_path) / "static" / "assets"
+    return render_template('RGB.html')
 
 
 

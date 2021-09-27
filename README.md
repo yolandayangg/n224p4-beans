@@ -35,6 +35,14 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 * Customization changes (e.g. changing the name of the website from "Nighthawk Coding Society" to "DNHS Women's Health Awareness")
 * Editing the names of the different tabs on navbar.html to "Home", "About", "Outreach", "Sign Up" (with the exception of our mini-lab pages at the end)
 
+###Sprint 3,4 
+|Name|GitHub ID|Tasks|Scrum Board|Commits|Profile| 
+|---------| |---|---
+|Nayana||
+|Mahima||
+|Gabe||
+|Gray||
+
 ### Tasks Accomplished so Far
 **Week 1:** 
 * Brainstormed possible website ideas, final decision was creating a website for the DNHS Women's Health Awareness Club 
