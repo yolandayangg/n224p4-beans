@@ -44,19 +44,23 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 |Gray||
 
 ### Tasks Accomplished so Far
-**Week 1:** 
-* Brainstormed possible website ideas, final decision was creating a website for the DNHS Women's Health Awareness Club 
-* [Journal 0](https://youtu.be/A7jPotTP5gI)
-
-**Week 2:** 
-* Made a wireframe of the website and a full project mockup afterwards 
-* Changed the names of the website to "DNHS Women's Health Awareness" and the names of the pages to reflect what we want the page to look like 
-* Created greet pages and customized them 
-
-**Week 3:** 
-* Learned about binary and made a page with binary math and conversions
-* Made a chart and put hyperlinks through markdown to organize our work 
-* [Overview video](https://youtu.be/z6-6m7LFtjk)
+**Week 5 & 6:**
+* Nayana:
+* Help scrum master add tasks to scrum board
+* Time to complete: 10 minutes, Finish by Monday
+* Time boxed README
+* Time: 10 minutes, Finish by Tuesday
+* Create a toggle to dynamically change colored image to gray-scaled
+* Progress: created a button to switch between colored and gray images
+* Need to do: Create gray-scale through java
+* Gray: RGB values with an image, looking into algotirthms and Big O notation
+* Time to complete: Thursday
+* Progress: Researching Big O Notation, testing code
+* Mahima: RGB Values with an image, writing text on image and importing it to WEB
+* progress: God RGB values of image and wrote text on image
+* Gabe:
+* RGB values with an image, manipulating image
+* Progress: Implementing and understanding Pillow
 
 **Week 4:**
 * Nayana: 
@@ -90,3 +94,17 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
     * Time to complete: 40 minutes, Finish by Monday
   * Complete the binary hacks 
     * Time to complete: 4 hours, Finish by Thursday 
+
+**Week 3:** 
+* Learned about binary and made a page with binary math and conversions
+* Made a chart and put hyperlinks through markdown to organize our work 
+* [Overview video](https://youtu.be/z6-6m7LFtjk)
+
+**Week 2:** 
+* Made a wireframe of the website and a full project mockup afterwards 
+* Changed the names of the website to "DNHS Women's Health Awareness" and the names of the pages to reflect what we want the page to look like 
+* Created greet pages and customized them 
+
+**Week 1:** 
+* Brainstormed possible website ideas, final decision was creating a website for the DNHS Women's Health Awareness Club 
+* [Journal 0](https://youtu.be/A7jPotTP5gI)
