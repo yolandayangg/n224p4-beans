@@ -46,21 +46,21 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 ### Tasks Accomplished so Far
 **Week 5 & 6:**
 * Nayana:
-* Help scrum master add tasks to scrum board
-* Time to complete: 10 minutes, Finish by Monday
-* Time boxed README
-* Time: 10 minutes, Finish by Tuesday
-* Create a toggle to dynamically change colored image to gray-scaled
-* Progress: created a button to switch between colored and gray images
-* Need to do: Create gray-scale through java
+ * Help scrum master add tasks to scrum board
+ * Time to complete: 10 minutes, Finish by Monday
+ * Time boxed README
+ * Time: 10 minutes, Finish by Tuesday
+ * Create a toggle to dynamically change colored image to gray-scaled
+ * Progress: created a button to switch between colored and gray images
+ * Need to do: Create gray-scale through java
 * Gray: RGB values with an image, looking into algotirthms and Big O notation
-* Time to complete: Thursday
-* Progress: Researching Big O Notation, testing code
+ * Time to complete: Thursday
+ * Progress: Researching Big O Notation, testing code
 * Mahima: RGB Values with an image, writing text on image and importing it to WEB
-* progress: God RGB values of image and wrote text on image
-* Gabe:
-* RGB values with an image, manipulating image
-* Progress: Implementing and understanding Pillow
+ * progress: God RGB values of image and wrote text on image
+ * Gabe:
+ * RGB values with an image, manipulating image
+ * Progress: Implementing and understanding Pillow
 
 **Week 4:**
 * Nayana: 
