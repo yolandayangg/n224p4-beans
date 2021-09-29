@@ -3,6 +3,8 @@ import numpy
 import base64
 from io import BytesIO
 from pathlib import Path  # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
+import os
+
 
 
 # image (PNG, JPG) to base64 conversion (string), learn about base64 on wikipedia https://en.wikipedia.org/wiki/Base64
@@ -18,16 +20,17 @@ def image_formatter(img, img_type):
 
 
 # color_data prepares a series of images for data analysis
-def image_data(path=Path("/static/assets/"), img_list=None):  # path of static images is defaulted
+def image_data(path=Path("static/assets/"), img_list=None):  # path of static images is defaulted
     if img_list is None:  # color_dict is defined with defaults
         img_list = [
-            {'source': "Eliana", 'label': "Lake Valley", 'file': "mountain_scenery.jpg"}
+            {'source': "Eliana", 'label': "Lake Valley", 'file': "hibiscus.jpeg"}
 
         ]
     # gather analysis data and meta data for each image, adding attributes to each row in table
     for img_dict in img_list:
         # File to open
         file = path / img_dict['file']  # file with path for local access (backend)
+        print(file)
         # Python Image Library operations
         img_reference = Image.open(file)  # PIL
         img_data = img_reference.getdata()  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
@@ -52,7 +55,7 @@ def image_data(path=Path("/static/assets/"), img_list=None):  # path of static i
         # create gray scale of image, ref: https://www.geeksforgeeks.org/convert-a-numpy-array-to-an-image/
         img_dict['gray_data'] = []
         for pixel in img_dict['data']:
-            average = (int(pixel[0]) + pixel[1] + pixel[2]) // 3
+            average = (int(pixel[0]) + pixel[1] + pixel[2]) // 3  # integer division
             if len(pixel) > 3:
                 img_dict['gray_data'].append((average, average, average, pixel[3]))
             else:
@@ -62,12 +65,11 @@ def image_data(path=Path("/static/assets/"), img_list=None):  # path of static i
     return img_list  # list is returned with all the attributes for each image dictionary
 
 
-
 # run this as standalone tester to see data printed in terminal
 if __name__ == "__main__":
     local_path = Path("/static/assets/")
     img_test = [
-        {'source': "Eliana", 'label': "Lake Valley", 'file': "mountain_scenery.jpg"}
+        {'source': "Eliana", 'label': "Lake Valley", 'file': "hibiscus.jpeg"},
     ]
     items = image_data(local_path, img_test)  # path of local run
     for row in items:
@@ -98,6 +100,3 @@ if __name__ == "__main__":
         draw.text((0, 0), "Size is {0} X {1}".format(*row['size']))  # draw in image
         image_ref.show()
 print()
-
-
-

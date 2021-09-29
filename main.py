@@ -2,6 +2,9 @@
 from flask import Flask, render_template
 from flask import request
 from image import image_data
+from pathlib import Path
+
+
 
 # create a Flask instance
 app = Flask(__name__)
@@ -84,7 +87,9 @@ def aboutme():
 
 @app.route('/RGB/')
 def RGB():
-    return render_template('RGB.html')
+    path = Path(app.root_path) / "static" / "assets"
+    return render_template('RGB.html', images=image_data(path))
+
 
 
 
