@@ -4,7 +4,7 @@ import base64
 from io import BytesIO
 from pathlib import Path  # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
 import os
-
+from PIL import ImageFont
 
 
 # image (PNG, JPG) to base64 conversion (string), learn about base64 on wikipedia https://en.wikipedia.org/wiki/Base64
@@ -26,6 +26,8 @@ def image_data(path=Path("static/assets/"), img_list=None):  # path of static im
             {'source': "Eliana", 'label': "Lake Valley", 'file': "mountain_scenery.jpeg"}
 
         ]
+
+
     # gather analysis data and meta data for each image, adding attributes to each row in table
     for img_dict in img_list:
         # File to open
@@ -71,6 +73,7 @@ if __name__ == "__main__":
     img_test = [
         {'source': "Eliana", 'label': "Lake Valley", 'file': "mountain_scenery.jpeg"},
     ]
+
     items = image_data(local_path, img_test)  # path of local run
     for row in items:
         # print some details about the image so you can validate that it looks like it is working

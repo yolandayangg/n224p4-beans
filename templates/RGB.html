@@ -1,12 +1,34 @@
 <!DOCTYPE html>
+<style>
 
+    button{
+        height: 50px;
+        width: 200px;
+        background: #d1badb;
+        outline: coral;
+
+    }
+</style>
 {% block meta %}
+
+
     <script>
-        // Hack: add java script function to toggle image from original to gray and back (toggle)
-        //  document.getElementById("img<n>").src
-        //  document.getElementID("img_gray<n>").innerHTML
-        //  help: https://www.geeksforgeeks.org/how-to-change-the-src-attribute-of-an-img-element-in-javascript-jquery/
+        var imageType = 0; // 0 is color, 1 is gray
+
+        function toggle() {
+            if (imageType == 0) {
+                $('#colored').hide();
+                $('#grayscale').show();
+                imageType = 1;
+            } else {
+                $('#grayscale').hide();
+                $('#colored').show();
+                imageType = 0;
+            }
+        }
+
     </script>
+
     <title>RGB starter</title>
 {% endblock %}
 
@@ -33,7 +55,10 @@
                             <div>{{image.size}}</div>
                         </td>
                         <td>
-                            <img class="img-responsive py-3" id=img{{loop.index}} alt="" width="256" height="Auto" src="{{image.base64}}" >
+                            <div class="row" style="padding:30%; padding-top: 5%; padding-bottom: 30%;">
+                            <img src="/static/assets/mountain_scenery.jpeg" id="grayscaletoggle"  alt="Colored Mountain" width="200" height="Auto" src="{{image.base64}}" >
+                            <button onclick="toggle()" id="togglebutton">Let's Switch Up the Colors!</button>
+                            </div>
                             <!-- Hack: create button (btn{{loop.index}} to  call java script function
                        pass index to allow you to toggle images with hidden id's
                        {{image.base64}}  original image
@@ -76,4 +101,21 @@
 
         </div>
     </div>
+
+
+    <br>
+    <script>
+        var imageType = 0; // 0 is color, 1 is gray
+        function toggle() {
+            if (imageType == 0) {
+                document.getElementById("grayscaletoggle").style.filter= "grayscale(100%)";
+                document.getElementById('togglebutton').style.backgroundColor='#d9848a';
+                imageType = 1;
+            } else {
+                document.getElementById("grayscaletoggle").style.filter= "grayscale(0%)";
+                document.getElementById('togglebutton').style.backgroundColor='#d1badb';
+                imageType = 0;
+            }
+        }
+    </script>
 {% endblock %}
