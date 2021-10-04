@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<style>
+
+    button{
+        height: 50px;
+        width: 200px;
+        background: #d1badb;
+        outline: coral;
+    }
+</style>
+
+<br>
+<script>
+    var imageType = 0; // 0 is color, 1 is gray
+    function toggle() {
+        if (imageType == 0) {
+            document.getElementById("grayscaletoggle").style.filter= "grayscale(100%)";
+            document.getElementById('togglebutton').style.backgroundColor='#d1badb';
+            imageType = 1;
+        } else {
+            document.getElementById("grayscaletoggle").style.filter= "grayscale(0%)";
+            document.getElementById('togglebutton').style.backgroundColor='#d9848a';
+            imageType = 0;
+        }
+    }
+</script>
+
+
+
+<br>
+<button onclick="toggle()" id="togglebutton">Let's Switch Up the Colors!</button>
+</div>
+<div class="row" style="padding:0%; padding-top: 5%; padding-bottom: 5%;">
+    <img src="/static/assets/mountain_scenery.jpeg" id="grayscaletoggle"  alt="Colored Mountain" width="300" height="200" />
+</div>
+</br>
+
+
