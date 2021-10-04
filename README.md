@@ -45,7 +45,7 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 |----|---------|-----|
 |Nayana|Time boxed README + minilab grid|[Nayana's Ticket](https://github.com/wangzi190/flask_portfolio/issues/36)
 |Mahima|Reaching out to team members and assign individual technical tasks,add ASCII converting element to the math mini-lab from the week prior along|[Mahima's Ticket](https://github.com/wangzi190/flask_portfolio/issues/37)
-|Gray|Add ASCII converting element to the math mini-lab from the week prior along with Mahima|[Gray's Ticket](https://github.com/wangzi190/flask_portfolio/issues/40)
+|Gray|Add ASCII converting element to the math mini-lab from the week prior, JS DOM|[Gray's Ticket](https://github.com/wangzi190/flask_portfolio/issues/40)
 |Gabe|Finish greet page|[Gabe's Ticket](https://github.com/wangzi190/flask_portfolio/issues/39)
 
 
