@@ -26,7 +26,7 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 ### Technical Elements
 * Give users positive first impression through homepage (images, mission statement, new/events board)
 * Give uses ample amount of information on the club
-* Create useful and clean sign-up page (reference UX design principles; make sure the sign-up is not overwhelming to look at)
+* Create useful and clean sign-up page (reference UX design principles; make sure the sign-up is not overwhelming etc.)
 * Link social media (Instagram, Twitter)
 
 ### Tasks Accomplished so Far
@@ -45,7 +45,7 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 |----|---------|-----|
 |Nayana|Time boxed README + minilab grid|[Nayana's Ticket](https://github.com/wangzi190/flask_portfolio/issues/36)
 |Mahima|Reaching out to team members and assign individual technical tasks,add ASCII converting element to the math mini-lab from the week prior along|[Mahima's Ticket](https://github.com/wangzi190/flask_portfolio/issues/37)
-|Gray|Add ASCII converting element to the math mini-lab from the week prior along with Mahima|[Gray's Ticket](https://github.com/wangzi190/flask_portfolio/issues/40)
+|Gray|Add ASCII converting element to the math mini-lab from the week prior, JS DOM|[Gray's Ticket](https://github.com/wangzi190/flask_portfolio/issues/40)
 |Gabe|Finish greet page|[Gabe's Ticket](https://github.com/wangzi190/flask_portfolio/issues/39)
 
 

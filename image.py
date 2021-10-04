@@ -1,4 +1,4 @@
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter
 import numpy
 import base64
 from io import BytesIO
@@ -54,11 +54,26 @@ def image_data(path=Path("static/assets/"), images=None):  # path of static imag
         # Conversion of original Image to Base64, a string format that serves HTML nicely
         image['base64'] = image_formatter(img_reference, image['format'])
         # Numpy is used to allow easy access to data of image, python list
+        rotate_image = img_reference.transpose(Image.FLIP_LEFT_RIGHT)
+        image['base64_ROTATE'] = image_formatter(rotate_image, image['format'])
+        image['rotate_data'] = numpy.array(rotate_image.getdata())
+
+        text_image = ImageDraw.Draw(img_reference)
+        text_image.text((0,0), "Hello, World!", fill=(255, 0, 0))
+
+        blur_image = img_reference.filter(ImageFilter.GaussianBlur(5))
+        image['base64_BLUR'] = image_formatter(blur_image, image['format'])
+        image['blur_data'] = numpy.array(blur_image.getdata())
+
+
+
         img_data = img_object.getdata()
         image['data'] = numpy.array(img_data)
         image['hex_array'] = []
         image['binary_array'] = []
         # 'data' is a list of RGB data, the list is traversed and hex and binary lists are calculated and formatted
+
+
         for pixel in image['data']:
             # hexadecimal conversions
             hex_value = hex(pixel[0])[-2:] + hex(pixel[1])[-2:] + hex(pixel[2])[-2:]
@@ -76,7 +91,8 @@ def image_data(path=Path("static/assets/"), images=None):  # path of static imag
             else:
                 image['gray_data'].append((average, average, average))
         img_reference.putdata(image['gray_data'])
-        image['base64_GRAY'] = image_formatter(img_reference, image['format'])
+    image['base64_GRAY'] = image_formatter(img_reference, image['format'])
+
     return images  # list is returned with all the attributes for each image dictionary
 
 
@@ -111,9 +127,10 @@ if __name__ == "__main__":
         print(image['base64'])
 
         filename = local_path / image['file']
-
-
-
+        img_object = Image.open(filename)
+        img_object.show()
+        img_object = img_object.transpose(Image.FLIP_TOP_BOTTOM)
+        img_object.show()
 
 print()
 
