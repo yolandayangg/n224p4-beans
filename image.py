@@ -19,7 +19,7 @@ def image_formatter(img, img_type):
 
 def image_base64_MSG(img, img_type):
     d1=ImageDraw.Draw(img)
-    d1.text((10,10), "Amazing!", fill="white")
+    d1.text((10,10), "Amazing!", fill="red")
     img.show()
     return "data:image/" + img_type + ";base64," +image_base64(img, img_type)
 
