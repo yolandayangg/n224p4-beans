@@ -11,7 +11,6 @@ Owls, [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1), [G
 |Gabe|@Gabrielboudreau|[Gabe's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3AGabrielboudreau+is%3Aopen)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
 
 
-
 ## [Flask Portfolio Starter (from which we are referencing for our own project)](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
 Runtime link: https://portfolio.nighthawkcodingsociety.com/
 
@@ -34,14 +33,6 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 #### As of for now, we have our flask project open on IltelliJ, and manipulated the code to match the general layout we plan on using for our website. Some of these changes include:
 * Customization changes (e.g. changing the name of the website from "Nighthawk Coding Society" to "DNHS Women's Health Awareness")
 * Editing the names of the different tabs on navbar.html to "Home", "About", "Outreach", "Sign Up" (with the exception of our mini-lab pages at the end)
-
-###Sprint 3,4 
-|Name|GitHub ID|Tasks|Scrum Board|Commits|Profile| 
-|---------| |---|---
-|Nayana||
-|Mahima||
-|Gabe||
-|Gray||
 
 ### Tasks Accomplished so Far
 **Week 5 & 6:**
