@@ -42,10 +42,10 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 **Week 4:**
 |Name|Job|Ticket|
 |----|---------|-----|
-|Nayana|Time boxed README + minilab grid|[Nayana's Ticket](https://github.com/wangzi190/flask_portfolio/issues/36)|[Nayana's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Anayanav)|[Nayana's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=Nayanav)|[Nayana's Profile](https://github.com/Nayanav)|
-|Mahima|Reaching out to team members and assign individual technical tasks,add ASCII converting element to the math mini-lab from the week prior along|[Mahima's Ticket](https://github.com/wangzi190/flask_portfolio/issues/37)|[Mahima's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Amahimak19)|[Mahima's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=mahimak19)|[Mahima's Profile](https://github.com/mahimak19)|
-|Gray|Add ASCII converting element to the math mini-lab from the week prior along with Mahima|[Gray's Ticket](https://github.com/wangzi190/flask_portfolio/issues/40)|[Gray's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190)|[Gray's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190)|[Gray's Profile](https://github.com/wangzi190)|
-|Gabe|Finish greet page|[Gabe's Ticket](https://github.com/wangzi190/flask_portfolio/issues/39)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
+|Nayana|Time boxed README + minilab grid|[Nayana's Ticket](https://github.com/wangzi190/flask_portfolio/issues/36)
+|Mahima|Reaching out to team members and assign individual technical tasks,add ASCII converting element to the math mini-lab from the week prior along|[Mahima's Ticket](https://github.com/wangzi190/flask_portfolio/issues/37)
+|Gray|Add ASCII converting element to the math mini-lab from the week prior along with Mahima|[Gray's Ticket](https://github.com/wangzi190/flask_portfolio/issues/40)
+|Gabe|Finish greet page|[Gabe's Ticket](https://github.com/wangzi190/flask_portfolio/issues/39)
 
 
 **Week 3:**
