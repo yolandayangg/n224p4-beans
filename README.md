@@ -40,6 +40,7 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 |Gabe|Image manipulation|[Gabe's Ticket](https://github.com/wangzi190/flask_portfolio/issues/39)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
 
 **Week 4:**
+
 |Name|Job|Ticket|
 |----|---------|-----|
 |Nayana|Time boxed README + minilab grid|[Nayana's Ticket](https://github.com/wangzi190/flask_portfolio/issues/36)
