@@ -44,24 +44,6 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 |Gray|Big O notation, algorithim efficiency|[Gray's Ticket](https://github.com/wangzi190/flask_portfolio/issues/40)|[Gray's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190)|[Gray's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190)|[Gray's Profile](https://github.com/wangzi190)|
 |Gabe|Manipulate image|[Gabe's Ticket](https://github.com/wangzi190/flask_portfolio/issues/39)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
 
-
-* Nayana:
-* Help scrum master add tasks to scrum board
-* Time to complete: 10 minutes, Finish by Monday
-* Time boxed README
-* Time: 10 minutes, Finish by Tuesday
-* Create a toggle to dynamically change colored image to gray-scaled
-* Progress: created a button to switch between colored and gray images
-* Need to do: Create gray-scale through java
-* Gray: RGB values with an image, looking into algotirthms and Big O notation
-* Time to complete: Thursday
-* Progress: Researching Big O Notation, testing code
-* Mahima: RGB Values with an image, writing text on image and importing it to WEB
-* progress: God RGB values of image and wrote text on image
-* Gabe:
-* RGB values with an image, manipulating image
-* Progress: Implementing and understanding Pillow
-
 **Week 4:**
 * Nayana:
   * Time boxed README: Take 30 minutes
