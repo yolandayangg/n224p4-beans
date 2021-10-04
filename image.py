@@ -6,27 +6,22 @@ from pathlib import Path  # https://medium.com/@ageitgey/python-3-quick-tip-the-
 import os
 from PIL import ImageFont
 
-
 # image (PNG, JPG) to base64 conversion (string), learn about base64 on wikipedia https://en.wikipedia.org/wiki/Base64
 def image_base64(img, img_type):
     with BytesIO() as buffer:
         img.save(buffer, img_type)
         return base64.b64encode(buffer.getvalue()).decode()
 
-
 # formatter preps base64 string for inclusion, ie <img src=[this return value] ... />
 def image_formatter(img, img_type):
     return "data:image/" + img_type + ";base64," + image_base64(img, img_type)
-
 
 # color_data prepares a series of images for data analysis
 def image_data(path=Path("static/assets/"), img_list=None):  # path of static images is defaulted
     if img_list is None:  # color_dict is defined with defaults
         img_list = [
             {'source': "Eliana", 'label': "Lake Valley", 'file': "mountain_scenery.jpeg"}
-
         ]
-
 
     # gather analysis data and meta data for each image, adding attributes to each row in table
     for img_dict in img_list:
@@ -55,8 +50,7 @@ def image_data(path=Path("static/assets/"), img_list=None):  # path of static im
             bin_value = bin(pixel[0])[2:].zfill(8) + " " + bin(pixel[1])[2:].zfill(8) + " " + bin(pixel[2])[2:].zfill(8)
             img_dict['binary_array'].append(bin_value)
         # create gray scale of image, ref: https://www.geeksforgeeks.org/convert-a-numpy-array-to-an-image/
-        img_dict['gray_data'] = []
-        for pixel in img_dict['data']:
+        # delete two lines of code here so that information is not processed more than once (more than necessary)
             average = (int(pixel[0]) + pixel[1] + pixel[2]) // 3  # integer division
             if len(pixel) > 3:
                 img_dict['gray_data'].append((average, average, average, pixel[3]))
@@ -64,11 +58,10 @@ def image_data(path=Path("static/assets/"), img_list=None):  # path of static im
                 img_dict['gray_data'].append((average, average, average))
         img_reference.putdata(img_dict['gray_data'])
         img_dict['base64_GRAY'] = image_formatter(img_reference, img_dict['format'])
-    return img_list  # list is returned with all the attributes for each image dictionary
-
+        return img_list  # list is returned with all the attributes for each image dictionary
 
 # run this as standalone tester to see data printed in terminal
-if __name__ == "__main__":
+    if __name__ == "__main__":
     local_path = Path("/static/assets/")
     img_test = [
         {'source': "Eliana", 'label': "Lake Valley", 'file': "mountain_scenery.jpeg"},
