@@ -40,37 +40,13 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 |Gabe|Image manipulation|[Gabe's Ticket](https://github.com/wangzi190/flask_portfolio/issues/39)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
 
 **Week 4:**
-* Nayana:
-  * Time boxed README: Take 30 minutes
-  * About Me Page:
-    * Tasks (CSS elements)
-      * Adding pictures
-      * Adding descriptions
-    * Time to complete: 1 hour, finish by Wednesday
-  * Grid Page
-    * Tasks
-      * Create 3x3 grid
-      * Change grid background, columns, and row colors to match color scheme of website
-      * Clean the up the dropdown so it is more organized and mini-labs are hyperlinked in the grid page
-    * Time to complete: 2 hours, finish by Thursday
-* Gray:
-  * Add ASCII converting element to the math mini-lab from the week prior along with Mahima
-  * Changing HTML DOM with Javascript
-    * Add visuals to greet page to make it more interactive and eye-catching
-    * Time to complete: 2.5 hours, finish by Thursday
-* Mahima:
-  * Reaching out to team members and assign individual technical tasks
-    * Time to complete: 10 minutes, Finish by Monday
-  * Add ASCII converting element to the math mini-lab from the week prior along with Gray
-    * Time to complete: 1 hour, Finish by Thursday
-  * Add aditional information relevant to the website we are making
-    * More information about the club
-    * Time to complete: 1 hour, Finish by Thursday
-* Gabe:
-  * Finish greet page and push code
-    * Time to complete: 40 minutes, Finish by Monday
-  * Complete the binary hacks
-    * Time to complete: 4 hours, Finish by Thursday
+|Name|Job|Ticket|
+|----|---------|-----|
+|Nayana|Time boxed README + minilab grid|[Nayana's Ticket](https://github.com/wangzi190/flask_portfolio/issues/36)|[Nayana's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Anayanav)|[Nayana's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=Nayanav)|[Nayana's Profile](https://github.com/Nayanav)|
+|Mahima|Reaching out to team members and assign individual technical tasks,add ASCII converting element to the math mini-lab from the week prior along|[Mahima's Ticket](https://github.com/wangzi190/flask_portfolio/issues/37)|[Mahima's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Amahimak19)|[Mahima's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=mahimak19)|[Mahima's Profile](https://github.com/mahimak19)|
+|Gray|Add ASCII converting element to the math mini-lab from the week prior along with Mahima|[Gray's Ticket](https://github.com/wangzi190/flask_portfolio/issues/40)|[Gray's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190)|[Gray's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190)|[Gray's Profile](https://github.com/wangzi190)|
+|Gabe|Finish greet page|[Gabe's Ticket](https://github.com/wangzi190/flask_portfolio/issues/39)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
+
 
 **Week 3:**
 * Learned about binary and made a page with binary math and conversions
