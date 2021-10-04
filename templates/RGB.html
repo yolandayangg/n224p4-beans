@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<style>
 
+<style>
+body {background-color: lightpink
+      }
     button{
         height: 50px;
         width: 200px;
@@ -9,6 +11,7 @@
 
     }
 </style>
+
 {% block meta %}
 
 
@@ -56,7 +59,7 @@
                         </td>
                         <td>
                             <div class="row" style="padding:30%; padding-top: 5%; padding-bottom: 30%;">
-                            <img src="/static/assets/mountain_scenery.jpeg" id="grayscaletoggle"  alt="Colored Mountain" width="200" height="Auto" src="{{image.base64}}" >
+                            <img src="/static/assets/forestttt.jpeg" id="grayscaletoggle"  alt="Colored Forest" width="200" height="Auto" src="{{image.base64}}" >
                             <button onclick="toggle()" id="togglebutton">Let's Switch Up the Colors!</button>
                             </div>
                             <!-- Hack: create button (btn{{loop.index}} to  call java script function
