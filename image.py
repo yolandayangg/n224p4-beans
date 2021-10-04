@@ -29,7 +29,7 @@ def image_data(path=Path("static/assets/"), images=None):  # path of static imag
 
         images = [
             {'source': "Sergei Akulich", 'label': "Pristine Forest", 'file': "forestttt.jpeg"},
-            {'source': "Carlsbad", 'label': "Carlsbad Flower Fields", 'file': "flowers.jpeg" }
+
         ]
 
 
