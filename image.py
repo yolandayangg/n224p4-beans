@@ -28,8 +28,8 @@ def image_data(path=Path("static/assets/"), images=None):  # path of static imag
     if images is None:  # color_dict is defined with defaults
 
         images = [
-            {'source': "Sergei Akulich", 'label': "Pristine Forest", 'file': "forestttt.jpeg"}
-
+            {'source': "Sergei Akulich", 'label': "Pristine Forest", 'file': "forestttt.jpeg"},
+            {'source': "Carlsbad", 'label': "Carlsbad Flower Fields", 'file': "flowers.jpeg" }
         ]
 
 
@@ -85,6 +85,7 @@ if __name__ == "__main__":
     local_path = Path("/static/assets/")
     img_test = [
         {'source': "Sergei Akulich", 'label': "Pristine Forest", 'file': "forestttt.jpeg"},
+        {'source': "Carlsbad", 'label': "Carlsbad Flower Fields", 'file': "flowers.jpeg"}
     ]
 
     images = image_data(local_path, img_test)  # path of local run
