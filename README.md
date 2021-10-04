@@ -26,7 +26,7 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 ### Technical Elements
 * Give users positive first impression through homepage (images, mission statement, new/events board)
 * Give uses ample amount of information on the club
-* Create useful and clean sign-up page (reference UX design principles; make sure the sign-up is not overwhelming to look at)
+* Create useful and clean sign-up page (reference UX design principles; make sure the sign-up is not overwhelming etc.)
 * Link social media (Instagram, Twitter)
 
 ### Tasks Accomplished so Far
