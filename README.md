@@ -29,19 +29,14 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 * Create useful and clean sign-up page (reference UX design principles; make sure the sign-up is not overwhelming to look at)
 * Link social media (Instagram, Twitter)
 
-### Implementation progress (August 18th, 2021)
-#### As of for now, we have our flask project open on IltelliJ, and manipulated the code to match the general layout we plan on using for our website. Some of these changes include:
-* Customization changes (e.g. changing the name of the website from "Nighthawk Coding Society" to "DNHS Women's Health Awareness")
-* Editing the names of the different tabs on navbar.html to "Home", "About", "Outreach", "Sign Up" (with the exception of our mini-lab pages at the end)
-
 ### Tasks Accomplished so Far
 **Week 5 & 6:**
 
 |Name|Job|Ticket|
 |----|---------|-----|
-|Nayana|Add button to toggle between grayscale and color & README update|[Nayana's Ticket](https://github.com/wangzi190/flask_portfolio/issues/36)|[Nayana's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Anayanav)|[Nayana's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=Nayanav)|[Nayana's Profile](https://github.com/Nayanav)|
+|Nayana|Add button to toggle between grayscale and color + README update|[Nayana's Ticket](https://github.com/wangzi190/flask_portfolio/issues/36)|[Nayana's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Anayanav)|[Nayana's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=Nayanav)|[Nayana's Profile](https://github.com/Nayanav)|
 |Mahima|Add text to image and print hex values|[Mahima's Ticket](https://github.com/wangzi190/flask_portfolio/issues/37)|[Mahima's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Amahimak19)|[Mahima's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=mahimak19)|[Mahima's Profile](https://github.com/mahimak19)|
-|Gray|Big O notation, algorithm efficiency|[Gray's Ticket](https://github.com/wangzi190/flask_portfolio/issues/40)|[Gray's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190)|[Gray's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190)|[Gray's Profile](https://github.com/wangzi190)|
+|Gray|Big O notation, algorithm efficiency, + README update|[Gray's Ticket](https://github.com/wangzi190/flask_portfolio/issues/40)|[Gray's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190)|[Gray's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190)|[Gray's Profile](https://github.com/wangzi190)|
 |Gabe|Image manipulation|[Gabe's Ticket](https://github.com/wangzi190/flask_portfolio/issues/39)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
 
 **Week 4:**
@@ -90,3 +85,5 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 **Week 1:**
 * Brainstormed possible website ideas, final decision was creating a website for the DNHS Women's Health Awareness Club
 * [Journal 0](https://youtu.be/A7jPotTP5gI)
+* Customization changes (e.g. changing the name of the website from "Nighthawk Coding Society" to "DNHS Women's Health Awareness")
+* Edited the names of the different tabs on navbar.html to "Home", "About", "Outreach", "Sign Up" (with the exception of our mini-lab pages at the end)
