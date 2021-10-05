@@ -29,8 +29,11 @@ def image_data(path=Path("static/assets/"), images=None):  # path of static imag
 
         images = [
             {'source': "Sergei Akulich", 'label': "Pristine Forest", 'file': "forestttt.jpeg"},
+            {'source': "Sergei Akulich", 'label': "Pristine Forest", 'file': "bridge.jpg"},
 
         ]
+
+
 
 
 # gather analysis data and meta data for each image, adding attributes to each row in table
@@ -101,8 +104,10 @@ if __name__ == "__main__":
     local_path = Path("/static/assets/")
     img_test = [
         {'source': "Sergei Akulich", 'label': "Pristine Forest", 'file': "forestttt.jpeg"},
-        {'source': "Long Pier on a Lake", 'label': "Whistler, Canada", 'file': "bridge.jpg"}
+        {'source': "Sergei Akulich", 'label': "Pristine Forest", 'file': "bridge.jpg"},
     ]
+
+
 
     images = image_data(local_path, img_test)  # path of local run
     for image in images:
