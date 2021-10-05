@@ -101,7 +101,7 @@ if __name__ == "__main__":
     local_path = Path("/static/assets/")
     img_test = [
         {'source': "Sergei Akulich", 'label': "Pristine Forest", 'file': "forestttt.jpeg"},
-        {'source': "Carlsbad", 'label': "Carlsbad Flower Fields", 'file': "flowers.jpeg"}
+        {'source': "Long Pier on a Lake", 'label': "Whistler, Canada", 'file': "bridge.jpg"}
     ]
 
     images = image_data(local_path, img_test)  # path of local run

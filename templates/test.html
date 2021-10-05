@@ -1,106 +1,71 @@
 <!DOCTYPE html>
+<body>
+<html>
 <style>
-
-    button{
-        height: 50px;
-        width: 200px;
-        background: #d1badb;
-        outline: coral;
+    #xop-bg{
+        background-image: url("/static/assets/color.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 256px;
+        psotition: relative;
+        overflow: hidden;
     }
-</style>
+    #xop-bg::before{
+        position: absolute;
+        content:"";
+        display: block;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: url("/static/assets/color.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: auto;
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+        opacity: 0;
+        transition: opacity .5s ease-in-out;
+    }
 
-<br>
+    #xop-bg.blur::before{
+        opacity: 1;
+    }
+    .xop-blur-link{
+        letter-spacing: 0.2em;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 250px;
+        position: relative;
+        text-transform: uppercase;
+    }
+    .xop-blur-link a {
+        cursor: pointer;
+        padding: 250px 40px;
+        background: #bd116d;
+        color: #aaeda6;
+        blorder-radius: 10px
+        transition: .5s;
+    }
+    .xop-blur-link a: hover {
+        background: #8240e6;
+    }
+    </style>
+
+<div id="xop-bg">
+    <div class=""xop-blur-link"><a>discover nature</a></div>
+</div>
+</body>
+</html>
+
 <script>
-    var imageType = 0; // 0 is color, 1 is gray
-    function toggle() {
-        if (imageType == 0) {
-            document.getElementById("grayscaletoggle").style.filter= "grayscale(100%)";
-            document.getElementById('togglebutton').style.backgroundColor='#d1badb';
-            imageType = 1;
-        } else {
-            document.getElementById("grayscaletoggle").style.filter= "grayscale(0%)";
-            document.getElementById('togglebutton').style.backgroundColor='#d9848a';
-            imageType = 0;
-        }
-    }
+    $(function() {
+        $('.xop-blur-link a').hover(function() {
+            $('#xop-bg').addClass('blur');
+        },function (){
+            $('#xop-bg').removeClass('blur');
+        })
+    })
 </script>
-
-
-
-<br>
-<button onclick="toggle()" id="togglebutton">Let's Switch Up the Colors!</button>
-</div>
-<div class="row" style="padding:0%; padding-top: 5%; padding-bottom: 5%;">
-    <img src="/static/assets/mountain_scenery.jpeg" id="grayscaletoggle"  alt="Colored Mountain" width="300" height="200" />
-</div>
-</br>
-
-<title>RGB starter</title>
-{% endblock %}
-
-{% block content %}
-<h1 class="text-center">RGB values within an Image</h1>
-<div class="container">
-    <div class="row justify-content-md-center">
-        <table class="table">
-            <thead>
-            <tr>
-                <th>Meta Data</th>
-                <th>Image</th>
-                <th>Data</th>
-            </tr>
-            </thead>
-            <tbody>
-            {% for image in images %}
-                <tr>
-                    <td>
-                        <div>{{image.label}}</div>
-                        <div>{{image.source}}</div>
-                        <div>{{image.file}}</div>
-                        <div>{{image.format}}</div>
-                        <div>{{image.size}}</div>
-                    </td>
-                    <td>
-                        <img class="img-responsive py-3" id=img{{loop.index}} alt="" width="256" height="Auto" src="{{image.base64}}" >
-                        <!-- Hack: create button (btn{{loop.index}} to  call java script function
-                       pass index to allow you to toggle images with hidden id's
-                       {{image.base64}}  original image
-                       {{image.base64_GRAY}}  gray scale image
-                    -->
-                        <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>
-                        <p hidden id="img_gray{{loop.index}}">{{image.base64_GRAY}}</p>
-                    </td>
-                    <td>
-                        <div class="overflow-auto" style="height: 256px">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>{{image.mode}}</th>
-                                    <th>Hex Code</th>
-                                    <th>Binary</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                {% for row in image.data[:256:+1] %}
-                                    <tr>
-                                        <td>{{loop.index}}</td>
-                                        <td>{{row}}</td>
-                                        <td>{{image.hex_array[loop.index - 1]}}</td>
-                                        <td>{{image.binary_array[loop.index - 1]}}
-                                    </tr>
-                                    {% if loop.index > 256 %}
-                                        <tr><td>...</td><td>truncated</td><td>...</td><td>...</td></tr>
-                                    {% endif %}
-                                {% endfor %}
-                                </tbody>
-                            </table>
-                        </div>
-                    </td>
-                </tr>
-            {% endfor %}
-            </tbody>
-        </table>
-
-    </div>
-</div>

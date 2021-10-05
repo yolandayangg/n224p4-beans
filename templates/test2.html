@@ -11,28 +11,14 @@
 
 <br>
 <script>
-    var imageType = 0; // 0 is color, 1 is gray
     function toggle() {
         if (imageType == 0) {
-            document.getElementById("grayscaletoggle").style.filter= "grayscale(100%)";
+            document.getElementById("grayscaletoggle").element.blur();
             document.getElementById('togglebutton').style.backgroundColor='#d1badb';
 
             imageType = 1;
         } else {
-            document.getElementById("grayscaletoggle").style.filter= "grayscale(0%)";
-            document.getElementById('togglebutton').style.backgroundColor='#d9848a';
-            imageType = 0;
-        }
-    }
-
-    function toggle() {
-        if (imageType == 0) {
-            document.getElementById("blur").style.filter= "blur(100%)";
-            document.getElementById('togglebutton').style.backgroundColor='#d1badb';
-
-            imageType = 1;
-        } else {
-            document.getElementById("blur").style.filter= "blur(100%)";
+            document.getElementById("grayscaletoggle").element.blur();
             document.getElementById('togglebutton').style.backgroundColor='#d9848a';
             imageType = 0;
         }
@@ -53,19 +39,3 @@
 
 
 
-<script>
-    var imageType = 0; // 0 is color, 1 is gray
-    function toggle() {
-        if (imageType == 0) {
-            document.getElementById("grayscaletoggle").style.filter= "blur(100%)";
-            document.getElementById('togglebutton').style.backgroundColor='#aaeda6';
-            imageType = 1;
-        } else {
-            document.getElementById("grayscaletoggle").style.filter= "blur(100%)";
-            document.getElementById('togglebutton').style.backgroundColor='#d1badb';
-            imageType = 0;
-        }
-    }
-</script>
-
-<button onclick="toggle()" id="togglebutton">Let's Switch Up the Colors!</button>
