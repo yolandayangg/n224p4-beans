@@ -75,10 +75,17 @@ def gabriel():
 @app.route('/binary/')
 def binary():
     if request.form:
-        bits = request.form.get("bits")
-        if len(bits) !=0:
-            return render_template("binary.html", int(bits))
-    return render_template("binary.html", bits=8)
+        try:
+            bits = request.form.get("bits")
+            if request.form["change_picture"] == "lightbulbs":
+                if len(bits) !=0:
+                    return render_template("templates/binary.html", bits=int(bits), imgCloudOn="static/assets/bulb_on.gif", imgCloudOff="static/assets/bulb_off.png")
+            if request.form["change_picture"] == "clouds":
+                if len(bits) !=0:
+                    return render_template("templates/binary.html", bits=int(bits), imgCloudOn="static/assets/cloud.png", imgCloudOff="static/assets/lightning cloud.png")
+        except:
+            return render_template("templates/binary.html", bits=8, imageCloudOn="/static/assets/bulb_on.gif", imageCloudOff="static/assets/bulb_off.png")
+    return render_template("binary.html", bits=8, imageCloudOn="/static/assets/bulb_on.gif", imageCloudOff="/static/assets/bulb_off.png")
 
 
 @app.route('/aboutme/')

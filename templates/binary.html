@@ -27,7 +27,7 @@
   const BITS = '{{ BITS }}'; let max = '{{ MAX }}'; let MAX = parseInt(max, 10);
   // return string with current value of each bit
   function getBits() {
-    let bits = " ";
+    let bits = "";
     for(let i = 0; i < BITS; i++) {
       bits = bits + document.getElementById('digit' + i).value;
     }
@@ -129,15 +129,10 @@
 <form action="/binary" id="bits" method="POST" >
   <label for="bits">Enter Bit Size</label>
   <input name="bits">
-  <input type="submit" value="bits">
+  <input type="submit" name="change_picture" value="lightbulbs">
+  <input type="submit" name="change_picture" value="clouds">
 </form>
-
-<form>
-  <input type="radio" id="html" name="fav_language" value="lightbulb">
-  <label for="lightbulb">Lightbulbs</label><br>
-  <input type="radio" id="css" name="fav_language" value="cloud">
-  <label for="cloud">Clouds</label><br>
-</form>
+Select image
 
 <div class="container">
   <div class="row justify-content-md-center">
