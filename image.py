@@ -29,7 +29,6 @@ def image_data(path=Path("static/assets/"), images=None):  # path of static imag
 
         images = [
             {'source': "Sergei Akulich", 'label': "Pristine Forest", 'file': "forestttt.jpeg"},
-            {'source': "Pier and Lake", 'label': "Canada", 'file': "bridge.jpg"},
 
         ]
 
@@ -104,7 +103,6 @@ if __name__ == "__main__":
     local_path = Path("/static/assets/")
     img_test = [
         {'source': "Sergei Akulich", 'label': "Pristine Forest", 'file': "forestttt.jpeg"},
-        {'source': "Pier and Lake", 'label': "Canada", 'file': "bridge.jpg"},
     ]
 
 
