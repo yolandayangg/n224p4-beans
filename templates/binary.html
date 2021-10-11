@@ -9,38 +9,7 @@
            send initial value and updated values to form via Python render_template -->
 <!-- Hack: use 8 as default -->
 
-<body>
-<h1>Hex Color Generator</h1>
 
-<div class="main">
-
-    <!-- To select the color -->
-    Color Picker: <input type="color"
-                         id="colorPicker" value="#6a5acd">
-
-    <!-- To display hex code of the color -->
-    Hex Code: <input type="text" id="box">
-</div>
-
-<script>
-    function myColor() {
-
-        // Get the value return by color picker
-        var color = document.getElementById('colorPicker').value;
-
-        // Set the color as background
-        document.body.style.backgroundColor = color;
-
-        // Take the hex code
-        document.getElementById('box').value = color;
-    }
-
-    // When user clicks over color picker,
-    // myColor() function is called
-    document.getElementById('colorPicker')
-        .addEventListener('input', myColor);
-</script>
-</body>
 
 </html>
 {% set BITS = bits %}

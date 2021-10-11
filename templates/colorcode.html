@@ -1,113 +1,153 @@
-<!DOCTYPE html>
-<html>
+<html><head></head><body style="background-color: rgb(205, 215, 238);">
+<h1>Hex Color Generator</h1>
+
+
+
+<div class="main">
+
+    <!-- To select the color --><h4>Let's change the background color!</h4>
+
+
+
+
+
+    <div>
+        <input type="color" id="colorPicker" value="#6a5acd">
+    </div>
+
+
+</div>
+
+<script>
+    function myColor() {
+
+        //Retrieve value set through color picker
+        var color = document.getElementById('colorPicker').value;
+
+        //Selected value becoming the background
+        document.body.style.backgroundColor = color;
+
+        // Retrieve hex code
+        document.getElementById('box').value = color;
+    }
+
+    // myColor() function when color picker is clicked
+    document.getElementById('colorPicker')
+        .addEventListener('input', myColor);
+</script>
+
 <style>
 
     .buttonOff {
-        background-color: coral;
-        color: pink;
+        color: white;
         font-style: normal;
     }
 
     .buttonOn {
-        background-color: lightblue;
         color: white;
-        font-style: italic;
+        font-style: normal;
     }
 
 </style>
-</html>
+
+
 <h1>Color Code</h1>
 
+<div class="offset-sm-1 col-sm-10" id="color" style="background-color: rgb(0, 0, 0); height: 20vh; width: 60vh;">  <!-- Div that shows off color -->
+</div><p style="text-align: left;" id="code">Hexcode: #000000</p><br>
+
+<h4>Red Color Manipulation</h4>
 <div class="row">
     <div class="col-sm-1"></div> <!-- Jinja for loops to create buttons -->
 
-    <button class="col-sm-1 buttonOn" id="r1" onclick="toggleSwitch('r1')">1</button>
+    <button style="background-color: firebrick" class="col-sm-1 buttonOff" id="r1" onclick="toggleSwitch('r1')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="r2" onclick="toggleSwitch('r2')">0</button>
+    <button style="background-color: firebrick" class="col-sm-1 buttonOff" id="r2" onclick="toggleSwitch('r2')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="r3" onclick="toggleSwitch('r3')">0</button>
+    <button style="background-color: firebrick" class="col-sm-1 buttonOn" id="r3" onclick="toggleSwitch('r3')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="r4" onclick="toggleSwitch('r4')">0</button>
+    <button style="background-color: firebrick" class="col-sm-1 buttonOn" id="r4" onclick="toggleSwitch('r4')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="r5" onclick="toggleSwitch('r5')">0</button>
+    <button style="background-color: firebrick" class="col-sm-1 buttonOn" id="r5" onclick="toggleSwitch('r5')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="r6" onclick="toggleSwitch('r6')">0</button>
+    <button style="background-color: firebrick" class="col-sm-1 buttonOn" id="r6" onclick="toggleSwitch('r6')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="r7" onclick="toggleSwitch('r7')">0</button>
+    <button style="background-color: firebrick" class="col-sm-1 buttonOn" id="r7" onclick="toggleSwitch('r7')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="r8" onclick="toggleSwitch('r8')">0</button>
+    <button style="background-color: firebrick" class="col-sm-1 buttonOff" id="r8" onclick="toggleSwitch('r8')">0</button>
 
 
     <div class="offset-sm-1 col-sm-2">
-        <p id="r">Decimal value: 128</p>
-        <div style="height: 2em; background-color: rgb(128, 0, 0);" id="red"></div>
+        <p id="r">Decimal value: 0</p>
+        <div style="height: 13em; background-color: rgb(62, 0, 0); width: 13em;" id="red"></div>
     </div>
 </div>
 
 <br>
 
+<h4>Green Color Manipulation</h4>
 <div class="row">
     <div class="col-sm-1"></div>
 
-    <button class="col-sm-1 buttonOff" id="g1" onclick="toggleSwitch('g1')">0</button>
+    <button style="background-color: green" class="col-sm-1 buttonOff" id="g1" onclick="toggleSwitch('g1')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="g2" onclick="toggleSwitch('g2')">0</button>
+    <button style="background-color: green" class="col-sm-1 buttonOff" id="g2" onclick="toggleSwitch('g2')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="g3" onclick="toggleSwitch('g3')">0</button>
+    <button style="background-color: green" class="col-sm-1 buttonOff" id="g3" onclick="toggleSwitch('g3')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="g4" onclick="toggleSwitch('g4')">0</button>
+    <button style="background-color: green" class="col-sm-1 buttonOff" id="g4" onclick="toggleSwitch('g4')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="g5" onclick="toggleSwitch('g5')">0</button>
+    <button style="background-color: green" class="col-sm-1 buttonOff" id="g5" onclick="toggleSwitch('g5')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="g6" onclick="toggleSwitch('g6')">0</button>
+    <button style="background-color: green" class="col-sm-1 buttonOff" id="g6" onclick="toggleSwitch('g6')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="g7" onclick="toggleSwitch('g7')">0</button>
+    <button style="background-color: green" class="col-sm-1 buttonOff" id="g7" onclick="toggleSwitch('g7')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="g8" onclick="toggleSwitch('g8')">0</button>
+    <button style="background-color: green" class="col-sm-1 buttonOff" id="g8" onclick="toggleSwitch('g8')">0</button>
 
 
     <div class="offset-sm-1 col-sm-2">
         <p id="g">Decimal value: 0</p>
-        <div style="height: 2em; background-color: #000000;" id="green"></div>
+        <div style="height: 13em; background-color: #000000; width:13em" id="green"></div>
     </div>
 </div>
 
 <br>
 
+<h4>Blue Color Manipulation</h4>
 <div class="row">
     <div class="col-sm-1"></div>
 
-    <button class="col-sm-1 buttonOff" id="b1" onclick="toggleSwitch('b1')">0</button>
+    <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b1" onclick="toggleSwitch('b1')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="b2" onclick="toggleSwitch('b2')">0</button>
+    <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b2" onclick="toggleSwitch('b2')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="b3" onclick="toggleSwitch('b3')">0</button>
+    <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b3" onclick="toggleSwitch('b3')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="b4" onclick="toggleSwitch('b4')">0</button>
+    <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b4" onclick="toggleSwitch('b4')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="b5" onclick="toggleSwitch('b5')">0</button>
+    <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b5" onclick="toggleSwitch('b5')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="b6" onclick="toggleSwitch('b6')">0</button>
+    <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b6" onclick="toggleSwitch('b6')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="b7" onclick="toggleSwitch('b7')">0</button>
+    <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b7" onclick="toggleSwitch('b7')">0</button>
 
-    <button class="col-sm-1 buttonOff" id="b8" onclick="toggleSwitch('b8')">0</button>
+    <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b8" onclick="toggleSwitch('b8')">0</button>
 
 
     <div class="offset-sm-1 col-sm-2">
         <p id="b">Decimal value: 0</p>
-        <div style="height: 2em; background-color: #000000;" id="blue"></div>
+        <div style="height: 13em; background-color: #000000;width:13em" id="blue"></div>
     </div>
 </div>
 
 <br>
 
-<div class="offset-sm-1 col-sm-10" id="color" style="background-color: rgb(128, 0, 0); height: 20vh;">  <!-- Div that shows off color -->
-</div>
-<p style="text-align: center;" id="code">Hexcode: #800000</p>
+
+
 
 <br>
-<button style="justify-content: center;" onclick="reset()">Reset</button>
+
 
 
 <script>
@@ -176,31 +216,4 @@
         document.getElementById("code").innerHTML = "Hexcode: " + code;
     }
 
-    function reset () {   // function to reset all buttons back to off
-        for (var i = 1; i <= 8; i++) {
-            document.getElementById('r' + i).innerHTML = "0";
-            document.getElementById('g' + i).innerHTML = "0";
-            document.getElementById('b' + i).innerHTML = "0";
-
-            calculateRow('r');
-            calculateRow('b');
-            calculateRow('g');
-
-            document.getElementById('r' + i).classList.add("buttonOff");
-            document.getElementById('g' + i).classList.add("buttonOff");
-            document.getElementById('b' + i).classList.add("buttonOff");
-
-            document.getElementById('r' + i).classList.remove("buttonOn");
-            document.getElementById('g' + i).classList.remove("buttonOn");
-            document.getElementById('b' + i).classList.remove("buttonOn");
-        }
-    }
-
-    window.onload = reset();  // init buttons
-
-</script>
-
-<!-- Distinct styling for on/off -->
-
-
-</body></html>
+</script></body></html>
