@@ -32,13 +32,13 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 ### Tasks Accomplished so Far
 **Week 7**
 
-|Name|Job|Ticket|
-|----|---------|-----|
-|Nayana|Color Codes RGB + README update + Logic Gates|[Nayana's Color Code Ticket](https://github.com/wangzi190/flask_portfolio/issues/46), [Nayana's Logic Gates Ticket](https://github.com/wangzi190/flask_portfolio/issues/48)|[Nayana's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Anayanav)|[Nayana's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=Nayanav)|[Nayana's Profile](https://github.com/Nayanav)|
-|Mahima|Unsigned/signed addition + Multiply/Divide by 2 Shift|[Mahima's Signed Addition Ticket](https://github.com/wangzi190/flask_portfolio/issues/49), [Mahima's Unsigned Addition Ticket](https://github.com/wangzi190/flask_portfolio/issues/47), [Mahima's Divide/Multiply 2 Shift Ticket](https://github.com/wangzi190/flask_portfolio/issues/44) |[Mahima's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Amahimak19)|[Mahima's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=mahimak19)|[Mahima's Profile](https://github.com/mahimak19)|
-|Gray|Extend/Switch ASCII to Unicode|[Gray's Ticket](https://github.com/wangzi190/flask_portfolio/issues/40)|[Gray's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190)|[Gray's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190)|[Gray's Profile](https://github.com/wangzi190)|
-|Gabe|Logic Gates|No ticket|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
-|Everyone|3.5 and 3.6 Notes and Quizzes|[Notes and Quizzes](https://github.com/wangzi190/flask_portfolio/issues/52)|
+|Name|Job|Ticket|Self-grade (Individual contributions)|
+|----|---------|-----|-----|
+|Nayana|Color Codes RGB + README update + Logic Gates|[Nayana's Color Code Ticket](https://github.com/wangzi190/flask_portfolio/issues/46), [Nayana's Logic Gates Ticket](https://github.com/wangzi190/flask_portfolio/issues/48)|2/2|
+|Mahima|Unsigned/signed addition + Multiply/Divide by 2 Shift|[Mahima's Signed Addition Ticket](https://github.com/wangzi190/flask_portfolio/issues/49), [Mahima's Unsigned Addition Ticket](https://github.com/wangzi190/flask_portfolio/issues/47), [Mahima's Divide/Multiply 2 Shift Ticket](https://github.com/wangzi190/flask_portfolio/issues/44) |2/2|
+|Gray|Extend/Switch ASCII to Unicode|[Gray's Ticket](https://github.com/wangzi190/flask_portfolio/issues/40)|2/2|
+|Gabe|Logic Gates|No ticket|0/2|
+|Everyone|3.5 and 3.6 Notes and Quizzes|[Notes and Quizzes](https://github.com/wangzi190/flask_portfolio/issues/52)|---|
 
 **Week 5 & 6:**
 
