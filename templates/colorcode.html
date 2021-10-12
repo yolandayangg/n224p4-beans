@@ -1,219 +1,228 @@
-<html><head></head><body style="background-color: rgb(205, 215, 238);">
-<h1>Hex Color Generator</h1>
+<!DOCTYPE html>
+{% extends "layouts/base.html" %}
+
+
+{% block body %}
+    <h2>Hex Color Generator</h2>
 
 
 
-<div class="main">
+    <div class="main">
 
-    <!-- To select the color --><h4>Let's change the background color!</h4>
-
-
+        <!-- To select the color --><h6>Let's change the background color!</h6>
 
 
 
-    <div>
-        <input type="color" id="colorPicker" value="#6a5acd">
+
+
+        <div>
+            <input type="color" id="colorPicker" value="#6a5acd">
+        </div>
+
+
+    </div>
+
+    <script>
+        function myColor() {
+
+            //Retrieve value set through color picker
+            var color = document.getElementById('colorPicker').value;
+
+            //Selected value becoming the background
+            document.body.style.backgroundColor = color;
+
+            // Retrieve hex code
+            document.getElementById('box').value = color;
+        }
+
+        // myColor() function when color picker is clicked
+        document.getElementById('colorPicker')
+            .addEventListener('input', myColor);
+    </script>
+
+    <style>
+
+        .buttonOff {
+            color: white;
+            font-style: normal;
+        }
+
+        .buttonOn {
+            color: white;
+            font-style: normal;
+        }
+
+        .row {
+            width: 2250px;
+        }
+
+
+    </style>
+
+
+
+    <h2>Color Code</h2>
+
+    <div class="col-sm-8" id="color" style="background-color: rgb(0, 0, 0); height: 13em; width: 160em;">  <!-- Div that shows off color -->
+    </div><p style="text-align: left;" id="code">Hexcode: #000000</p><br>
+
+    <h4>Red Color Manipulation</h4>
+    <div class="row">
+
+        <button style="background-color: firebrick" class="col-sm-1 buttonOff" id="r1" onclick="toggleSwitch('r1')">0</button>
+
+        <button style="background-color: firebrick" class="col-sm-1 buttonOff" id="r2" onclick="toggleSwitch('r2')">0</button>
+
+        <button style="background-color: firebrick" class="col-sm-1 buttonOn" id="r3" onclick="toggleSwitch('r3')">0</button>
+
+        <button style="background-color: firebrick" class="col-sm-1 buttonOn" id="r4" onclick="toggleSwitch('r4')">0</button>
+
+        <button style="background-color: firebrick" class="col-sm-1 buttonOn" id="r5" onclick="toggleSwitch('r5')">0</button>
+
+        <button style="background-color: firebrick" class="col-sm-1 buttonOn" id="r6" onclick="toggleSwitch('r6')">0</button>
+
+        <button style="background-color: firebrick" class="col-sm-1 buttonOn" id="r7" onclick="toggleSwitch('r7')">0</button>
+
+        <button style="background-color: firebrick" class="col-sm-1 buttonOff" id="r8" onclick="toggleSwitch('r8')">0</button>
+
+
+        <p id="r">Decimal value: 0</p><div style="height: 13em; background-color: rgb(0, 0, 0); width: 2250px;" id="red"></div>
+    </div>
+
+    <br>
+
+    <h4>Green Color Manipulation</h4>
+    <div class="row">
+
+
+        <button style="background-color: green" class="col-sm-1 buttonOff" id="g1" onclick="toggleSwitch('g1')">0</button>
+
+        <button style="background-color: green" class="col-sm-1 buttonOff" id="g2" onclick="toggleSwitch('g2')">0</button>
+
+        <button style="background-color: green" class="col-sm-1 buttonOff" id="g3" onclick="toggleSwitch('g3')">0</button>
+
+        <button style="background-color: green" class="col-sm-1 buttonOff" id="g4" onclick="toggleSwitch('g4')">0</button>
+
+        <button style="background-color: green" class="col-sm-1 buttonOff" id="g5" onclick="toggleSwitch('g5')">0</button>
+
+        <button style="background-color: green" class="col-sm-1 buttonOff" id="g6" onclick="toggleSwitch('g6')">0</button>
+
+        <button style="background-color: green" class="col-sm-1 buttonOff" id="g7" onclick="toggleSwitch('g7')">0</button>
+
+        <button style="background-color: green" class="col-sm-1 buttonOff" id="g8" onclick="toggleSwitch('g8')">0</button>
+
+        <p id="g">Decimal value: 0</p><div style="height: 13em; background-color: #000000; width:180em" id="green"></div>
+
+
+
+    </div>
+
+    <br>
+
+    <h4>Blue Color Manipulation</h4>
+    <div class="row">
+
+        <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b1" onclick="toggleSwitch('b1')">0</button>
+
+        <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b2" onclick="toggleSwitch('b2')">0</button>
+
+        <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b3" onclick="toggleSwitch('b3')">0</button>
+
+        <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b4" onclick="toggleSwitch('b4')">0</button>
+
+        <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b5" onclick="toggleSwitch('b5')">0</button>
+
+        <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b6" onclick="toggleSwitch('b6')">0</button>
+
+        <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b7" onclick="toggleSwitch('b7')">0</button>
+
+        <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b8" onclick="toggleSwitch('b8')">0</button>
+
+
+        <p id="b">Decimal value: 0</p><div style="height: 13em; background-color: #000000;width:180em" id="blue"></div>
+    </div>
+
+    <br>
+
+
+
+
+    <br>
+
+
+
+    <script>
+
+        var red = 0;
+        var green = 0;
+        var blue = 0;
+
+        function toggleSwitch (id) {     // toggles button between on and off
+            const element = document.getElementById(id);
+            if (element.innerHTML == "1") {
+                element.innerHTML = "0";
+            } else {
+                element.innerHTML = "1";
+            }
+            element.classList.toggle("buttonOn");
+            element.classList.toggle("buttonOff");
+
+            calculateRow(id.charAt(0));
+        }
+
+        function calculateRow (color) {    // function that calculates the decimal value for a certain row after one of its buttons is toggled
+            let sum = 0;
+            for (var i = 1; i <= 8; i++) {
+                let element = document.getElementById(color + i);
+                sum += Math.pow(2, 8 - i) * parseInt(element.innerHTML);
+            }
+            document.getElementById(color).innerHTML = "Decimal value: " + sum;
+            switch (color) {
+                case 'r':
+                    red = sum;
+                    document.getElementById("red").style.backgroundColor = "#" + red.toString(16) + "0000";
+                    break;
+                case 'g':
+                    green = sum;
+                    document.getElementById("green").style.backgroundColor = "#" + "00" + green.toString(16) + "00";
+                    break;
+                case 'b':
+                    blue = sum;
+                    document.getElementById("blue").style.backgroundColor = "#0000" + blue.toString(16);
+                    break;
+                default:
+                    break;
+            }
+
+            setColorCode();
+        }
+
+        function setColorCode () {    // uses values from each row to create a color
+            let r = red.toString(16);
+            let g = green.toString(16);
+            let b = blue.toString(16);
+
+            if (r.length == 1) {
+                r = "0" + r;
+            }
+            if (g.length == 1) {
+                g = "0" + g;
+            }
+            if (b.length == 1) {
+                b = "0" + b;
+            }
+
+            let code = "#" + r + g + b;
+            document.getElementById("color").style.backgroundColor = code;
+            document.getElementById("code").innerHTML = "Hexcode: " + code;
+        }
+
+
+    </script>
+
     </div>
 
 
-</div>
 
-<script>
-    function myColor() {
-
-        //Retrieve value set through color picker
-        var color = document.getElementById('colorPicker').value;
-
-        //Selected value becoming the background
-        document.body.style.backgroundColor = color;
-
-        // Retrieve hex code
-        document.getElementById('box').value = color;
-    }
-
-    // myColor() function when color picker is clicked
-    document.getElementById('colorPicker')
-        .addEventListener('input', myColor);
-</script>
-
-<style>
-
-    .buttonOff {
-        color: white;
-        font-style: normal;
-    }
-
-    .buttonOn {
-        color: white;
-        font-style: normal;
-    }
-
-</style>
-
-
-<h1>Color Code</h1>
-
-<div class="offset-sm-1 col-sm-10" id="color" style="background-color: rgb(0, 0, 0); height: 20vh; width: 60vh;">  <!-- Div that shows off color -->
-</div><p style="text-align: left;" id="code">Hexcode: #000000</p><br>
-
-<h4>Red Color Manipulation</h4>
-<div class="row">
-    <div class="col-sm-1"></div> <!-- Jinja for loops to create buttons -->
-
-    <button style="background-color: firebrick" class="col-sm-1 buttonOff" id="r1" onclick="toggleSwitch('r1')">0</button>
-
-    <button style="background-color: firebrick" class="col-sm-1 buttonOff" id="r2" onclick="toggleSwitch('r2')">0</button>
-
-    <button style="background-color: firebrick" class="col-sm-1 buttonOn" id="r3" onclick="toggleSwitch('r3')">0</button>
-
-    <button style="background-color: firebrick" class="col-sm-1 buttonOn" id="r4" onclick="toggleSwitch('r4')">0</button>
-
-    <button style="background-color: firebrick" class="col-sm-1 buttonOn" id="r5" onclick="toggleSwitch('r5')">0</button>
-
-    <button style="background-color: firebrick" class="col-sm-1 buttonOn" id="r6" onclick="toggleSwitch('r6')">0</button>
-
-    <button style="background-color: firebrick" class="col-sm-1 buttonOn" id="r7" onclick="toggleSwitch('r7')">0</button>
-
-    <button style="background-color: firebrick" class="col-sm-1 buttonOff" id="r8" onclick="toggleSwitch('r8')">0</button>
-
-
-    <div class="offset-sm-1 col-sm-2">
-        <p id="r">Decimal value: 0</p>
-        <div style="height: 13em; background-color: rgb(0, 0, 0); width: 13em;" id="red"></div>
-    </div>
-</div>
-
-<br>
-
-<h4>Green Color Manipulation</h4>
-<div class="row">
-    <div class="col-sm-1"></div>
-
-    <button style="background-color: green" class="col-sm-1 buttonOff" id="g1" onclick="toggleSwitch('g1')">0</button>
-
-    <button style="background-color: green" class="col-sm-1 buttonOff" id="g2" onclick="toggleSwitch('g2')">0</button>
-
-    <button style="background-color: green" class="col-sm-1 buttonOff" id="g3" onclick="toggleSwitch('g3')">0</button>
-
-    <button style="background-color: green" class="col-sm-1 buttonOff" id="g4" onclick="toggleSwitch('g4')">0</button>
-
-    <button style="background-color: green" class="col-sm-1 buttonOff" id="g5" onclick="toggleSwitch('g5')">0</button>
-
-    <button style="background-color: green" class="col-sm-1 buttonOff" id="g6" onclick="toggleSwitch('g6')">0</button>
-
-    <button style="background-color: green" class="col-sm-1 buttonOff" id="g7" onclick="toggleSwitch('g7')">0</button>
-
-    <button style="background-color: green" class="col-sm-1 buttonOff" id="g8" onclick="toggleSwitch('g8')">0</button>
-
-
-    <div class="offset-sm-1 col-sm-2">
-        <p id="g">Decimal value: 0</p>
-        <div style="height: 13em; background-color: #000000; width:13em" id="green"></div>
-    </div>
-</div>
-
-<br>
-
-<h4>Blue Color Manipulation</h4>
-<div class="row">
-    <div class="col-sm-1"></div>
-
-    <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b1" onclick="toggleSwitch('b1')">0</button>
-
-    <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b2" onclick="toggleSwitch('b2')">0</button>
-
-    <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b3" onclick="toggleSwitch('b3')">0</button>
-
-    <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b4" onclick="toggleSwitch('b4')">0</button>
-
-    <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b5" onclick="toggleSwitch('b5')">0</button>
-
-    <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b6" onclick="toggleSwitch('b6')">0</button>
-
-    <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b7" onclick="toggleSwitch('b7')">0</button>
-
-    <button style="background-color: cornflowerblue" class="col-sm-1 buttonOff" id="b8" onclick="toggleSwitch('b8')">0</button>
-
-
-    <div class="offset-sm-1 col-sm-2">
-        <p id="b">Decimal value: 0</p>
-        <div style="height: 13em; background-color: #000000;width:13em" id="blue"></div>
-    </div>
-</div>
-
-<br>
-
-
-
-
-<br>
-
-
-
-<script>
-
-    var red = 0;
-    var green = 0;
-    var blue = 0;
-
-    function toggleSwitch (id) {     // toggles button between on and off
-        const element = document.getElementById(id);
-        if (element.innerHTML == "1") {
-            element.innerHTML = "0";
-        } else {
-            element.innerHTML = "1";
-        }
-        element.classList.toggle("buttonOn");
-        element.classList.toggle("buttonOff");
-
-        calculateRow(id.charAt(0));
-    }
-
-    function calculateRow (color) {    // function that calculates the decimal value for a certain row after one of its buttons is toggled
-        let sum = 0;
-        for (var i = 1; i <= 8; i++) {
-            let element = document.getElementById(color + i);
-            sum += Math.pow(2, 8 - i) * parseInt(element.innerHTML);
-        }
-        document.getElementById(color).innerHTML = "Decimal value: " + sum;
-        switch (color) {
-            case 'r':
-                red = sum;
-                document.getElementById("red").style.backgroundColor = "#" + red.toString(16) + "0000";
-                break;
-            case 'g':
-                green = sum;
-                document.getElementById("green").style.backgroundColor = "#" + "00" + green.toString(16) + "00";
-                break;
-            case 'b':
-                blue = sum;
-                document.getElementById("blue").style.backgroundColor = "#0000" + blue.toString(16);
-                break;
-            default:
-                break;
-        }
-
-        setColorCode();
-    }
-
-    function setColorCode () {    // uses values from each row to create a color
-        let r = red.toString(16);
-        let g = green.toString(16);
-        let b = blue.toString(16);
-
-        if (r.length == 1) {
-            r = "0" + r;
-        }
-        if (g.length == 1) {
-            g = "0" + g;
-        }
-        if (b.length == 1) {
-            b = "0" + b;
-        }
-
-        let code = "#" + r + g + b;
-        document.getElementById("color").style.backgroundColor = code;
-        document.getElementById("code").innerHTML = "Hexcode: " + code;
-    }
-
-</script></body></html>
+{% endblock %}
+</html>

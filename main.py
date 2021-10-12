@@ -94,6 +94,10 @@ def RGB():
 def colorcode():
     return render_template('colorcode.html')
 
+@app.route('/logicgate/')
+def logicgate():
+    return render_template('logicgate.html')
+
 
 @app.route('/minilabs/')
 def minilabs():

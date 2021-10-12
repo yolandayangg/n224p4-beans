@@ -1,0 +1,212 @@
+<html lang="en"><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="https://csp.nighthawkcodingsociety.com/">Women's Health Awareness Club</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-nav">
+        <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/volunteering/">Volunteering</a>
+        <a class="nav-link" href="/signup/">Sign Up</a>
+        <a class="nav-link" href="/outreach/">Outreach</a>
+        <!-- stub is shown using the name of the route -->
+        <!--<a class="nav-link" href="/stub">Greet</a>-->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+            </ul>
+        </div>
+        <!--hi -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1" type="button">
+                Concepts
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <a class="dropdown-item" href="/minilabs">Mini-Labs</a>
+                <a class="dropdown-item" href="https://docs.google.com/document/d/1ItEfkOSJl8et1n6pr0n1H3VyyuOtrrEZ4eNztx6WK_0/edit?usp=sharing">Brainwriting/Wireframes</a>
+            </div>
+        </li>
+
+
+
+    </div>
+</nav><!----><!----><!----><head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+    <style>
+        :root{
+            --white: darkblue;
+            --black: white;
+            --grey: lightpink;
+        }
+
+        html, body{
+            margin: 0;
+            height: 100%;
+            animation: fadein 2s;
+            -moz-animation: fadein 2s; /* Firefox */
+            -webkit-animation: fadein 2s; /* Safari and Chrome */
+            -o-animation: fadein 2s; /* Opera */
+            background-color: var(--grey);
+            color: var(--white);
+            font-family:"Century Schoolbook";
+        }
+
+        .dark-mode {
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+        h1{
+            font-size: 6em;
+        }
+
+        a {
+            color: hotpink;
+        }
+
+        .fa{
+            font-size: 6em;
+            letter-spacing: 1em;
+            transition: all .2s;
+            color: white;
+        }
+
+        .fa:hover{
+            transform: translateY(10px);
+        }
+
+        .fa-youtube-play:hover{
+            color: #cc0000;
+        }
+
+        .fa-twitter:hover{
+            color: #1da1f2;
+        }
+
+        .fa-github:hover{
+            color: #000000;
+        }
+
+        .btn:link,
+        .btn:visited {
+            text-transform: uppercase;
+            text-decoration: mediumpurple;
+            padding: 15px 40px;
+            display: inline-block;
+            border-radius: 100px;
+            transition: all .2s;
+            position: absolute;
+            color: white;
+            font-size: 1em;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .row{
+            margin: auto;
+        }
+        .nav{
+            z-index: 1100;
+        }
+    </style>
+
+    <title>Women's Health Awareness Club |  </title>
+
+
+<!--Binary Logic Gate Lab Code -->
+    <style>
+        box-shadow: 5px 5px 5px blue;
+        margin: 1em;
+        }
+
+        table, th, td {
+            border: 1px solid blue;
+            width: 50%;
+        }
+    </style>
+
+</head><body><h2>Logic Gates</h2>
+
+
+<input type="checkbox" id="A" value="A">
+<label for="A"> A</label><br>
+
+<input type="checkbox" id="B" value="B">
+<label for="B"> B</label><br>
+
+<br>
+<button id="submit" onclick="logic()" style="background-color: cornflowerblue; color: white">Let's see the logic in action!</button>
+</br>
+
+<br>
+
+<table>
+    <tr>
+        <td>AND</td>
+        <td id="AND">---</td>
+    </tr>
+    <tr>
+        <td>OR</td>
+        <td id="OR">---</td>
+    </tr>
+    <tr>
+        <td>XOR</td>
+        <td id="XOR">---</td>
+    </tr>
+    </tbody></table>
+
+<br>
+</br>
+<br>
+</br>
+<h5>Confusion? Check out the diagrams below!</h5>
+    <img src= "/static/assets/logics.png" height="200" width="500">
+    <img src= "/static/assets/anotherlogics.png" height="200" width="500">
+</br>
+<script>
+    function logic() {
+        var A = document.getElementById('A');
+        var B = document.getElementById('B');
+
+        var inputA = document.querySelector('input[id=A]');
+        var valA = inputA.checked ? true : false;
+        var inputB = document.querySelector('input[id=B]');
+        var valB = inputB.checked ? true : false;
+
+        document.getElementById('AND').innerHTML = valA && valB ? 'true' : 'false';
+        document.getElementById('OR').innerHTML = valA || valB ? 'true' : 'false';
+        document.getElementById('XOR').innerHTML = (valA && !valB) || (!valA && valB) ? 'true' : 'false';
+    }
+</script>
+
+
+
+
+
+
+<!-- Navigation Bar from bootstrap
+This HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
