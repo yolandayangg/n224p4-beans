@@ -42,6 +42,22 @@
             return bits;
         }
 
+        function getBits1() {
+            let bits = "";
+            for(let i = 0; i < BITS; i++) {
+                bits = bits + document.getElementById('digit1' + i).value;
+            }
+            return bits;
+        }
+
+        function getBits2() {
+            let bits = "";
+            for(let i = 0; i < BITS; i++) {
+                bits = bits + document.getElementById('digit2' + i).value;
+            }
+            return bits;
+        }
+
         /* This function sets or resets (setter function) the DOM values (conversions) from binary string.
              parameter: <binary>, the current value of each bit (ie "1010001")
              returns: <none>
@@ -112,6 +128,49 @@
             setConversions(binary);
         }
 
+        // toggle selected bit and recalculate
+        function toggleBit1(i) {
+            //alert("Digit action: " + i );
+            const dig = document.getElementById('digit1' + i);
+            const image = document.getElementById('bulb1' + i);
+            const butt = document.getElementById('butt1' + i);
+            // Change digit and visual
+            if (image.src.match("{{ imgBulbOn }}")) {
+                dig.value = 0;
+                image.src = "{{ imgBulbOff }}";
+                butt.innerHTML = "{{ msgTurnOn }}";
+            } else {
+                dig.value = 1;
+                image.src = "{{ imgBulbOn }}";
+                butt.innerHTML = "{{ msgTurnOff }}";
+            }
+            // Binary numbers
+            const binary = getBits1();
+            setConversions(binary);
+        }
+
+        // toggle selected bit and recalculate
+        function toggleBit2(i) {
+            //alert("Digit action: " + i );
+            const dig = document.getElementById('digit2' + i);
+            const image = document.getElementById('bulb2' + i);
+            const butt = document.getElementById('butt2' + i);
+            // Change digit and visual
+            if (image.src.match("{{ imgBulbOn }}")) {
+                dig.value = 0;
+                image.src = "{{ imgBulbOff }}";
+                butt.innerHTML = "{{ msgTurnOn }}";
+            } else {
+                dig.value = 1;
+                image.src = "{{ imgBulbOn }}";
+                butt.innerHTML = "{{ msgTurnOff }}";
+            }
+            // Binary numbers
+            const binary = getBits2();
+            setConversions(binary);
+        }
+
+
         /* This function takes visual representation of screen bulbs and performs addition
             parameter: <i>, the value to be added (+1 or -1 is implemented on screen)
             returns: <none>
@@ -178,6 +237,47 @@
 
 
         }
+
+        function SignedAddition() {
+            let binary = getBits();
+            if (binary.substr(0,1) === "1") {
+                decimal = 0 - parseInt(binary.substring(1,7),2);
+            } else {
+                decimal = parseInt(binary,2);
+            }
+
+
+            let binary1 = getBits1();
+            if (binary1.substr(0,1) === "1") {
+                decimal1 = 0 - parseInt(binary1.substring(1,7),2);
+            } else {
+                decimal1 = parseInt(binary1,2);
+            }
+
+            let result = decimal + decimal1;
+
+
+// convert the result back to binary, using custom function
+            let binary2 = decimal_2_base(result, 2);
+            // update conversions
+            setConversions(binary2);
+            // update bits
+            for (let i = 0; i < binary2.length; i++) {
+                let digit2 = binary2.substr(i, 1);
+                document.getElementById('digit2' + i).value = digit2;
+                if (digit2 === "1") {
+                    document.getElementById('bulb2' + i).src = "{{ imgBulbOn }}";
+                    document.getElementById('butt2' + i).innerHTML = "{{ msgTurnOff }}";
+                } else {
+                    document.getElementById('bulb2' + i).src = "{{ imgBulbOff }}";
+                    document.getElementById('butt2' + i).innerHTML = "{{ msgTurnOn }}";
+                }
+
+            }
+
+
+        }
+
         // add is positive integer, subtract is negative integer
         function add(n) {
             let binary = getBits();
@@ -238,6 +338,7 @@
                         <!-- Hack: display ASCII printable character(s)  -->
                         <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
                         <td><button type="button" id="div2" onclick="ShiftRight(1)">/2</button></td>
+                        <td><button type="button" id="signadd" onclick="SignedAddition()">Sign Add</button></td>
 
                     </tr>
                 </table>
@@ -260,7 +361,46 @@
                 </table>
             </div>
 
+            <div class="col-12">
+                <table class="table">
+                    <tr>
+                        {% for i in range(BITS) %}
+                            <td><img class="img-responsive py-3" id="bulb1{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+                                <button type="button" id="butt1{{i}}" onclick="toggleBit1('{{i}}')">{{ msgTurnOn }}</button>
+                            </td>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                        {% for i in range(BITS) %}
+                            <td><input type='text' id='digit1{{i}}' Value="0" size="1" readonly></td>
+                        {% endfor %}
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-12">
+                <table class="table">
+                    <tr>
+                        {% for i in range(BITS) %}
+                            <td><img class="img-responsive py-3" id="bulb2{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+                                <button type="button" id="butt2{{i}}" onclick="toggleBit2('{{i}}')">{{ msgTurnOn }}</button>
+                            </td>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                        {% for i in range(BITS) %}
+                            <td><input type='text' id='digit2{{i}}' Value="0" size="1" readonly></td>
+                        {% endfor %}
+                    </tr>
+                </table>
+            </div>
+
         </div>
+    </div>
+
+    <div>
+    <a href="/signed_unsigned_addition">Signed and Unsigned Addition</a>
+
     </div>
 {% endblock %}
 
