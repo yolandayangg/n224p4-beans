@@ -98,13 +98,13 @@ def RGB():
     return render_template('RGB.html', images=image_data(path))
 
 
-@app.route('/test/')
-def test():
-    return render_template('test.html')
+@app.route('/colorcode/')
+def colorcode():
+    return render_template('colorcode.html')
 
-@app.route('/test2/')
-def test2():
-    return render_template('test2.html')
+@app.route('/logicgate/')
+def logicgate():
+    return render_template('logicgate.html')
 
 
 @app.route('/minilabs/')

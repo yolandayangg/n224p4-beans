@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% extends "layouts/base.html" %}
 
 <style>
 body {background-color: lightpink
@@ -29,13 +30,24 @@ body {background-color: lightpink
                 imageType = 0;
             }
         }
+        function textimage() {
+            if (imageType == 0) {
+                $('#colored').hide()
+                $('#textimage').show()
+                imageType = 1;
+            } else {
+                $('#textimage').hide()
+                $('#colored').show()
+                imageType = 0;
+            }
+
 
     </script>
 
     <title>RGB starter</title>
 {% endblock %}
 
-{% block content %}
+{% block body %}
     <h1 class="text-center">RGB values within an Image</h1>
     <div class="container">
         <div class="row justify-content-md-center">
@@ -71,17 +83,18 @@ body {background-color: lightpink
 
 
 </div>
-
-
-
                             <!-- Hack: create button (btn{{loop.index}} to  call java script function
                        pass index to allow you to toggle images with hidden id's
                        {{image.base64}}  original image
                        {{image.base64_GRAY}}  gray scale image
                     -->
-                            <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>
+                            </div>
+                        <td>
+                        <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>
                             <p hidden id="img_gray{{loop.index}}">{{image.base64_GRAY}}</p>
                         </td>
+
+
                         <td>
                             <div class="overflow-auto" style="height: 0px">
                                 <table class="table">

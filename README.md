@@ -30,6 +30,16 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 * Link social media (Instagram, Twitter)
 
 ### Tasks Accomplished so Far
+**Week 7**
+
+|Name|Job|Ticket|Self-grade (Individual contributions)|
+|----|---------|-----|-----|
+|Nayana|Color Codes RGB + README update + Logic Gates|[Nayana's Color Code Ticket](https://github.com/wangzi190/flask_portfolio/issues/46), [Nayana's Logic Gates Ticket](https://github.com/wangzi190/flask_portfolio/issues/48)|2/2|
+|Mahima|Unsigned/signed addition + Multiply/Divide by 2 Shift|[Mahima's Signed Addition Ticket](https://github.com/wangzi190/flask_portfolio/issues/49), [Mahima's Unsigned Addition Ticket](https://github.com/wangzi190/flask_portfolio/issues/47), [Mahima's Divide/Multiply 2 Shift Ticket](https://github.com/wangzi190/flask_portfolio/issues/44) |2/2|
+|Gray|Extend/Switch ASCII to Unicode|[Gray's Ticket](https://github.com/wangzi190/flask_portfolio/issues/40)|2/2|
+|Gabe|Logic Gates|No ticket|0/2|
+|Everyone|3.5 and 3.6 Notes and Quizzes + Overal Week 7 Review Ticket (w/video and grade comments)|[Notes and Quizzes](https://github.com/wangzi190/flask_portfolio/issues/52), [Overall Review Week 7 Ticket](https://github.com/wangzi190/flask_portfolio/issues/50)|---|
+
 **Week 5 & 6:**
 
 |Name|Job|Ticket|
