@@ -1,33 +1,97 @@
-<!-- Extending the project layout, as this file will do minor customizations -->
+<!DOCTYPE html>
 {% extends "layouts/base.html" %}
 
-<!-- Setting up variables to customize "project" details to be specific to walruses -->
-{% set project = "Sign up here!" %}
-
-<!-- Setting up a block replacement to customize background to RINGS -->
 {% block body %}
-    <head>
-        <h1 style="color: darkblue; text-align: center; position: center; font-size:75px; padding-top: 0px; font-family: 'Century Schoolbook'">Sign Up Here!</h1>
+<style>
+    * {box-sizing: border-box}
 
-    </head>
-    <body style="background: lightpink; font-family: 'Kohinoor Telugu'; ">
-    <p style="font-size: xx-large; font-family: 'Century Schoolbook'; text-align: center">
-        Click on the Google Form Below to sign up as a member!
-        <a href="https://forms.gle/Af3RGDabYwiqn6Gq9">Member Form</a>
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
 
-    </p>
-    <p style="font-size: xx-large; font-family: 'Century Schoolbook'; text-align: center">
-        Leadership Role questionnaire:
-    </p>
-    <ul class="a">
-        <li>Why do you want to join WHA?</li>
-        <li>Have you taken on any leadership roles before? If so, what were your most valuable experiences that changed you as a person?</li>
-        <li>If you were the president of the WHA, what activities and events would you do and why?</li>
-        <li>Why do you think womens' health issues are stigmatized in our society?</li>
+    input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
 
-    </ul>
-    
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
 
-    </body>
+    /* Set a style for all buttons */
+    button {
+        background-color: #04AA6D;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
 
+    button:hover {
+        opacity:1;
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+        padding: 14px 20px;
+        background-color: #f44336;
+    }
+
+    /* Float cancel and signup buttons and add an equal width */
+    .cancelbtn, .signupbtn {
+        float: left;
+        width: 50%;
+    }
+
+    /* Add padding to container elements */
+    .container {
+        padding: 16px;
+    }
+
+    /* Clear floats */
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    /* Change styles for cancel button and signup button on extra small screens */
+    @media screen and (max-width: 300px) {
+        .cancelbtn, .signupbtn {
+            width: 100%;
+        }
+    }
+</style>
+    <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfgmddGRK6gvxbZK9MWUkvVXZEdmcxXRhlUQw5_BCJMpKpeSQ/formResponse" style="border:1px solid #ccc">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <p>Want to get updates? Sign up now!</p>
+            <hr>
+            <label for="name"><b>Full Name</b></label>
+            <input type="text" placeholder="First and last name" name="entry.1564829526" jsname="YPqjbf" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="entry.1685589982" jsname="YPqjbf" required>
+
+            <label for="number"><b>Phone Number</b></label>
+            <input type="text" placeholder="Phone number" name="entry.592319792" jsname="YPqjbf" required>
+
+            <label for="qcc"><b>Questions/Comments/Concerns?</b></label>
+            <input type="text" placeholder="Type here" name="entry.80120306" jsname="YPqjbf" required>
+
+
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+        </div>
+    </form>
 {% endblock %}
