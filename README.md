@@ -6,7 +6,6 @@ Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1
 [Gray and Gabe's Pair Journal]
 
 
-### README Task CSP 
 |Name|GitHub ID|Tasks|Scrum Board|Commits|Profile|
 |----|---------|-----|-----------|-------|-------|
 |Nayana|@Nayanav|[Nayana's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3ANayanav+is%3Aopen)|[Nayana's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Anayanav)|[Nayana's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=Nayanav)|[Nayana's Profile](https://github.com/Nayanav)|
