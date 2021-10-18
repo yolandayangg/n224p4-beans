@@ -1,0 +1,55 @@
+<!-- Extending the project layout, as this file will do minor customizations -->
+{% extends "layouts/base.html" %}
+
+<!-- Setting up variables to customize "project" details to be specific to volunteering -->
+
+
+<!-- Setting up a block replacement to customize background to RINGS -->
+{% block body %}
+    <head>
+    <h1 style="color: darkblue; text-align: center; position: center; font-size:100px; padding-top: 50px; font-family: 'Century Schoolbook'">Volunteering</h1>
+
+    </head>
+    <body style="background: lightpink">
+    <p style="font-size: xx-large; font-family: 'Century Schoolbook'; text-align: center">
+        We will be volunteering in places like the Scripps Hospital, the San Diego Blood Bank, Homeless shelters and much more!
+
+    </p>
+    <p style="font-size: xx-large; font-family: 'Century Schoolbook'; text-align: center">
+        Sign up here for opportunities!
+
+    </p>
+
+    <br>
+    <br>
+    <br>
+
+    <div style="font-size: xx-large; font-family: 'Century Schoolbook'; text-align: left">
+        <a href="https://app.betterimpact.com/PublicOrganization/440138e7-f5aa-4606-add0-fbb0e0a3da45">San Diego Blood Bank </a>
+
+        <img src="/static/assets/blood_bank.jpeg" width="500" height="300" right="200">
+
+    </div>
+<br>
+    <br>
+
+    <div style="font-size: xx-large; font-family: 'Century Schoolbook'; text-align: left">
+        <a href="https://ucsdhealth.samaritan.com/custom/528/volunteer_home">UCSD Volunteering</a>
+        <img src="/static/assets/ucsd_health.jpeg" width="500" height="300" right="200">
+
+
+    </div>
+<br>
+    <br>
+    <div style="font-size: xx-large; font-family: 'Century Schoolbook'; text-align: left">
+        <a href="https://www.scripps.org/about-us/volunteer">Scripps Hospital Volunteering</a>
+        <img src="/static/assets/scripps.jpeg" width="500" height="300" right="200">
+
+    </div>
+<br>
+
+    </body>
+
+
+
+{% endblock %}

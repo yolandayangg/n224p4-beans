@@ -38,9 +38,9 @@ def stub():
     if request.form:
         name = request.form.get("name")
         if len(name) != 0:  # input field has content
-            return render_template("Mahima.html", name=name)
+            return render_template("Minilabs/Mahima.html", name=name)
     # starting and empty input default
-    return render_template("Mahima.html", name="World")
+    return render_template("Minilabs/Mahima.html", name="World")
 
 @app.route('/grayGreet/', methods=['GET', 'POST'])
 def grayGreet():
@@ -48,9 +48,9 @@ def grayGreet():
     if request.form:
         name = request.form.get("name")
         if len(name) != 0:  # input field has content
-            return render_template("grayGreet.html", name=name)
+            return render_template("Minilabs/grayGreet.html", name=name)
     # starting and empty input default
-    return render_template("grayGreet.html", name="World")
+    return render_template("Minilabs/grayGreet.html", name="World")
 
 @app.route('/Nayana2', methods=['GET', 'POST'])
 def greet():
@@ -58,9 +58,9 @@ def greet():
     if request.form:
         name = request.form.get("name")
         if len(name) != 0:  # input field has content
-            return render_template("Nayana2.html", name=name)
+            return render_template("Minilabs/Nayana2.html", name=name)
     # starting and empty input default
-    return render_template("Nayana2.html", name="World")
+    return render_template("Minilabs/Nayana2.html", name="World")
 
 @app.route('/gabriel', methods=['GET', 'POST'])
 def gabriel():
@@ -68,35 +68,43 @@ def gabriel():
     if request.form:
         name = request.form.get("name")
         if len(name) != 0:  # input field has content
-            return render_template("gabriel.html", name=name)
+            return render_template("Minilabs/gabriel.html", name=name)
     # starting and empty input default
-    return render_template("gabriel.html", name="World")
+    return render_template("Minilabs/gabriel.html", name="World")
 
 @app.route('/binary/')
 def binary():
     if request.form:
-        bits = request.form.get("bits")
-        if len(bits) !=0:
-            return render_template("binary.html", int(bits))
-    return render_template("binary.html", bits= 8)
+        try:
+            bits = request.form.get("bits")
+            if request.form["change_picture"] == "lightbulbs":
+                if len(bits) !=0:
+                    return render_template("Minilabs/binary.html", bits=int(bits), imgCloudOn="static/assets/bulb_on.gif", imgCloudOff="static/assets/bulb_off.png")
+            if request.form["change_picture"] == "clouds":
+                if len(bits) !=0:
+                    return render_template("Minilabs/binary.html", bits=int(bits), imgCloudOn="static/assets/cloud.png", imgCloudOff="static/assets/lightning cloud.png")
+        except:
+            return render_template("Minilabs/binary.html", bits=8, imageCloudOn="/static/assets/bulb_on.gif", imageCloudOff="static/assets/bulb_off.png")
+    return render_template("Minilabs/binary.html", bits=8, imageCloudOn="/static/assets/bulb_on.gif", imageCloudOff="/static/assets/bulb_off.png")
+
 
 @app.route('/aboutme/')
 def aboutme():
-    return render_template("aboutme.html")
+    return render_template("Minilabs/aboutme.html")
 
 @app.route('/RGB/')
 def RGB():
     path = Path(app.root_path) / "static" / "assets"
-    return render_template('RGB.html', images=image_data(path))
+    return render_template('Minilabs/RGB.html', images=image_data(path))
 
 
 @app.route('/colorcode/')
 def colorcode():
-    return render_template('colorcode.html')
+    return render_template('Minilabs/colorcode.html')
 
 @app.route('/logicgate/')
 def logicgate():
-    return render_template('logicgate.html')
+    return render_template('Minilabs/logicgate.html')
 
 
 @app.route('/minilabs/')
