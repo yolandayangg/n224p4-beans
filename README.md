@@ -14,7 +14,7 @@ Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1
 |Gabe|@Gabrielboudreau|[Gabe's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3AGabrielboudreau+is%3Aopen)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
 
 
-### Tasks Accomplished so Far
+## Tasks Accomplished so Far
 **Week 7**
 
 |Name|Job|Ticket|Self-grade (Individual contributions)|
