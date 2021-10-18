@@ -14,24 +14,6 @@ Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1
 |Gabe|@Gabrielboudreau|[Gabe's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3AGabrielboudreau+is%3Aopen)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
 
 
-## [Flask Portfolio Starter (from which we are referencing for our own project)](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
-Runtime link: https://portfolio.nighthawkcodingsociety.com/
-
-### Idea
-* Create an effective website for the Women’s Health Awareness (WHA) club at DNHS to allow greater club outreach.
-
-### Visual Thoughts
-* Clean, minimalistic, and navigable (reference UX design principles)
-* Organized color palette that matches WHA logo
-* Add extra interaction and movement with Bootstrap (e.g. carousel, animated buttons)
-* Show project-specific links (hrefs) per page
-
-### Technical Elements
-* Give users positive first impression through homepage (images, mission statement, new/events board)
-* Give uses ample amount of information on the club
-* Create useful and clean sign-up page (reference UX design principles; make sure the sign-up is not overwhelming etc.)
-* Link social media (Instagram, Twitter)
-
 ### Tasks Accomplished so Far
 **Week 7**
 
@@ -77,3 +59,23 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 * [Journal 0](https://youtu.be/A7jPotTP5gI)
 * Customization changes (e.g. changing the name of the website from "Nighthawk Coding Society" to "DNHS Women's Health Awareness")
 * Edited the names of the different tabs on navbar.html to "Home", "About", "Outreach", "Sign Up" (with the exception of our mini-lab pages at the end)
+
+
+
+## Ideation of Project
+
+### Idea
+* Create an effective website for the Women’s Health Awareness (WHA) club at DNHS to allow greater club outreach.
+
+### Visual Thoughts
+* Clean, minimalistic, and navigable (reference UX design principles)
+* Organized color palette that matches WHA logo
+* Add extra interaction and movement with Bootstrap (e.g. carousel, animated buttons)
+* Show project-specific links (hrefs) per page
+
+### Technical Elements
+* Give users positive first impression through homepage (images, mission statement, new/events board)
+* Give uses ample amount of information on the club
+* Create useful and clean sign-up page (reference UX design principles; make sure the sign-up is not overwhelming etc.)
+* Link social media (Instagram, Twitter)
+
