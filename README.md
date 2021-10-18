@@ -64,7 +64,7 @@ Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1
 
 ## Ideation of Project
 
-###Brainstorm: 
+### Brainstorm: 
 
 #### Idea
 * Create an effective website for the Women’s Health Awareness (WHA) club at DNHS to allow greater club outreach.
