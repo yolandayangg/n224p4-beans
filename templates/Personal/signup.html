@@ -1,16 +1,16 @@
 <!-- Extending the project layout, as this file will do minor customizations -->
-{% include "layouts/navbar.html" %}
+{% extends "layouts/base.html" %}
 
 <!-- Setting up variables to customize "project" details to be specific to walruses -->
 {% set project = "Sign up here!" %}
 
 <!-- Setting up a block replacement to customize background to RINGS -->
-{% block background %}
+{% block body %}
     <head>
         <h1 style="color: darkblue; text-align: center; position: center; font-size:75px; padding-top: 0px; font-family: 'Century Schoolbook'">Sign Up Here!</h1>
 
     </head>
-    <body style="background: lightpink">
+    <body style="background: lightpink; font-family: 'Kohinoor Telugu'; ">
     <p style="font-size: xx-large; font-family: 'Century Schoolbook'; text-align: center">
         Click on the Google Form Below to sign up as a member!
         <a href="https://forms.gle/Af3RGDabYwiqn6Gq9">Member Form</a>
