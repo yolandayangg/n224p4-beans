@@ -3,9 +3,9 @@
 ## Contributors 
 Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1), [Github repo contributers](https://github.com/wangzi190/flask_portfolio/graphs/contributors)
 
-[Team Notes Set](https://drive.google.com/drive/folders/1OO_uDmH_A1tTisIU9VoWnIfKt1gEUctu?usp=sharing)
-[Nayana and Mahima's Pair Journal]()
-[Gray and Gabe's Pair Journal]()
+* [Team Notes Set](https://drive.google.com/drive/folders/1OO_uDmH_A1tTisIU9VoWnIfKt1gEUctu?usp=sharing)
+* [Nayana and Mahima's Pair Journal](https://docs.google.com/document/d/17dg1Ca6bv7LfiUPjs7iw3_IV5GAZQcQxqUlrnfceZ98/edit?usp=sharing)
+* [Gray and Gabe's Pair Journal]()
 
 
 |Name|GitHub ID|Tasks|Scrum Board|Commits|Profile|
