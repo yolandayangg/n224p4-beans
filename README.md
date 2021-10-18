@@ -1,7 +1,10 @@
 ## Contributors 
-Owls, [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1), [Github repo contributers](https://github.com/wangzi190/flask_portfolio/graphs/contributors)
+Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1), [Github repo contributers](https://github.com/wangzi190/flask_portfolio/graphs/contributors)
 
-[Pairs and Journals](https://drive.google.com/drive/folders/1OO_uDmH_A1tTisIU9VoWnIfKt1gEUctu?usp=sharing)
+[Team Notes Set](https://drive.google.com/drive/folders/1OO_uDmH_A1tTisIU9VoWnIfKt1gEUctu?usp=sharing)
+[Nayana and Mahima's Pair Journal]
+[Gray and Gabe's Pair Journal]
+
 
 ### README Task CSP 
 |Name|GitHub ID|Tasks|Scrum Board|Commits|Profile|
