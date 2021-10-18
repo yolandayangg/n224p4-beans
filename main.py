@@ -19,17 +19,17 @@ def index():
 # connects /kangaroos path to render volunteering.html
 @app.route('/volunteering/')
 def kangaroos():
-    return render_template("volunteering.html")
+    return render_template("Personal/volunteering.html")
 
 
 @app.route('/signup/')
 def walruses():
-    return render_template("signup.html")
+    return render_template("Personal/signup.html")
 
 
 @app.route('/outreach/')
 def hawkers():
-    return render_template("outreach.html")
+    return render_template("Personal/outreach.html")
 
 
 @app.route('/Mahima/', methods=['GET', 'POST'])
