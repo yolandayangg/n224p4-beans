@@ -64,16 +64,18 @@ Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1
 
 ## Ideation of Project
 
-### Idea
+###Brainstorm: 
+
+#### Idea
 * Create an effective website for the Women’s Health Awareness (WHA) club at DNHS to allow greater club outreach.
 
-### Visual Thoughts
+#### Visual Thoughts
 * Clean, minimalistic, and navigable (reference UX design principles)
 * Organized color palette that matches WHA logo
 * Add extra interaction and movement with Bootstrap (e.g. carousel, animated buttons)
 * Show project-specific links (hrefs) per page
 
-### Technical Elements
+#### Technical Elements
 * Give users positive first impression through homepage (images, mission statement, new/events board)
 * Give uses ample amount of information on the club
 * Create useful and clean sign-up page (reference UX design principles; make sure the sign-up is not overwhelming etc.)
