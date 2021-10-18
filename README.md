@@ -2,8 +2,8 @@
 Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1), [Github repo contributers](https://github.com/wangzi190/flask_portfolio/graphs/contributors)
 
 [Team Notes Set](https://drive.google.com/drive/folders/1OO_uDmH_A1tTisIU9VoWnIfKt1gEUctu?usp=sharing)
-[Nayana and Mahima's Pair Journal]
-[Gray and Gabe's Pair Journal]
+[Nayana and Mahima's Pair Journal]()
+[Gray and Gabe's Pair Journal]()
 
 
 |Name|GitHub ID|Tasks|Scrum Board|Commits|Profile|
@@ -81,3 +81,17 @@ Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1
 * Create useful and clean sign-up page (reference UX design principles; make sure the sign-up is not overwhelming etc.)
 * Link social media (Instagram, Twitter)
 
+
+### New Elements Added: 
+
+#### Visual Thoughts
+* Simple sign up/register page
+* Pink theme is maintaned throughout all pages 
+* Wanted more visuals and interactive element
+  * Click images to learn more about the various volunteer opportunities in the "Volunteer" page 
+  * Drop-down to separetly keep AP CSP assignments from the rest of the page 
+
+
+#### Technical Elements
+* Want a less time consuming method of keeping list of club member's info
+  * Sign-up form linked to Google Form, which then directly puts information in a spreasheet 
