@@ -21,10 +21,9 @@ Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1
 |Name|Job|Ticket|
 |----|---------|-----|
 |Nayana|Sign-Up Page + README|[Nayana's Sign-Up Page and README Ticket](https://github.com/wangzi190/flask_portfolio/issues/58)|
-|Mahima|Home Page + Volunteer Page|[Mahima's Home Page and Volunteer Ticket](https://github.com/wangzi190/flask_portfolio/issues/49)|
-|Gray|Volunteer Page|[Gray's Volunteer Page Ticket](https://github.com/wangzi190/flask_portfolio/issues/40)|
-|Gabe|Fix Jinja Issues and organize IntelliJ files|No ticket|
-|Everyone|3.5 and 3.6 Notes and Quizzes + Overal Week 7 Review Ticket (w/video and grade comments)|[Notes and Quizzes](https://github.com/wangzi190/flask_portfolio/issues/52), [Overall Review Week 7 Ticket](https://github.com/wangzi190/flask_portfolio/issues/50)|---|
+|Mahima|Home Page + Volunteer Page|[Mahima's Home Page and Volunteer Ticket](https://github.com/wangzi190/flask_portfolio/issues/60)|
+|Gray|Volunteer Page|[Gray's Volunteer Page Ticket](https://github.com/wangzi190/flask_portfolio/issues/59)|
+|Gabe|Fix Jinja Issues and organize IntelliJ files|[Gabe's Code Fixes Ticket](https://github.com/wangzi190/flask_portfolio/issues/61)|
 
 **Week 7**
 
