@@ -23,6 +23,7 @@ def image_base64_MSG(img, img_type):
     img.show()
     return "data:image/" + img_type + ";base64," +image_base64(img, img_type)
 
+
 # color_data prepares a series of images for data analysis
 def image_data(path=Path("static/assets/"), images=None):  # path of static images is defaulted
     if images is None:  # color_dict is defined with defaults
