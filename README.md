@@ -24,7 +24,7 @@ Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1
 |Mahima|Home Page + Volunteer Page|[Mahima's Home Page and Volunteer Ticket](https://github.com/wangzi190/flask_portfolio/issues/60)|
 |Gray|Volunteer Page|[Gray's Volunteer Page Ticket](https://github.com/wangzi190/flask_portfolio/issues/59)|
 |Gabe|Fix Jinja Issues and organize IntelliJ files|[Gabe's Code Fixes Ticket](https://github.com/wangzi190/flask_portfolio/issues/61)|
-|Everyone|Scores|[Click her for scores](https://github.com/wangzi190/flask_portfolio/issues/56)|
+|Everyone|Scores|[Click here for ticket to scores](https://github.com/wangzi190/flask_portfolio/issues/56)|
 
 **Week 7**
 
