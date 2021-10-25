@@ -25,17 +25,17 @@
     <script>
         function myColor() {
 
-            //Retrieve value set through color picker
+
             var color = document.getElementById('colorPicker').value;
 
-            //Selected value becoming the background
+
             document.body.style.backgroundColor = color;
 
-            // Retrieve hex code
+
             document.getElementById('box').value = color;
         }
 
-        // myColor() function when color picker is clicked
+
         document.getElementById('colorPicker')
             .addEventListener('input', myColor);
     </script>
@@ -63,7 +63,7 @@
 
     <h2>Color Code</h2>
 
-    <div class="col-sm-8" id="color" style="background-color: rgb(0, 0, 0); height: 13em; width: 160em;">  <!-- Div that shows off color -->
+    <div class="col-sm-8" id="color" style="background-color: rgb(0, 0, 0); height: 13em; width: 160em;">
     </div><p style="text-align: left;" id="code">Hexcode: #000000</p><br>
 
     <h4>Red Color Manipulation</h4>
