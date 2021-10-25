@@ -17,6 +17,16 @@ Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1
 
 
 ## Tasks Accomplished so Far
+**Week 9**
+**Week 8**
+|Name|Video|Score|
+|----|---------|-----|
+|Nayana|[Nayana's Video](https://github.com/wangzi190/flask_portfolio/issues/58)|
+|Mahima|[Mahima's Video](https://github.com/wangzi190/flask_portfolio/issues/60)|
+|Gray|[Gray's Video](https://github.com/wangzi190/flask_portfolio/issues/59)|
+|Gabe|[Gabe's Video](https://github.com/wangzi190/flask_portfolio/issues/61)|
+|Everyone|Scores|[Click here for ticket to scores](https://github.com/wangzi190/flask_portfolio/issues/56)|
+
 **Week 8**
 |Name|Job|Ticket|
 |----|---------|-----|
