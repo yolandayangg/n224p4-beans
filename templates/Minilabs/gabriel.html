@@ -1,9 +1,11 @@
 {% set project = "Gabriel" %}
 
 {% block body %}
-    <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
+<body style="background-color: lightseagreen">
+
+    <div class="center-block" style="margin: 5% 0% 0% ; text-align:center; font-family: 'Trebuchet MS'; gilroy: serif; font-size: large">
         <div class="col-12">
-            <p>Hello, {{name}}!</p>
+            <p>Greetings, {{name}}!</p>
         </div>
         <div class="col-12">
             <form action="/gabriel" id="greet" method="POST" >
@@ -13,6 +15,7 @@
             </form>
         </div>
         <div class="col-12">
+            <img src="static/assets/1200px-Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" style="height: 500px" img-align="center">
         </div>
     </div>
 {% endblock %}
