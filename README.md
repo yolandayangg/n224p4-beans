@@ -21,11 +21,11 @@ Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1
 **Week 8**
 |Name|Video|Score|
 |----|---------|-----|
-|Nayana|[Nayana's Video](https://github.com/wangzi190/flask_portfolio/issues/58)|
-|Mahima|[Mahima's Video](https://github.com/wangzi190/flask_portfolio/issues/60)|
-|Gray|[Gray's Video](https://github.com/wangzi190/flask_portfolio/issues/59)|
-|Gabe|[Gabe's Video](https://github.com/wangzi190/flask_portfolio/issues/61)|
-|Everyone|Scores|[Click here for ticket to scores](https://github.com/wangzi190/flask_portfolio/issues/56)|
+|Nayana|[Nayana's Video](https://www.youtube.com/watch?v=9hTYSQJjIXM)|/6|
+|Mahima|[Mahima's Video](https://www.loom.com/share/90009749bc0e4ecabe68fdce34a21fd9)|/6|
+|Gray|[Gray's Video](https://www.loom.com/share/2f8a42384af1424d911f5b3c08a238f7)|/6|
+|Gabe|[Gabe's Video](https://www.loom.com/share/70b856dae2604d5c92a30da3faac0e1e)|/6|
+|Everyone|[Click here for ticket (issue) to scores and videos](https://github.com/wangzi190/flask_portfolio/issues/62)|---|
 
 **Week 8**
 |Name|Job|Ticket|
