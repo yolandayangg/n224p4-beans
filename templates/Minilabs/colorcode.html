@@ -157,7 +157,7 @@
         var green = 0;
         var blue = 0;
 
-        function toggleSwitch (id) {     // toggles button between on and off
+        function toggleSwitch (id) {     // a button is toggled between the on (1) or off (0) options
             const element = document.getElementById(id);
             if (element.innerHTML == "1") {
                 element.innerHTML = "0";
@@ -170,7 +170,7 @@
             calculateRow(id.charAt(0));
         }
 
-        function calculateRow (color) {    // function that calculates the decimal value for a certain row after one of its buttons is toggled
+        function calculateRow (color) {    //decimal value shows up under buttons according to number of buttons toggled
             let sum = 0;
             for (var i = 1; i <= 8; i++) {
                 let element = document.getElementById(color + i);
@@ -197,7 +197,7 @@
             setColorCode();
         }
 
-        function setColorCode () {    // uses values from each row to create a color
+        function setColorCode () {    // accumulate the values from each row/color to combine and create a "total" value and color on top of the page
             let r = red.toString(16);
             let g = green.toString(16);
             let b = blue.toString(16);
