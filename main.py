@@ -72,6 +72,10 @@ def gabriel():
     # starting and empty input default
     return render_template("Minilabs/gabriel.html", name="World")
 
+@app.route('/platformer')
+def platformer():
+    return render_template("Personal/platformer.html")
+
 @app.route('/binary/')
 def binary():
     if request.form:
