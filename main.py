@@ -119,7 +119,9 @@ def minilabs():
 def random():
     return render_template("Minilabs/random.html")
 
-
+@app.route('/grayProject/')
+def grayProject():
+    return render_template("Personal/grayProject.html")
 
 
 if __name__ == "__main__":
