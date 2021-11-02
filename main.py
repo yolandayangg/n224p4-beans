@@ -115,12 +115,13 @@ def logicgate():
 def minilabs():
     return render_template("minilabs.html")
 
+@app.route('/random/')
+def random():
+    return render_template("Minilabs/random.html")
 
-@app.route('/wha_quiz/')
-def wha_quiz():
-    return render_template("Personal/wha_quiz.html")
-
-
+@app.route('/grayProject/')
+def grayProject():
+    return render_template("Personal/grayProject.html")
 
 
 if __name__ == "__main__":

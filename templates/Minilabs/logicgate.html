@@ -136,8 +136,7 @@
     </style>
 
 </head><body><h2>Logic Gates</h2>
-
-
+<!--creating two two options for one to chose: A and B -->
 <input type="checkbox" id="A" value="A">
 <label for="A"> A</label><br>
 
@@ -150,6 +149,7 @@
 
 <br>
 
+<!--these are the various logics that the options we selected go through -->
 <table>
     <tr>
         <td>AND</td>
@@ -163,16 +163,32 @@
         <td>XOR</td>
         <td id="XOR">...</td>
     </tr>
-    </tbody></table>
+    <tr>
+        <td>NAND</td>
+        <td id="NAND">...</td>
+    </tr>
+    <tr>
+        <td>NOR</td>
+        <td id="NOR">...</td>
+    </tr>
+   </table>
 
 <br>
 </br>
 <br>
 </br>
+
+<!--few pictures to clarify doubts -->
 <h5>Confusion? Check out the diagrams below!</h5>
-    <img src= "/static/assets/logics.png" height="200" width="500">
-    <img src= "/static/assets/anotherlogics.png" height="200" width="500">
-</br>
+<table>
+    <img src="/static/and.PNG" width="100" height="100">
+    <img src="/static/or.PNG" width="100" height="100">
+    <img src="/static/xor.PNG" width="100" height="100">
+    <img src="/static/nand.PNG" width="100" height="100">
+    <img src="/static/nor.PNG" width="100" height="100">
+</table>
+
+<!--the options we selected are retrieved the code will check to see if they match the rule for each type of logic-->
 <script>
     function logic() {
         var A = document.getElementById('A');
@@ -186,6 +202,9 @@
         document.getElementById('AND').innerHTML = valA && valB ? 'true' : 'false';
         document.getElementById('OR').innerHTML = valA || valB ? 'true' : 'false';
         document.getElementById('XOR').innerHTML = (valA && !valB) || (!valA && valB) ? 'true' : 'false';
+        document.getElementById('NAND').innerHTML = !(valA && valB) ? 'true' : 'false';
+        document.getElementById('NOR').innerHTML = !(valA || valB) ? 'true' : 'false';
+
     }
 </script>
 </body></html>
