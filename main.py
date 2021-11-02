@@ -116,6 +116,11 @@ def minilabs():
     return render_template("minilabs.html")
 
 
+@app.route('/wha_quiz/')
+def wha_quiz():
+    return render_template("Personal/wha_quiz.html")
+
+
 
 
 if __name__ == "__main__":

@@ -57,15 +57,13 @@ def image_data(path=Path("static/assets/"), images=None):  # path of static imag
         # Conversion of original Image to Base64, a string format that serves HTML nicely
         image['base64'] = image_formatter(img_reference, image['format'])
         # Numpy is used to allow easy access to data of image, python list
-        text_image = ImageDraw.Draw(img_reference)
-        text_image.text((0,0), "Hello, World!", fill=(255, 0, 0))
+
+
 
         image['base64_TEXT'] = image_formatter(img_reference, image['format'])
         image['text_data'] = numpy.array(img_reference.getdata())
 
-        rotate_image = img_reference.transpose(Image.FLIP_LEFT_RIGHT)
-        image['base64_ROTATE'] = image_formatter(rotate_image, image['format'])
-        image['rotate_data'] = numpy.array(rotate_image.getdata())
+
 
         text_image = ImageDraw.Draw(img_reference)
         text_image.text((0,0), "Hello, World!", fill=(255, 0, 0))
@@ -136,11 +134,6 @@ if __name__ == "__main__":
         print("----  base64  -----")
         print(image['base64'])
 
-        filename = local_path / image['file']
-        img_object = Image.open(filename)
-        img_object.show()
-        img_object = img_object.transpose(Image.FLIP_TOP_BOTTOM)
-        img_object.show()
 
 print()
 
