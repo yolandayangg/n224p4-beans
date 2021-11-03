@@ -127,6 +127,10 @@ def random():
 def grayProject():
     return render_template("Personal/grayProject.html")
 
+@app.route('/wha_quiz/')
+def wha_quiz():
+    return render_template("Personal/wha_quiz.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5180)
