@@ -115,6 +115,10 @@ def logicgate():
 def minilabs():
     return render_template("minilabs.html")
 
+@app.route('/jeopardy/')
+def jeopardy():
+    return render_template("Minilabs/jeopardy.html")
+
 @app.route('/random/')
 def random():
     return render_template("Minilabs/random.html")
