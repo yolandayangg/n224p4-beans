@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+{% set temperature = temperature %}
+<script>
+    let temp = ""
+    function temperature() {
+        temp = document.getElementById('answer').value;
+        if (temp > 80) {
+            document.getElementById("Wear").innerHTML = "Wear light clothing!"
+        } else {
+            if (temp < 65) {
+                document.getElementById("Wear").innerHTML = "Wear Heavy clothing!";
+            } else {
+                document.getElementById("Wear").innerHTML = "Wear comfortable clothes!";
+            }
+        }
+    }
+</script>
+<body style="background-color: lightseagreen">
+    <div class="center-block" style="margin: 5% 0% 0% ; text-align:center; font-family: 'Trebuchet MS'; gilroy: serif; font-size: large">
+        <div class="col-12">
+            <p>Input the temperature below</p>
+        </div>
+        <div>
+            <label for="answer" class="button"></label>
+            <input name="answer" id="answer">
+            <button class="button" onclick="temperature()">Submit</button>
+        </div>
+        <div class="row justify-content-center margins-autos">
+            <p id="Wear"></p>
+        </div>
+    </div>
+</body>
+
+</html>

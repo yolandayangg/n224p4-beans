@@ -70,7 +70,8 @@ def gabriel():
         if len(name) != 0:  # input field has content
             return render_template("Minilabs/gabriel.html", name=name)
     # starting and empty input default
-    return render_template("Minilabs/gabriel.html", name="World")
+
+    return render_template("Minilabs/gabriel.html", name="World",)
 
 @app.route('/platformer')
 def platformer():
@@ -83,13 +84,17 @@ def binary():
             bits = request.form.get("bits")
             if request.form["change_picture"] == "lightbulbs":
                 if len(bits) !=0:
-                    return render_template("Minilabs/binary.html", bits=int(bits), imgCloudOn="static/assets/bulb_on.gif", imgCloudOff="static/assets/bulb_off.png")
+                    return render_template("Minilabs/binary.html", bits=int(bits), imgBulbOn="static/assets/bulb_on.gif", imgCloudOff="static/assets/bulb_off.png", name="New")
             if request.form["change_picture"] == "clouds":
                 if len(bits) !=0:
-                    return render_template("Minilabs/binary.html", bits=int(bits), imgCloudOn="static/assets/cloud.png", imgCloudOff="static/assets/lightning cloud.png")
+                    return render_template("Minilabs/binary.html", bits=int(bits), imgBulbOn="static/assets/cloud.png", imgCloudOff="static/assets/lightning cloud.png", name="New")
+            if request.form:
+                bits = request.form.get("bits")
+                if len(bits) !=0:
+                    return render_template("Minilabs/binary.html", bits=int(bits))
         except:
-            return render_template("Minilabs/binary.html", bits=8, imageCloudOn="/static/assets/bulb_on.gif", imageCloudOff="static/assets/bulb_off.png")
-    return render_template("Minilabs/binary.html", bits=8, imageCloudOn="/static/assets/bulb_on.gif", imageCloudOff="/static/assets/bulb_off.png")
+            return render_template("Minilabs/binary.html", bits=8, imageBulbOn="/static/assets/bulb_on.gif", imageCloudOff="static/assets/bulb_off.png")
+    return render_template("Minilabs/binary.html", bits=8, imageBulbOn="/static/assets/bulb_on.gif", imageCloudOff="/static/assets/bulb_off.png")
 
 
 @app.route('/aboutme/')
@@ -131,6 +136,13 @@ def grayProject():
 def wha_quiz():
     return render_template("Personal/wha_quiz.html")
 
+@app.route('/clothing/')
+def clothing():
+
+    if request.form:
+        return render_template("Personal/clothing.html")
+
+    return render_template("Personal/clothing.html")
 
 if __name__ == "__main__":
     app.run(debug=True, port=5180)
