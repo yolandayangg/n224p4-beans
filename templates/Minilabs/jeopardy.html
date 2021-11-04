@@ -12,9 +12,6 @@
       #header {
         margin-top: 1rem;
       }
-      #questionText {
-        margin-top: 1rem;
-      }
       #totalPoints {
         margin-left: .25rem;
       }
@@ -236,43 +233,44 @@
       <div class="row justify-content-center margins-autos">
         <h1 id="header">Trivia Game Show</h1>
       </div>
+      
+      <div class="row justify-content-center margins-autos">
+        <p id="questionText">Pick a question !</p>
+      </div>
 
       <div class="row justify-content-center margins-autos">
-        <p class="topicHeader">Topics 1</p>
+        <p class="topicHeader">Topic 1</p>
             <button type="button" id="t1p100" class="button" onclick="displayQ(id)">100</button>
             <button type="button" id="t1p200" class="button" onclick="displayQ(id)">200</button>
             <button type="button" id="t1p300" class="button" onclick="displayQ(id)">300</button>
       </div>
 
       <div class="row justify-content-center margins-autos">
-        <p class="topicHeader">Topics 2</p>
+        <p class="topicHeader">Topic 2</p>
             <button type="button" id="t2p100" class="button" onclick="displayQ(id)">100</button>
             <button type="button" id="t2p200" class="button" onclick="displayQ(id)">200</button>
             <button type="button" id="t2p300" class="button" onclick="displayQ(id)">300</button>
       </div>
 
       <div class="row justify-content-center margins-autos">
-        <p class="topicHeader">Topics 3</p>
+        <p class="topicHeader">Topic 3</p>
             <button type="button" id="t3p100" class="button" onclick="displayQ(id)">100</button>
             <button type="button" id="t3p200" class="button" onclick="displayQ(id)">200</button>
             <button type="button" id="t3p300" class="button" onclick="displayQ(id)">300</button>
       </div>
 
       <div class="row justify-content-center margins-autos">
-        <p class="topicHeader">Topics 4</p>
+        <p class="topicHeader">Topic 4</p>
             <button type="button" id="t4p100" class="button" onclick="displayQ(id)">100</button>
             <button type="button" id="t4p200" class="button" onclick="displayQ(id)">200</button>
             <button type="button" id="t4p300" class="button" onclick="displayQ(id)">300</button>
       </div>
 
+      <br>
       <div class="row justify-content-center margins-autos">
-        <p id="questionText">Pick a question !</p>
-      </div>
-
-      <div class="row justify-content-center margins-autos">
-        <label for="answer" class="button">Your answer: </label>
+        <label for="answer">Your answer: </label>
         <input name="answer" id="answer">
-        <button onclick="checkAnswer()" class="button">Submit</button>
+        <button onclick="checkAnswer()">Submit</button>
       </div>
 
       <div class="row justify-content-center margins-autos">
