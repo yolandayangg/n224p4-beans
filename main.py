@@ -117,7 +117,7 @@ def minilabs():
 
 @app.route('/jeopardy/')
 def jeopardy():
-    return render_template("Minilabs/jeopardy.html")
+    return render_template("Personal/jeopardy.html")
 
 @app.route('/random/')
 def random():

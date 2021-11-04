@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+
+  <head style="background-color: darkslateblue; color: aliceblue">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   </head>
 
-  <body>
+  <body style="background-color: darkslateblue; color: aliceblue">
     <style>
+
       #header {
         margin-top: 1rem;
       }
@@ -40,51 +43,51 @@
           selected = id;
           switch(selected) {
             case "t1p100":
-              document.getElementById("questionText").innerHTML = "Insert topic 1 question 1";
+              document.getElementById("questionText").innerHTML = "Pregnancy can increase the risk of which condition in younger women?";
               points = 100;
             break;
             case "t1p200":
-              document.getElementById("questionText").innerHTML = "Insert topic 1 question 2";
+              document.getElementById("questionText").innerHTML = "What can actually worsen menopause symptoms?";
               points = 200;
             break;
             case "t1p300":
-              document.getElementById("questionText").innerHTML = "Insert topic 1 question 3";
+              document.getElementById("questionText").innerHTML = "Which hormone protects women against bone loss?";
               points = 300;
             break;
             case "t2p100":
-              document.getElementById("questionText").innerHTML = "Insert topic 2 question 1";
+              document.getElementById("questionText").innerHTML = "What is the best way to find out if you have Breast Cancer?";
               points = 100;
             break;
             case "t2p200":
-              document.getElementById("questionText").innerHTML = "Insert topic 2 question 2";
+              document.getElementById("questionText").innerHTML = "What is an important supplement to take to prevent osteoporosis?";
               points = 200;
             break;
             case "t2p300":
-              document.getElementById("questionText").innerHTML = "Insert topic 2 question 3";
+              document.getElementById("questionText").innerHTML = "Which vitamin is responsible for helping a weak immune system caused by cancer?";
               points = 300;
             break;
             case "t3p100":
-              document.getElementById("questionText").innerHTML = "Insert topic 3 question 1";
+              document.getElementById("questionText").innerHTML = "Pimples are caused by an excess of which substance on facial pores?";
               points = 100;
             break;
             case "t3p200":
-              document.getElementById("questionText").innerHTML = "Insert topic 3 question 2";
+              document.getElementById("questionText").innerHTML = "Blackheads mostly consist of which substance?";
               points = 200;
             break;
             case "t3p300":
-              document.getElementById("questionText").innerHTML = "Insert topic 3 question 3";
+              document.getElementById("questionText").innerHTML = "The severity of psoriasis in women can be increased by the production of what bodily substance?";
               points = 300;
             break;
             case "t4p100":
-              document.getElementById("questionText").innerHTML = "Insert topic 4 question 1";
+              document.getElementById("questionText").innerHTML = "At what age is the HPV vaccine recommended for young girls?";
               points = 100;
             break;
             case "t4p200":
-              document.getElementById("questionText").innerHTML = "Insert topic 4 question 2";
+              document.getElementById("questionText").innerHTML = "Women are much more likely than men to develop which mental health condition?";
               points = 200;
             break;
             case "t4p300":
-              document.getElementById("questionText").innerHTML = "Insert topic 4 question 3";
+              document.getElementById("questionText").innerHTML = "What kind of arthritis is more prevalent in women?";
               points = 300;
             break;
           }
@@ -93,133 +96,133 @@
           var userInput = document.getElementById('answer').value;
           switch(selected) {
             case "t1p100":
-              if (userInput == "topic 1 answer 1") {
+              if (userInput == "Stroke") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Insert topic 1 answer 1";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Stroke";
               }
               selected = null;
               userInput = null;
             break;
             case "t1p200":
-              if (userInput == "topic 1 answer 2") {
+              if (userInput == "Obesity") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Insert topic 1 answer 2";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Obesity";
               }
               selected = null;
               userInput = null;
             break;
             case "t1p300":
-              if (userInput == "topic 1 answer 3") {
+              if (userInput == "Estrogen") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Insert topic 1 answer 3";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Estrogen";
               }
               selected = null;
               userInput = null;
             break;
             case "t2p100":
-              if (userInput == "topic 2 answer 1") {
+              if (userInput == "Mammogram") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Insert topic 2 answer 1";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Mammogram";
               }
               selected = null;
               userInput = null;
             break;
             case "t2p200":
-              if (userInput == "topic 2 answer 2") {
+              if (userInput == "Calcium") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Insert topic 2 answer 2";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Calcium";
               }
               selected = null;
               userInput = null;
             break;
             case "t2p300":
-              if (userInput == "topic 2 answer 3") {
+              if (userInput == "Vitamin D") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Insert topic 2 answer 3";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Vitamin D";
               }
               selected = null;
               userInput = null;
             break;
             case "t3p100":
-              if (userInput == "topic 3 answer 1") {
+              if (userInput == "Oil") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Insert topic 3 answer 1";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Oil";
               }
               selected = null;
               userInput = null;
             break;
             case "t3p200":
-              if (userInput == "topic 3 answer 2") {
+              if (userInput == "Oxidized Melanin") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Insert topic 3 answer 2";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Oxidized Melanin";
               }
               selected = null;
               userInput = null;
             break;
             case "t3p300":
-              if (userInput == "topic 3 answer 3") {
+              if (userInput == "Hormones") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Insert topic 3 answer 3";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Hormones";
               }
               selected = null;
               userInput = null;
             break;
             case "t4p100":
-              if (userInput == "topic 4 answer 1") {
+              if (userInput == "11") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Insert topic 4 answer 1";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: 11";
               }
               selected = null;
               userInput = null;
             break;
             case "t4p200":
-              if (userInput == "topic 4 answer 2") {
+              if (userInput == "Depression") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Insert topic 4 answer 2";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Depression";
               }
               selected = null;
               userInput = null;
             break;
             case "t4p300":
-              if (userInput == "topic 4 answer 3") {
+              if (userInput == "Osteoarthritis") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Insert topic 4 answer 3";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Osteoarthritis";
               }
               selected = null;
               userInput = null;
@@ -279,4 +282,5 @@
 
     </div>
   </body>
+
 </html>
