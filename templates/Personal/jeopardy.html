@@ -94,6 +94,7 @@
         }
         function checkAnswer() {
           var userInput = document.getElementById('answer').value;
+          userInput = userInput.toLowerCase();
           switch(selected) {
             case "t1p100":
               if (userInput == "Stroke") {
