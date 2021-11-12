@@ -17,6 +17,12 @@ Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1
 
 
 ## Tasks Accomplished so Far
+**Week 12**
+|Capture the Moment|Reflection|
+|----|---------|-----|
+|Everyone|[Reflection Document](https://docs.google.com/document/d/1QIPI5aLPVEHTeAmd9CNCDj62c_yJrX3I8eKJR0QQPyk/edit?usp=sharing)|
+
+
 **Week 9**
 |Name|Video|Score (averaged from peer reveiews)|
 |----|---------|-----|
