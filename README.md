@@ -1,5 +1,10 @@
 # Team Owls' README
 
+## Project Idea
+*Create an effective website for the Women’s Health Awareness (WHA) club at DNHS to allow greater club outreach. Help spread more awareness regard problems regarding Women's Health. 
+
+
+
 ## Contributors 
 Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1), [GitHub repository contributers](https://github.com/wangzi190/flask_portfolio/graphs/contributors)
 
