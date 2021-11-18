@@ -1,7 +1,7 @@
-# Team Owls' README
+# Team Bean's README
 
 ## Project Idea
-*Create an effective website for the Women’s Health Awareness (WHA) club at DNHS to allow greater club outreach. Help spread more awareness regard problems regarding Women's Health. 
+*Create an effective website that talks more about the different personality types. Fun and informative games included to covey this. 
 
 
 
