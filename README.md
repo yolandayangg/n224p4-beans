@@ -17,7 +17,7 @@ Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1
 |----|---------|-----|-----------|-------|-------|
 |Nayana|@Nayanav|[Nayana's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3ANayanav+is%3Aopen)|[Nayana's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Anayanav)|[Nayana's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=Nayanav)|[Nayana's Profile](https://github.com/Nayanav)|
 |Mahima|@mahimak19|[Mahima's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3Amahimak19+is%3Aopen)|[Mahima's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Amahimak19)|[Mahima's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=mahimak19)|[Mahima's Profile](https://github.com/mahimak19)|
-|Gray|@wangzi190|[Gray's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3Awangzi190+is%3Aopen)|[Gray's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190)|[Gray's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190)|[Gray's Profile](https://github.com/wangzi190)|
+|Shruti|@shrutiapcsp|[Shruti's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3Awangzi190+is%3Aopen)|[Gray's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190)|[Gray's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190)|[Gray's Profile](https://github.com/wangzi190)|
 |Gabe|@Gabrielboudreau|[Gabe's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3AGabrielboudreau+is%3Aopen)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
 
 
@@ -65,25 +65,6 @@ Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1
 |Gray|Big O notation, algorithm efficiency, + README update|[Gray's Ticket](https://github.com/wangzi190/flask_portfolio/issues/40)|[Gray's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190)|[Gray's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190)|[Gray's Profile](https://github.com/wangzi190)|
 |Gabe|Image manipulation|[Gabe's Ticket](https://github.com/wangzi190/flask_portfolio/issues/39)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
 
-**Week 4:**
-
-|Name|Job|Ticket|
-|----|---------|-----|
-|Nayana|Time boxed README + minilab grid|[Nayana's Ticket](https://github.com/wangzi190/flask_portfolio/issues/36)
-|Mahima|Reaching out to team members and assign individual technical tasks,add ASCII converting element to the math mini-lab from the week prior along|[Mahima's Ticket](https://github.com/wangzi190/flask_portfolio/issues/37)
-|Gray|Add ASCII converting element to the math mini-lab from the week prior, JS DOM|[Gray's Ticket](https://github.com/wangzi190/flask_portfolio/issues/40)
-|Gabe|Finish greet page|[Gabe's Ticket](https://github.com/wangzi190/flask_portfolio/issues/39)
-
-
-**Week 3:**
-* Learned about binary and made a page with binary math and conversions
-* Made a chart and put hyperlinks through markdown to organize our work
-* [Overview video](https://youtu.be/z6-6m7LFtjk)
-
-**Week 2:**
-* Made a wireframe of the website and a full project mockup afterwards
-* Changed the names of the website to "DNHS Women's Health Awareness" and the names of the pages to reflect what we want the page to look like
-* Created greet pages and customized them
 
 **Week 1:**
 * Brainstormed possible website ideas, final decision was creating a website for the DNHS Women's Health Awareness Club
