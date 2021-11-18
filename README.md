@@ -1,7 +1,7 @@
 # Team Bean's README
 
 ## Project Idea
-*Create an effective website that talks more about the different personality types. Fun and informative games included to covey this. 
+Create an effective website that talks more about the different personality types. Fun and informative games included to covey this. 
 
 
 
