@@ -3,22 +3,20 @@
 ## Project Idea
 Create an effective website that talks more about the different personality types. Fun and informative games included to covey this. 
 
-
-
 ## Contributors 
 Team Owls: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1), [GitHub repository contributers](https://github.com/wangzi190/flask_portfolio/graphs/contributors)
 
 * [Team Notes Set](https://drive.google.com/drive/folders/1OO_uDmH_A1tTisIU9VoWnIfKt1gEUctu?usp=sharing)
-* [Nayana and Mahima's Pair Journal](https://docs.google.com/document/d/17dg1Ca6bv7LfiUPjs7iw3_IV5GAZQcQxqUlrnfceZ98/edit?usp=sharing)
-* [Gray and Gabe's Pair Journal]()
+* [Nayana, Natalie, and Mahima's Pair Journal](https://docs.google.com/document/d/17dg1Ca6bv7LfiUPjs7iw3_IV5GAZQcQxqUlrnfceZ98/edit?usp=sharing)
+* [Shruti and Yolanda Pair Journal]()
 
 
-|Name|GitHub ID|Tasks|Scrum Board|Commits|Profile|
-|----|---------|-----|-----------|-------|-------|
+|Name|GitHub ID|Issues|Commits|
+|----|---------|-------|-------|
 |Nayana|@Nayanav|[Nayana's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3ANayanav+is%3Aopen)|[Nayana's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Anayanav)|[Nayana's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=Nayanav)|[Nayana's Profile](https://github.com/Nayanav)|
 |Mahima|@mahimak19|[Mahima's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3Amahimak19+is%3Aopen)|[Mahima's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Amahimak19)|[Mahima's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=mahimak19)|[Mahima's Profile](https://github.com/mahimak19)|
 |Shruti|@shrutiapcsp|[Shruti's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3Awangzi190+is%3Aopen)|[Gray's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3Awangzi190)|[Gray's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=wangzi190)|[Gray's Profile](https://github.com/wangzi190)|
-|Gabe|@Gabrielboudreau|[Gabe's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3AGabrielboudreau+is%3Aopen)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
+|Yolanda|@yolandayangg|[Yolanda's Tasks](https://github.com/wangzi190/flask_portfolio/issues?q=assignee%3AGabrielboudreau+is%3Aopen)|[Gabe's Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1?card_filter_query=assignee%3A+gabrielboudreau)|[Gabe's Commits](https://github.com/wangzi190/flask_portfolio/commits?author=GabrielBoudreau)|[Gabe's Profile](https://github.com/Gabrielboudreau)|
 
 
 ## Tasks Accomplished so Far
