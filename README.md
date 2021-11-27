@@ -1,6 +1,8 @@
 # Personality Parlor
 
 ## Ideation
+[Brainwrite](https://github.com/yolandayangg/n224p4-beans/wiki/Brainwrite)
+[Wireframe](https://github.com/yolandayangg/n224p4-beans/wiki/Wireframe)
 
 ## Purpose
 Personality parlor is a platform that allows for users to explore personality types. After completing a quiz to determine their own personality, users can compare their results with friends and family. Knowing one's personality type is essential as it impacts interactions with others and reactions to external stimuli; this can strengthen one's relationships with others and create an effective work environment. 
@@ -25,6 +27,6 @@ Personality parlor is a platform that allows for users to explore personality ty
 |Mahima|Deployment Admin|Deploy website|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/7)|
 |Natalie|Technical Officer|TPT lessons|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/8)|
 |Nayana|Primary Designer|Layout website- create wireframe/brainwrite|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/4)|
-|Shruti|Scrum Master|Assign roles for each team member. Plan/ organize scrum board. Create issues for this week and assign to members.|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/6) <br> [Policies](https://github.com/yolandayangg/n224p4-beans/issues/1) <br> [README](https://github.com/yolandayangg/n224p4-beans/issues/2)|[Scrum Board](https://github.com/yolandayangg/n224p4-beans/projects/1)|
+|Shruti|Scrum Master|Assign roles for each team member. Plan/ organize scrum board. Create issues for this week and assign to members.|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/6) <br> [Policies](https://github.com/yolandayangg/n224p4-beans/issues/1) <br> [README](https://github.com/yolandayangg/n224p4-beans/issues/2)|[Scrum Board](https://github.com/yolandayangg/n224p4-beans/projects/1) <br> [Wiki](https://github.com/yolandayangg/n224p4-beans/wiki/Policies-for-Issues)
 |Yolanda|Github Admin|Setup project in GIt. Fork and pull from Team Owls website|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/5)|
 
