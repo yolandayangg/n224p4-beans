@@ -23,7 +23,7 @@ Personality parlor is a platform that allows for users to explore personality ty
 
 ## Week 1-2
 |Name|Role|Task|Scrum Issue|Commits|
-|----|----|-------------|---|-----|
+|----|----|---------|-------|-------|
 |Mahima|Deployment Admin|Deploy website|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/7)|
 |Natalie|Technical Officer|TPT lessons|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/8)|
 |Nayana|Primary Designer|Layout website- create wireframe/brainwrite|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/4)|
