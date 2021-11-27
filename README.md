@@ -1,14 +1,14 @@
-# Team Bean's README
+# Personality Parlor
 
 ## Project Idea
-Create an effective website that talks more about the different personality types. Fun and informative games included to covey this. 
 
-## Contributors 
-Team Beans: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/1), [GitHub repository contributers](https://github.com/wangzi190/flask_portfolio/graphs/contributors)
+#Ideation
 
-* [Team Notes Set](https://drive.google.com/drive/folders/1OO_uDmH_A1tTisIU9VoWnIfKt1gEUctu?usp=sharing)
+#Purpose
+Personality parlor is a platform that allows for users to explore personality types. After completing a quiz to determine their own personality, users can compare their results with friends and family. Knowing one's personality type is essential as it impacts interactions with others and reactions to external stimuli; this can strengthen one's relationships with others and create an effective work environment. 
 
 # Timebox
+* [Team Notes Set](https://drive.google.com/drive/folders/1OO_uDmH_A1tTisIU9VoWnIfKt1gEUctu?usp=sharing)
 |Name|GitHub Profile|Issues|Journals|Commits|
 |--------|---------|-------|-------|-------|
 |Mahima Krovvidy|@mahimak19|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3Amahimak19)|[Journal](https://docs.google.com/document/d/17dg1Ca6bv7LfiUPjs7iw3_IV5GAZQcQxqUlrnfceZ98/edit?usp=sharing)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=mahimak19)|
@@ -17,7 +17,8 @@ Team Beans: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/
 |Shruti Chari|@shrutiapcsp|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3Ashrutiapcsp)|[Journal](https://docs.google.com/document/d/1iePZMHrLpCaCBdit59z2DYMRZPzylpTn6LDC4NgAFto/edit?usp=sharing)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=shrutiapcsp)|
 |Yolanda Yang|@yolandayangg|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3Ayolandayangg)|[Journal](https://docs.google.com/document/d/1iePZMHrLpCaCBdit59z2DYMRZPzylpTn6LDC4NgAFto/edit?usp=sharing)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=yolandayangg)|
 
-
+#Table of Contents
+[Week 1-2](https://github.com/yolandayangg/n224p4-beans/projects/1)
 
 ## Week 1-2
 |Name|Role|Task|Scrum Issue|Commits|
