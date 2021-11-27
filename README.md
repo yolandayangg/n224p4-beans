@@ -1,7 +1,5 @@
 # Personality Parlor
 
-## Project Idea
-
 ## Ideation
 
 ## Purpose
