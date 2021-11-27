@@ -19,7 +19,7 @@ Personality parlor is a platform that allows for users to explore personality ty
 |Yolanda Yang|@yolandayangg|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3Ayolandayangg)|[Journal](https://docs.google.com/document/d/1iePZMHrLpCaCBdit59z2DYMRZPzylpTn6LDC4NgAFto/edit?usp=sharing)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=yolandayangg)|
 
 ## Table of Contents
-[Week 1-2](https://github.com/yolandayangg/n224p4-beans/projects/1)
+[- Week 1-2](https://github.com/yolandayangg/n224p4-beans/projects/1)
 
 ## Week 1-2
 |Name|Role|Task|Scrum Issue|Commits|
