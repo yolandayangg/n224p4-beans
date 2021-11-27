@@ -2,13 +2,14 @@
 
 ## Project Idea
 
-#Ideation
+## Ideation
 
-#Purpose
+## Purpose
 Personality parlor is a platform that allows for users to explore personality types. After completing a quiz to determine their own personality, users can compare their results with friends and family. Knowing one's personality type is essential as it impacts interactions with others and reactions to external stimuli; this can strengthen one's relationships with others and create an effective work environment. 
 
-# Timebox
-* [Team Notes Set](https://drive.google.com/drive/folders/1OO_uDmH_A1tTisIU9VoWnIfKt1gEUctu?usp=sharing)
+## Timebox
+[Team Notes Set](https://drive.google.com/drive/folders/1OO_uDmH_A1tTisIU9VoWnIfKt1gEUctu?usp=sharing)
+
 |Name|GitHub Profile|Issues|Journals|Commits|
 |--------|---------|-------|-------|-------|
 |Mahima Krovvidy|@mahimak19|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3Amahimak19)|[Journal](https://docs.google.com/document/d/17dg1Ca6bv7LfiUPjs7iw3_IV5GAZQcQxqUlrnfceZ98/edit?usp=sharing)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=mahimak19)|
