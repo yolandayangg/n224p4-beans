@@ -20,9 +20,9 @@ Team Beans: [Scrum Board](https://github.com/wangzi190/flask_portfolio/projects/
 
 
 ## Week 1-2
-|Name|Role|Task|Scrum Issue|Commit|
-|----|----|--------|-----|----|
-|Mahima|Deployment Admin|Deploy website|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/7|
+|Name|Role|Task|Scrum Issue|Commits|
+|----|----|-------------|---|-----|
+|Mahima|Deployment Admin|Deploy website|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/7)|
 |Natalie Cohen|Technical Officer|TPT lessons|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/8)|
 |Nayana|Primary Designer|Layout website- create wireframe/brainwrite|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/4)|
 |Shruti|Scrum Master|Assign roles for each team member. Plan/ organize scrum board. Create issues for this week and assign to members.|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/6) <br> [Policies for Issues](https://github.com/yolandayangg/n224p4-beans/issues/1) <br> [README](https://github.com/yolandayangg/n224p4-beans/issues/2)|[Scrum Board](https://github.com/yolandayangg/n224p4-beans/projects/1)|
