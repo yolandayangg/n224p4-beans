@@ -1,7 +1,7 @@
 # Personality Parlor
 
 ## Ideation
-[Brainwrite](https://github.com/yolandayangg/n224p4-beans/wiki/Brainwrite)
+[Brainwrite](https://github.com/yolandayangg/n224p4-beans/wiki/Brainwrite) <br>
 [Wireframe](https://github.com/yolandayangg/n224p4-beans/wiki/Wireframe)
 
 ## Purpose
