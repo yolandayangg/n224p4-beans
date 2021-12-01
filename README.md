@@ -25,7 +25,7 @@ Personality parlor is a platform that allows for users to explore personality ty
 |Name|Role|Task|Scrum Issue|Commits|
 |----|----|-------|-------|-------|
 |Mahima|Deployment Admin|Deploy website|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/7)|
-|Natalie|Technical Officer|TPT lessons|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/8)| <br> [Wiki](https://github.com/yolandayangg/n224p4-beans/wiki/Technicals) 
+|Natalie|Technical Officer|TPT lessons|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/8)| <br> [Technicals Wiki](https://github.com/yolandayangg/n224p4-beans/wiki/Technicals) 
 |Nayana|Primary Designer|Layout website- create wireframe/brainwrite|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/4)|
 |Shruti|Scrum Master|Assign roles for each team member. Plan/ organize scrum board. Create issues for this week and assign to members.|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/6) <br> [Policies](https://github.com/yolandayangg/n224p4-beans/issues/1) <br> [README](https://github.com/yolandayangg/n224p4-beans/issues/2)|[Scrum Board](https://github.com/yolandayangg/n224p4-beans/projects/1) <br> [Wiki](https://github.com/yolandayangg/n224p4-beans/wiki/Policies-for-Issues)
 |Yolanda|Github Admin|Setup project in GIt. Fork and pull from Team Owls website|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/5)|
