@@ -22,6 +22,7 @@ Personality parlor is a platform that allows for users to explore personality ty
 [Week 1-2](https://github.com/yolandayangg/n224p4-beans/projects/1)
 
 ## Week 1-2
+[Review Ticket](https://github.com/yolandayangg/n224p4-beans/issues/9)
 |Name|Role|Task|Scrum Issue|Commits|
 |----|----|-------|-------|-------|
 |Mahima|Deployment Admin|Deploy website|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/7)| [Deployment Wiki](https://github.com/yolandayangg/n224p4-beans/wiki/Deployment-Guide)
