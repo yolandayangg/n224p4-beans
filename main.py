@@ -131,6 +131,10 @@ def grayProject():
 def wha_quiz():
     return render_template("Personal/wha_quiz.html")
 
+@app.route('/Natalie/')
+def Natalie():
+    return render_template("Personal/Natalie.html")
+
 @app.route('/clothing/')
 def clothing():
 
