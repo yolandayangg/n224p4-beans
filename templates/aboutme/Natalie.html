@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-{% extends "layouts/base.html" %}
 
 
-{% block body %}
-<div class="center-block" style="margin: 2% 5% 5%; text-align:center; font-size: larger">
+
+<div class="center-block" style="margin: 2% 5% 5%; text-align:center; font-family: 'Comic Sans MS', sans-serif;">
 
     <div class="col-12">
-        <h4 style=>Natalie Cohen</h4>
+        <h4 style="color:cornflowerblue">Natalie Cohen</h4>
+        <p   style="color:cornflowerblue">I am a Junior at Del Norte {{name3}}!</>
     </div>
 
     <div class="col-12">
 
     </div>
-    </body>
+    <body style="background-color:aliceblue;">
     <img src="/static/assets/lexie.jpeg" alt="Lexie" style="width:50%">
     <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
     <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
 </div>
-{% endblock %}
