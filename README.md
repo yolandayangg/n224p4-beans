@@ -12,9 +12,9 @@ Personality parlor is a platform that allows for users to explore personality ty
 
 |Name|GitHub Profile|Issues|Journals|Commits|
 |--------|---------|-------|-------|-------|
-|Mahima Krovvidy|@mahimak19|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3Amahimak19)|[Journal](https://docs.google.com/document/d/17dg1Ca6bv7LfiUPjs7iw3_IV5GAZQcQxqUlrnfceZ98/edit?usp=sharing)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=mahimak19)|
-|Natalie Cohen|@nataliecohen|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3Anataliecohen)|[Journal](https://docs.google.com/document/d/17dg1Ca6bv7LfiUPjs7iw3_IV5GAZQcQxqUlrnfceZ98/edit?usp=sharing)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=nataliecohen)
-|Nayana Vallamkondu|@Nayanav|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3ANayanav)|[Journal](https://docs.google.com/document/d/17dg1Ca6bv7LfiUPjs7iw3_IV5GAZQcQxqUlrnfceZ98/edit?usp=sharing)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=Nayanav)|
+|Mahima Krovvidy|@mahimak19|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3Amahimak19)|[Journal](https://docs.google.com/document/d/1u8SX84sg8QsT7gzVuCX_T-uksLZDLLriqrIEiLrn0aw/edit?usp=sharing)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=mahimak19)|
+|Natalie Cohen|@nataliecohen|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3Anataliecohen)|[Journal](https://docs.google.com/document/d/1u8SX84sg8QsT7gzVuCX_T-uksLZDLLriqrIEiLrn0aw/edit?usp=sharing)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=nataliecohen)
+|Nayana Vallamkondu|@Nayanav|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3ANayanav)|[Journal](https://docs.google.com/document/d/1u8SX84sg8QsT7gzVuCX_T-uksLZDLLriqrIEiLrn0aw/edit?usp=sharing)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=Nayanav)|
 |Shruti Chari|@shrutiapcsp|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3Ashrutiapcsp)|[Journal](https://docs.google.com/document/d/1iePZMHrLpCaCBdit59z2DYMRZPzylpTn6LDC4NgAFto/edit?usp=sharing)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=shrutiapcsp)|
 |Yolanda Yang|@yolandayangg|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3Ayolandayangg)|[Journal](https://docs.google.com/document/d/1iePZMHrLpCaCBdit59z2DYMRZPzylpTn6LDC4NgAFto/edit?usp=sharing)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=yolandayangg)|
 
@@ -22,11 +22,12 @@ Personality parlor is a platform that allows for users to explore personality ty
 [Week 1-2](https://github.com/yolandayangg/n224p4-beans/projects/1)
 
 ## Week 1-2
+[Review Ticket](https://github.com/yolandayangg/n224p4-beans/issues/9)
 |Name|Role|Task|Scrum Issue|Commits|
 |----|----|-------|-------|-------|
-|Mahima|Deployment Admin|Deploy website|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/7)|
+|Mahima|Deployment Admin|Deploy website|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/7)| [Deployment Wiki](https://github.com/yolandayangg/n224p4-beans/wiki/Deployment-Guide)
 |Natalie|Technical Officer|TPT lessons|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/8)| <br> [Technicals Wiki](https://github.com/yolandayangg/n224p4-beans/wiki/Technicals) 
-|Nayana|Primary Designer|Layout website- create wireframe/brainwrite|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/4)|
+|Nayana|Primary Designer|Layout website- create wireframe/brainwrite|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/4)|[Brainwrite](https://github.com/yolandayangg/n224p4-beans/wiki/Brainwrite) <br> [Wireframe](https://github.com/yolandayangg/n224p4-beans/wiki/Wireframe)
 |Shruti|Scrum Master|Assign roles for each team member. Plan/ organize scrum board. Create issues for this week and assign to members.|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/6) <br> [Policies](https://github.com/yolandayangg/n224p4-beans/issues/1) <br> [README](https://github.com/yolandayangg/n224p4-beans/issues/2)|[Scrum Board](https://github.com/yolandayangg/n224p4-beans/projects/1) <br> [Wiki](https://github.com/yolandayangg/n224p4-beans/wiki/Policies-for-Issues)
 |Yolanda|Github Admin|Setup project in GIt. Fork and pull from Team Owls website|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/5)|[Github Wiki](https://github.com/yolandayangg/n224p4-beans/wiki/BOF-Github-Admins-policy-document:)
 
