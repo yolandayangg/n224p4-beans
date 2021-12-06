@@ -76,6 +76,8 @@ def gabriel():
 def platformer():
     return render_template("Personal/platformer.html")
 
+
+
 @app.route('/binary/')
 def binary():
     if request.form:
@@ -131,9 +133,6 @@ def grayProject():
 def wha_quiz():
     return render_template("Personal/wha_quiz.html")
 
-@app.route('/Natalie/')
-def Natalie():
-    return render_template("Personal/Natalie.html")
 
 @app.route('/clothing/')
 def clothing():
@@ -142,6 +141,14 @@ def clothing():
         return render_template("Personal/clothing.html")
 
     return render_template("Personal/clothing.html")
+
+@app.route('/Natalie/')
+def Natalie():
+    return render_template("aboutme/Natalie.html")
+
+@app.route('/nayana/')
+def nayana():
+    return render_template("aboutme/nayana.html")
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
