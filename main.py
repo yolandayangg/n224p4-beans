@@ -150,6 +150,10 @@ def Natalie():
 def nayana():
     return render_template("aboutme/nayana.html")
 
+@app.route('/Shruti/')
+def Shruti():
+    return render_template("aboutme/Shruti.html")
+
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
 
