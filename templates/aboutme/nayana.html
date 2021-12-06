@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "layouts/base.html" %}
 
-</body>
-</html>
+{% block body %}
+<div class="center-block" style="margin: 2% 5% 5%; text-align:center; ">
+
+    <div class="col-12">
+        <h4 style="">Nayana Vallamkondu</h4>
+        <p   style="">I am a Senior at Del Norte {{name3}}!</>
+    </div>
+
+    <div class="col-12">
+
+    </div>
+    <body style="background-color:;">
+    <img src="/static/assets/lexie.jpeg" alt="Lexie" style="width:50%">
+    <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
+</div>
+{% endblock %}
