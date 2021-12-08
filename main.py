@@ -159,6 +159,10 @@ def nayana():
 def Shruti():
     return render_template("aboutme/Shruti.html")
 
+@app.route('/yolanda/')
+def yolanda():
+    return render_template("aboutme/yolanda.html")
+
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
 
