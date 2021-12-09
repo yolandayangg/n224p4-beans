@@ -5,15 +5,34 @@
     <div class="center-block" style="margin: 2% 5% 5%; text-align:center; sans-serif;">
 
         <div class="col-12">
-            <h4>Shruti</h4>
-            <p>I am a Senior at Del Norte {{name3}}!</>
+            <h4>Shruti Chari</h4>
+            <p>I am a Senior at Del Norte High School. I enjoy playing tennis and reading{{name3}}!</>
         </div>
 
         <div class="col-12">
 
         </div>
-        <img src="/static/shrutimask.png" alt="shrutimask" style="width:50%">
+        <input type="button" value="Change Picture" onclick="switchpic();"/>
+        <img width="400" height="225" src="/static/shrutimask.png" id="mask" alt=""/>
         <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
         <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
+        <script>
+            let i = 0
+            function switchpic(){
+                const pic1 ="/static/shrutipic.jpg"
+                const pic2 ="/static/shrutimask.png"
+                if (i === 0){
+                    document.getElementById('mask').src = pic1;
+                    i = 1
+                }
+                else {
+                    document.getElementById('mask').src = pic2;
+                    i = 0
+                }
+            }
+        </script>
+
     </div>
+
+
 {% endblock %}
