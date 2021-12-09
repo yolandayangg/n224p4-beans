@@ -69,4 +69,73 @@
 
         </div>
 
+    <!--This is the API random facts thing-->
+
+        <br></br>
+        <br></br>
+        <h6>My Favorite Places To Shop</h6>
+
+        <!--Formatting the location of the button and text of the random facts -->
+        <div class="center-block" style="margin: 2% 5% 5%; font-family: gilroy,serif;">
+            <div id="output" class="text-center">Click the button to learn more facts about our favorite topic: [choose whatever topic you guys want, this info is from our last generator]</div> <!--This is the initial message that shows up before the facts are generated -->
+        </div>
+        <button onclick="toggle()" id="btn" >Generate New Fact!</button> <!-- Created a toggle button to generate facts AND switch colors as the user clicks. Also assigned id -->
+
+        <!--Set the variable facts to hold a list of facts that it can spit out when the button is told to generate-->
+        <script>
+            let btn = document.getElementById('btn');
+            let output = document.getElementById('output');
+            let facts =
+                [
+                    "There are over 3.1 million breast cancer survivors in the United States, including women still being treated and those who have completed treatment.",
+                    "Breast cancer is the second leading cause of cancer death in women, second only to lung cancer.",
+                    "A woman has about a one in eight chance of being diagnosed with breast cancer in her lifetime, according to the National Cancer Institute.",
+                    "Thanks to new treatments and early detection, the five-year relative survival rate for women with breast cancer is about 90 percent.",
+                    "Women with a BRCA1 or BRCA2 gene mutation are more likely to be diagnosed with breast cancer at a younger age, as well as developing cancer in both breasts.",
+                    "While non-Hispanic white women have higher rates of breast cancer incidence, African-American women have a higher incidence rate before age 40 and are more likely to die from breast cancer at every age.",
+                    "Herceptin, a breast cancer “smart drug,” can trace its roots to City of Hope: Scientists there developed engineered human proteins that led to monoclonal antibodies, the basis of multiple cancer drugs.",
+                    "A 2017 JAMA study found that in the U.S., younger women with breast cancer are increasingly opting to undergo double mastectomies, even if they were diagnosed with early-stage cancer in only one breast.",
+                    "In 2021, an estimated 281,550 new cases of invasive breast cancer will be diagnosed in women in the U.S. as well as 49,290 new cases of non-invasive (in situ) breast cancer.",
+                    "63% of breast cancer cases are diagnosed at a localized stage (there is no sign that the cancer has spread outside of the breast), for which the 5-year survival rate is 99%.",
+                    "This year, an estimated 43,600 women will die from breast cancer in the U.S.",
+                    "Although rare, men get breast cancer too. In 2021, an estimated 2,650 men will be diagnosed with breast cancer this year in the U.S. and approximately 530 will die.",
+                    "1 in 8 women in the United States will be diagnosed with breast cancer in her lifetime.",
+                    "Breast cancer is the most common cancer in American women, except for skin cancers.",
+                    "It is estimated that in 2021, approximately 30% of all new women cancer diagnoses will be breast cancer.",
+                    "There are over 3.8 million breast cancer survivors in the United States.",
+                    "On average, every 2 minutes a woman is diagnosed with breast cancer in the United States.",
+                    "A Vitamin D3 blood serum level of 40-60 ng/ml can reduce the occurrence of breast cancer by 77%.",
+                    "A way to prevent breast cancer is to manage stress. Love and care for YOURSELF.",
+                    "Exercise moderately. 30 minutes of activity, 3-5 times a week can lower risk by 30-50%.",
+                    "Perform regular breast exams. Self-exam, clinical exam, ultrasound, MRI, and thermography can help detect early signs of breast cancer.",
+                    "Eat healthy/avoid sugar. Eating cruciferous green vegetables may lower risk of breast cancer by 40%. Cancer LOVES sugar.",
+                    "Drink less alcohol. Reducing the consumption of alcohol may reduce the risk of developing breast cancer by as much as 20%.",
+                    "Avoid artificial estrogen. Progestin, found in birth control drugs, can transform healthy cells into cancerous cells. Hormone-free IUDs are recommended.",
+                    "A breast surgeon or surgical oncologist: a doctor who uses surgery to treat breast cancer.",
+                    "A radiation oncologist: a doctor who uses radiation to treat cancer.",
+                    "A medical oncologist: a doctor who uses chemotherapy and other medicines to treat cancer.",
+                    "A plastic surgeon: a doctor who specializes in reconstructing or repairing parts of the body.",
+                    "Women who have surgery as part of their breast cancer treatment may choose breast reconstruction surgery to rebuild the shape and look of the breast. There are different types of breast reconstruction.",
+                ];
+
+            // When the button is clicked, it generates a random fact (derived from Math.floor)
+            btn.addEventListener('click',function (){
+                var randomFact = facts[Math.floor(Math.random() * facts.length)]
+                output.innerHTML = randomFact;
+
+            })
+
+            // Switches colors of button when user clicks
+            var imageType = 0;
+            function toggle() {
+                if (imageType == 0) {
+                    document.getElementById('btn').style.backgroundColor='#db0028';
+                    imageType = 1;
+                } else {
+                    document.getElementById('btn').style.backgroundColor='#6596eb';
+                    imageType = 0;
+                }
+            }
+        </script>
+
 {% endblock %}
