@@ -11,12 +11,6 @@
 
     <div class="col-12">
 
-    </div>
-    <body style="background-color:;">
-    <img src="/static/lexie.jpeg" alt="Lexie" style="width:50%">
-    <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
-</div>
 
     </style>
     <a href="https://docs.google.com/document/d/1u8SX84sg8QsT7gzVuCX_T-uksLZDLLriqrIEiLrn0aw/edit" class="button">Journal</a></td>
@@ -50,5 +44,29 @@
         }
     </style>
 
+        <div class="col-12">
+
+        </div>
+        <input type="button" value="Change Picture" onclick="switchpic();"/>
+        <img width="400" height="225" src="/static/lexie.jpeg" id="mask" alt=""/>
+        <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
+        <script>
+            let i = 0
+            function switchpic(){
+                const pic1 ="/static/lexie.jpeg"
+                const pic2 ="/static/nataliemask.jpg"
+                if (i === 0){
+                    document.getElementById('mask').src = pic1;
+                    i = 1
+                }
+                else {
+                    document.getElementById('mask').src = pic2;
+                    i = 0
+                }
+            }
+        </script>
+
+        </div>
 
 {% endblock %}
