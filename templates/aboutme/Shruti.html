@@ -12,11 +12,22 @@
         <div class="col-12">
 
         </div>
+        <a href="https://docs.google.com/document/d/1iePZMHrLpCaCBdit59z2DYMRZPzylpTn6LDC4NgAFto/edit?usp=sharing">Link to my Pair Journal</a> <br>
+        <a href="https://docs.google.com/document/d/1e1tMbot2zqoMZHbRNGlgYtF4iKBwhEj1s7w6Cm5LZjc/edit?usp=sharing">Link to my TPT Shared Notes</a> <br>
+
+        <button onclick="luckynumber()">Get Your Lucky Number</button>
+        <h1 id="favorDisplay"></h1>
+
         <input type="button" value="Change Picture" onclick="switchpic();"/>
         <img width="400" height="225" src="/static/shrutimask.png" id="mask" alt=""/>
         <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
         <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
         <script>
+            function luckynumber() {
+                var i = Math.floor(Math.random() * (100));
+                document.getElementById('favorDisplay').innerHTML = i;
+            }
+
             let i = 0
             function switchpic(){
                 const pic1 ="/static/shrutipic.jpg"
