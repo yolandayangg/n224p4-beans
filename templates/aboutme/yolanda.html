@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends "layouts/base.html" %}
+
+{% block body %}
+    <div class="center-block" style="margin: 2% 5% 5%; text-align:center; sans-serif;">
+
+        <div class="col-12">
+            <h4>Yolanda</h4>
+            <p>I am a Senior at Del Norte {{name3}}!</>
+        </div>
+
+        <div class="col-12">
+
+        </div>
+        <img src="/static/yolandamask.jpg" alt="yolandamask" style="width:50%">
+        <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTVHhS1eQCGd2OzlenxD0tRN2S6uX96eskIPkCexnlRchsPs_Xq3B17KMdroljz11UH8Xm4hThltGFO/pub?embedded=true"></iframe>
+    </div>
+{% endblock %}

@@ -1,7 +1,12 @@
 # import "packages" from flask
 from flask import Flask, render_template
 from flask import request
+from flask import render_template
+
+
+
 from pathlib import Path
+
 
 
 
@@ -153,6 +158,10 @@ def nayana():
 @app.route('/Shruti/')
 def Shruti():
     return render_template("aboutme/Shruti.html")
+
+@app.route('/yolanda/')
+def yolanda():
+    return render_template("aboutme/yolanda.html")
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
