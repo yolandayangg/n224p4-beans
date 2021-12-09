@@ -1,11 +1,10 @@
-# import "packages" from flask
+
+import requests
 from flask import Flask, render_template
 from flask import request
-from flask import render_template
 
-
-
-from pathlib import Path
+from pathlib import \
+    Path  # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
 
 
 
