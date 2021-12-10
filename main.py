@@ -158,7 +158,9 @@ def Shruti():
 @app.route('/yolanda/')
 def yolanda():
     return render_template("aboutme/yolanda.html")
-
+@app.route('/mahima/')
+def mahima():
+    return render_template("aboutme/mahima.html")
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
 
