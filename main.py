@@ -4,6 +4,11 @@ from flask import Flask, render_template
 from flask import request
 from pathlib import Path
 
+from pathlib import \
+    Path  # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
+
+
+
 
 # create a Flask instance
 app = Flask(__name__)
@@ -157,6 +162,10 @@ def Shruti():
 @app.route('/yolanda/')
 def yolanda():
     return render_template("aboutme/yolanda.html")
+
+@app.route('/mahima/')
+def mahima():
+    return render_template("aboutme/mahima.html")
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
