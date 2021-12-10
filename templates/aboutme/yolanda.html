@@ -10,11 +10,67 @@
         </div>
 
         <div class="col-12">
+            <a href="https://docs.google.com/document/d/1iePZMHrLpCaCBdit59z2DYMRZPzylpTn6LDC4NgAFto/edit?usp=sharing">Pair Share Journal</a> <br>
+            <a href="https://docs.google.com/document/d/1e1tMbot2zqoMZHbRNGlgYtF4iKBwhEj1s7w6Cm5LZjc/edit?usp=sharing">TPT Shared Notes</a> <br>
+
+            <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
+        <button onclick="jokes()">Random Jokes</button>
+        <h1 id="favorDisplay"></h1>
+        <div class="col-12">
 
         </div>
-        <img src="/static/yolandamask.jpg" alt="yolandamask" style="width:50%">
+        <input type="button" value="Change Picture" onclick="switchpic();"/>
+        <img width="400" height="225" src="/static/yolandamask.jpg" id="mask" alt=""/>
         <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
         <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
-        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTVHhS1eQCGd2OzlenxD0tRN2S6uX96eskIPkCexnlRchsPs_Xq3B17KMdroljz11UH8Xm4hThltGFO/pub?embedded=true"></iframe>
-    </div>
+        <script>
+            let i = 0
+            function switchpic(){
+                const pic1 ="/static/yolandamask.jpg"
+                const pic2 ="/static/yolanda.jpg"
+                if (i === 0){
+                    document.getElementById('mask').src = pic1;
+                    i = 1
+                }
+                else {
+                    document.getElementById('mask').src = pic2;
+                    i = 0
+                }
+            }
+        </script>
+
+        <br></br>
+        <br></br>
+        <h6>Random joke generator</h6>
+
+        <div class="center-block" style="margin: 2% 5% 5%; font-family: gilroy,serif;">
+            <div id="output" class="text-center">Click the button to get a joke</div>
+        </div>
+        <button onclick="toggle()" id="btn" >Generate a new joke!</button> <!-- Created a toggle button to generate facts AND switch colors as the user clicks. Also assigned id -->
+
+        <!--Set the variable facts to hold a list of facts that it can spit out when the button is told to generate-->
+        <script>
+            let btn = document.getElementById('btn');
+            let output = document.getElementById('output');
+            let facts =
+                [
+                    "Two bytes meet.  The first byte asks, 'Are you ill?' The second byte replies, 'No, just feeling a bit off.'",
+                    "How did the programmer die in the shower? He read the shampoo bottle instructions: Lather. Rinse. Repeat.",
+                    "Why do programmers always mix up Halloween and Christmas? Because Oct 31 equals Dec 25.",
+                    "There are only 10 kinds of people in this world: those who know binary and those who don’t.",
+                    "The computer is mightier than the pen, the sword, and usually, the programmer.",
+                    "Debugging: Removing the needles from the haystack.",
+                    "What do you call a Russian that enjoys programming? Computin.",
+                    "Programming jokes are fun... but only when executed properly.",
+                    "What programming language do they use in Star Wars? JawaScript",
+                ];
+
+            // When the button is clicked, it generates a random fact (derived from Math.floor)
+            btn.addEventListener('click',function (){
+                var randomFact = facts[Math.floor(Math.random() * facts.length)]
+                output.innerHTML = randomFact;
+
+            })
+        </script>
 {% endblock %}
