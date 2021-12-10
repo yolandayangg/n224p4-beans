@@ -1,12 +1,8 @@
 
-
+# import "packages" from flask
 from flask import Flask, render_template
 from flask import request
-
-from pathlib import \
-    Path  # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
-
-
+from pathlib import Path
 
 
 # create a Flask instance
@@ -35,7 +31,15 @@ def hawkers():
     return render_template("Personal/outreach.html")
 
 
-
+@app.route('/Mahima/', methods=['GET', 'POST'])
+def stub():
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("Minilabs/Mahima.html", name=name)
+    # starting and empty input default
+    return render_template("Minilabs/Mahima.html", name="World")
 
 @app.route('/grayGreet/', methods=['GET', 'POST'])
 def grayGreet():
@@ -153,10 +157,6 @@ def Shruti():
 @app.route('/yolanda/')
 def yolanda():
     return render_template("aboutme/yolanda.html")
-
-@app.route('/mahima/')
-def mahima():
-    return render_template("aboutme/mahima.html")
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
