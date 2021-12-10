@@ -1,12 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-{% extends layouts/base.html %}
+{% extends "layouts/base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>About Me</title>
-</head>
-<body>
+<!-- Setting up variables to customize "project" details to be specific to hawkers -->
 
-</body>
-</html>
+
+<!-- Setting up a block replacement to customize background to BIRDS -->
+{% block body %}
+    <div class="center-block" style="margin: 2% 5% 5%; text-align:center; ">
+
+        <div class="col-12">
+            <h4 style="">Mahima Krovvidy</h4>
+            <p   style="">Hello! I'm Mahima and I love to watch movies, read, and cook delicious recipes </p>
+        </div>
+        <!--Insert your three pictures here-->
+        <style
+            link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+                                                                                                                                                                                                                              .margins-autos {
+                                                                                                                                                                                                                                  margin-left: auto;
+                                                                                                                                                                                                                                  margin-right: auto;
+                                                                                                                                                                                                                              }
+            .vLink {
+                margin-bottom: 5px;
+            }
+            .vImage {
+                margin-bottom: 2rem;
+            }
+            #vMap {
+                margin-bottom: 12rem;
+            }
+        </style>
+
+        <div class="container">
+            <div class="row justify-content-center margins-autos">
+                <div id="n1" class="vImage col-sm"><img src="/static/mahima2.jpg" width="250" height="240"></div>
+                <div id="n2" class="vImage col-sm"><img src="/static/mahima1.jpg" width="175" height="250"></div>
+                <div id="n3" class="vImage col-sm"><img src="/static/mahima3.jpg" width="210" height="240"></div>
+            </div>
+
+            <!--This is the API random facts thing-->
+
+            <br></br>
+            <br></br>
+            <h6>Fun Facts About Movies!</h6>
+
+            <!--Formatting the location of the button and text of the random facts -->
+            <div class="center-block" style="margin: 2% 5% 5%; font-family: gilroy,serif;">
+                <div id="output" class="text-center">Click the button to learn more facts about Hollywood movies! </div> <!--This is the initial message that shows up before the facts are generated -->
+            </div>
+            <button onclick="toggle()" id="btn" >Generate New Movie Fact!</button> <!-- Created a toggle button to generate facts AND switch colors as the user clicks. Also assigned id -->
+
+            <script>
+                let btn = document.getElementById('btn');
+                let output = document.getElementById('output');
+                let facts =
+                    [
+                       "In 1994, during one famous lunch at Pixar, filmmakers John Lasseter, Pete Docter and Joe Ranft came up with ideas that would eventually become A Bug’s Life, Finding Nemo, Monster Inc. and Wall-E.",
+                    "Titanic won 11 Oscar Awards, including Best Picture",
+                        "In the Pixar movie 'Up', the animators had to create each of the more than 1000 balloons individually.",
+                        "During the making of Toy Story 2, about 90% of the animation work got deleted by accident. Luckily, the director had a copy!",
+                        "Real squirrels were used in 'Charlie and the Chocolate Factory'. ",
+                        "The most expensive film ever made as of November 2020 is the 2011 film “Pirates of the Caribbean: On Stranger Tides,” with a budget of $378.5 million. ",
+                        "The first motion-picture film camera was called the Kinetoscope",
+                        "Stephen King is the living author with the most film adaptations",
+                        "The largest film market outside the United States is China",
+                        "Old sets were burned to create the fire scene in ‘Gone with the Wind’",
+                        "The code in 'The Matrix' comes from the characters in sushi recipes.",
+                        "A 'Harry Potter' stunt double was paralyzed on the job"
+
+                    ];
+
+                // When the button is clicked, it generates a random fact (derived from Math.floor)
+                btn.addEventListener('click',function (){
+                    var randomFact = facts[Math.floor(Math.random() * facts.length)]
+                    output.innerHTML = randomFact;
+
+                })
+
+</script>
+            <br>
+            <br>
+            <br>
+            <h6>Mask and No Mask</h6>
+                <!--Formatting the location of the button and text of the random facts -->
+            <img width="180" height="225" src="/static/mahima_mask.JPG" id="mask" alt=""/>
+            <div class="center-block" style="margin: 2% 5% 5%; font-family: gilroy,serif;">
+                <input type="button" value="Change Picture!" onclick="switchpic();"/>
+
+
+            </div>
+            <script>
+                let i = 0
+                function switchpic(){
+                    const pic1 ="/static/mahimapic.jpg"
+                    const pic2 ="/static/mahima_mask.JPG"
+                    if (i === 0){
+                        document.getElementById('mask').src = pic1;
+                        i = 1
+                    }
+                    else {
+                        document.getElementById('mask').src = pic2;
+                        i = 0
+                    }
+                }
+            </script>
+            <a href="https://docs.google.com/document/d/1u8SX84sg8QsT7gzVuCX_T-uksLZDLLriqrIEiLrn0aw/edit?usp=sharing">Pair Journal</a>
+            <a href="https://github.com/yolandayangg/n224p4-beans/commits?author=mahimak19">Commits</a>
+            <a href="https://docs.google.com/document/d/1j1tK67g_sMg-ZqZ9EQLpHmH7gI2v0KCVXG8V94IlR3k/edit?usp=sharing">Create Task Planning</a>
+
+
+        </div>
+    </div>
+
+
+
+
+
+{% endblock %}

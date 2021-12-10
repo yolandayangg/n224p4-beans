@@ -48,14 +48,14 @@
 
         </div>
         <input type="button" value="Change Picture" onclick="switchpic();"/>
-        <img width="400" height="225" src="/static/lexie.jpeg" id="mask" alt=""/>
+        <img width="400" height="225" src="/static/nataliemask.jpg" id="mask" alt=""/>
         <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
         <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
         <script>
             let i = 0
             function switchpic(){
-                const pic1 ="/static/lexie.jpeg"
-                const pic2 ="/static/nataliemask.jpg"
+                const pic1 ="/static/nataliemask.jpg"
+                const pic2 ="/static/lexie.jpeg"
                 if (i === 0){
                     document.getElementById('mask').src = pic1;
                     i = 1
@@ -68,5 +68,66 @@
         </script>
 
         </div>
+
+    <!--This is the API random facts thing-->
+
+        <br></br>
+        <br></br>
+        <h6>My Favorite Places To Shop</h6>
+
+        <!--Formatting the location of the button and text of the random facts -->
+        <div class="center-block" style="margin: 2% 5% 5%; font-family: gilroy,serif;">
+            <div id="output" class="text-center">All of my favorite shops!</div> <!--This is the initial message that shows up before the facts are generated -->
+        </div>
+        <button onclick="toggle()" id="btn" >Generate New Shop!</button> <!-- Created a toggle button to generate facts AND switch colors as the user clicks. Also assigned id -->
+
+        <!--Set the variable facts to hold a list of facts that it can spit out when the button is told to generate-->
+        <script>
+            let btn = document.getElementById('btn');
+            let output = document.getElementById('output');
+            let facts =
+                [
+                    "Lululemon",
+                    "Urban Outfitters",
+                    "Pacsun",
+                    "Urban Girl",
+                    "Target",
+                    "Athleta",
+                    "Vans",
+                    "Converse",
+                    "Starbucks",
+                    "Aritzia",
+                    "Princess Polly",
+                    "Starbucks",
+                    "Ulta",
+                    "Sephora",
+                    "Converse",
+                    "Tarte",
+                    "Tillys",
+                    "Old Navy",
+                    "Cotton on",
+                    "Garage",
+                    "Sun Diego",
+                ];
+
+            // When the button is clicked, it generates a random fact (derived from Math.floor)
+            btn.addEventListener('click',function (){
+                var randomFact = facts[Math.floor(Math.random() * facts.length)]
+                output.innerHTML = randomFact;
+
+            })
+
+            // Switches colors of button when user clicks
+            var imageType = 0;
+            function toggle() {
+                if (imageType == 0) {
+                    document.getElementById('btn').style.backgroundColor='#db0028';
+                    imageType = 1;
+                } else {
+                    document.getElementById('btn').style.backgroundColor='#6596eb';
+                    imageType = 0;
+                }
+            }
+        </script>
 
 {% endblock %}
