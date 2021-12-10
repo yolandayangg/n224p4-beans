@@ -6,7 +6,7 @@
 
     <div class="col-12">
         <h4 style="">Nayana Vallamkondu</h4>
-        <p   style="">Hi! I am a Senior at Del Norte. My hobbies are to eat, sleep, and breathe. If I have extra time I like taking pictures :)</>
+        <p   style="">Hi! I am a Senior at Del Norte. My hobbies are to eat, sleep, and breathe. If I have extra time I like taking pictures :)</p>
     </div>
 <!--Insert your three pictures here-->
     <style>
@@ -37,12 +37,17 @@
 
         <br></br>
         <br></br>
-            <h6>Fun Facts About [choose topic]</h6>
+            <h6>Fun Facts About Photography</h6>
 
         <!--Formatting the location of the button and text of the random facts -->
             <div class="center-block" style="margin: 2% 5% 5%; font-family: gilroy,serif;">
-                <div id="output" class="text-center">Click the button to learn more facts about our favorite topic: [choose whatever topic you guys want, this info is from our last generator]</div> <!--This is the initial message that shows up before the facts are generated -->
+                <div id="output" class="text-center">Click the button to learn more facts!</div> <!--This is the initial message that shows up before the facts are generated -->
             </div>
+        <style>
+            .button{
+                background-color:#a0937d
+            }
+            </style>
             <button onclick="toggle()" id="btn" >Generate New Fact!</button> <!-- Created a toggle button to generate facts AND switch colors as the user clicks. Also assigned id -->
 
         <!--Set the variable facts to hold a list of facts that it can spit out when the button is told to generate-->
@@ -51,35 +56,26 @@
             let output = document.getElementById('output');
             let facts =
                 [
-                    "There are over 3.1 million breast cancer survivors in the United States, including women still being treated and those who have completed treatment.",
-                    "Breast cancer is the second leading cause of cancer death in women, second only to lung cancer.",
-                    "A woman has about a one in eight chance of being diagnosed with breast cancer in her lifetime, according to the National Cancer Institute.",
-                    "Thanks to new treatments and early detection, the five-year relative survival rate for women with breast cancer is about 90 percent.",
-                    "Women with a BRCA1 or BRCA2 gene mutation are more likely to be diagnosed with breast cancer at a younger age, as well as developing cancer in both breasts.",
-                    "While non-Hispanic white women have higher rates of breast cancer incidence, African-American women have a higher incidence rate before age 40 and are more likely to die from breast cancer at every age.",
-                    "Herceptin, a breast cancer “smart drug,” can trace its roots to City of Hope: Scientists there developed engineered human proteins that led to monoclonal antibodies, the basis of multiple cancer drugs.",
-                    "A 2017 JAMA study found that in the U.S., younger women with breast cancer are increasingly opting to undergo double mastectomies, even if they were diagnosed with early-stage cancer in only one breast.",
-                    "In 2021, an estimated 281,550 new cases of invasive breast cancer will be diagnosed in women in the U.S. as well as 49,290 new cases of non-invasive (in situ) breast cancer.",
-                    "63% of breast cancer cases are diagnosed at a localized stage (there is no sign that the cancer has spread outside of the breast), for which the 5-year survival rate is 99%.",
-                    "This year, an estimated 43,600 women will die from breast cancer in the U.S.",
-                    "Although rare, men get breast cancer too. In 2021, an estimated 2,650 men will be diagnosed with breast cancer this year in the U.S. and approximately 530 will die.",
-                    "1 in 8 women in the United States will be diagnosed with breast cancer in her lifetime.",
-                    "Breast cancer is the most common cancer in American women, except for skin cancers.",
-                    "It is estimated that in 2021, approximately 30% of all new women cancer diagnoses will be breast cancer.",
-                    "There are over 3.8 million breast cancer survivors in the United States.",
-                    "On average, every 2 minutes a woman is diagnosed with breast cancer in the United States.",
-                    "A Vitamin D3 blood serum level of 40-60 ng/ml can reduce the occurrence of breast cancer by 77%.",
-                    "A way to prevent breast cancer is to manage stress. Love and care for YOURSELF.",
-                    "Exercise moderately. 30 minutes of activity, 3-5 times a week can lower risk by 30-50%.",
-                    "Perform regular breast exams. Self-exam, clinical exam, ultrasound, MRI, and thermography can help detect early signs of breast cancer.",
-                    "Eat healthy/avoid sugar. Eating cruciferous green vegetables may lower risk of breast cancer by 40%. Cancer LOVES sugar.",
-                    "Drink less alcohol. Reducing the consumption of alcohol may reduce the risk of developing breast cancer by as much as 20%.",
-                    "Avoid artificial estrogen. Progestin, found in birth control drugs, can transform healthy cells into cancerous cells. Hormone-free IUDs are recommended.",
-                    "A breast surgeon or surgical oncologist: a doctor who uses surgery to treat breast cancer.",
-                    "A radiation oncologist: a doctor who uses radiation to treat cancer.",
-                    "A medical oncologist: a doctor who uses chemotherapy and other medicines to treat cancer.",
-                    "A plastic surgeon: a doctor who specializes in reconstructing or repairing parts of the body.",
-                    "Women who have surgery as part of their breast cancer treatment may choose breast reconstruction surgery to rebuild the shape and look of the breast. There are different types of breast reconstruction.",
+                    "The first person who managed to make a ‘photographic’ snapshot constant, that is to fix the image was Joseph Niepce. The very first snapshot in the history of photography is considered “view from the window,” dated 1826. The exposure of the shot lasted 8 Hours.",
+                    "The first person who invented negative was Fox Talbot. This event occurred in 1839. In the same year Hippolyte Bayard presented the first positive print to the world.",
+                    "The first “photographic paper” was made of asphalt. More precisely, asphalt varnish was applied on the copper or the glass plate.",
+                    "Camera Obscura, which became the prototype of the modern camera, is used up to this day for the production of integrated circuits and as a special film camera.",
+                    "The first color photograph was taken in 1861 by James Maxwell,the British physicist.",
+                    "Appearance of the first plates for color photography dated back to 1904, produced by the company ‘Lumiere’.",
+                    "The first aerial photography was carried out by French inventor Turnache in 1858. He shot Paris from the balloon.",
+                    "The first photos in Russia were made by Y.F.Fritzsche using the method of Talbot.",
+                    "The first color photograph in Russia was published in “Memoirs of Russian Technical Society”. Leo Tolstoy is captured on it.",
+                    "They began to retouch photos and make them 'color',which was achieved by coloring in watercolor for the first time in 1840.",
+                    "In Russia, the first camera based on the theory of Daguerreotype was invented by Grekov back in 1840, that is, a year after the invention of photography. Alex Grekov also made experiments with photographs by the method of Talbot on the light-sensitive paper.",
+                    "The first portrait by the electric light was made in 1879 by Levitsky, which required the exposure of 15 seconds.",
+                    "The first cassette – one of the prototypes of modern photographic film – which had 12 sheets of light-sensitive paper, and,respectively, 12 shots, weighed 15 (!) pounds.",
+                    "The basis of a digital camera was invented in 1973. It was a charge-coupled device, with which it was possible to obtain an image size of 100×100 pixels. The first astronomical electronic photo was taken with the help of this device the following year.",
+                    "The story of a digital photo begins with camera Mavica, produced by the company Sony in 1981. Mavica is almost a full SLR with interchangeable lenses and resolution of 570h490 pixels. But then it was considered a “static camera,” the result of which was not the video but static images – shots.",
+                    "Officially the world’s first digital camera is the development of the company Kodak, Stephen CESSON. The invented camera recorded an image on an audio cassette tape. Time of recording images from the moment you press the button was 22 seconds.",
+                    "The term “megapixel” was first used in 1984.",
+                    "The world’s first auto-focus SLR camera was produced by “Polaroid” in 1979, and in 1985 “Minolta” produced a camera that eventually become the standard for SLR cameras.",
+                    "According to statistics, at present, only 2 of 10 images taken with digital cameras are printed on paper.",
+                    "The oldest camera was sold at the auction in Vienna in 2007, setting all-time overall record and having become the most expensive camera ever sold at auction. Rarity called “Daguerrotype Susses Freres” was sold for nearly eight hundred thousand U.S. dollars. The starting price was 100000 euros.”, surgery to rebuild the shape and look of the breast. There are different types of breast reconstruction.",
                 ];
 
             // When the button is clicked, it generates a random fact (derived from Math.floor)
@@ -88,20 +84,7 @@
                 output.innerHTML = randomFact;
 
             })
-
-            // Switches colors of button when user clicks
-            var imageType = 0;
-            function toggle() {
-                if (imageType == 0) {
-                    document.getElementById('btn').style.backgroundColor='#db0028';
-                    imageType = 1;
-                } else {
-                    document.getElementById('btn').style.backgroundColor='#6596eb';
-                    imageType = 0;
-                }
-            }
         </script>
-
 <!--Toggle-->
         <br></br>
         <br></br>
@@ -129,4 +112,43 @@
                 }
             }
         </script>
+<!-- Journal, Commits, and Creat Task Plan-->
+        <div class="center-block" style="margin: 4% 5% 5%; font-family: gilroy,serif;">
+            <br></br>
+            <h6>Links to Journals and Create Task Plan</h6>
+            </style>
+            <a href="https://docs.google.com/document/d/1u8SX84sg8QsT7gzVuCX_T-uksLZDLLriqrIEiLrn0aw/edit" class="button">Journal</a></td>
+            <td> <style>
+                .button {
+                    background-color: #a0937d;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+            </style>
+
+                <a href="https://docs.google.com/document/d/1ATIhrK62_eFa_dvYXCZUEKEgcPiZYorsRvHYtFuAWKM/edit?usp=sharing" class="button">Create Task Plan</a></td>
+            <td> <style>
+                .button {
+                    background-color: #a0937d;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+            </style>
+    </div>
+</div>
+</div>
 {% endblock %}
