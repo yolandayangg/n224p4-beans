@@ -24,8 +24,8 @@ Personality parlor is a platform that allows for users to explore personality ty
 [Week 3](https://github.com/yolandayangg/n224p4-beans#week-3)
 
 ## Week 3
-[Review Ticket](https://github.com/yolandayangg/n224p4-beans/issues/14)
-[Individual TPT Notes and Quizzes](https://github.com/yolandayangg/n224p4-beans/issues/22)
+[Review Ticket](https://github.com/yolandayangg/n224p4-beans/issues/14) <br>
+[Individual TPT Notes and Quizzes](https://github.com/yolandayangg/n224p4-beans/issues/22) <br>
 [Video Overview]
 |Name|Role|Task|Individual Tickets|
 |----|----|-------|--------|
