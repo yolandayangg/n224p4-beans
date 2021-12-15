@@ -27,8 +27,8 @@ Personality parlor is a platform that allows for users to explore personality ty
 [Review Ticket](https://github.com/yolandayangg/n224p4-beans/issues/14) <br>
 [Individual TPT Notes and Quizzes](https://github.com/yolandayangg/n224p4-beans/issues/22) <br>
 [Video Overview]
-|Name|Role|Task|Individual Tickets|
-|----|----|-------|--------|
+|Name|Role|Task|
+|----|----|-------|
 |Mahima|Deployment Admin|Website Run from URL <br> Process for Updates|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/7)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Deployment-Guide)
 |Natalie|Technical Officer|Asynchronous access to Database|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/8)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Technicals)
 |Nayana|Design Manager|Bootstrap Layouts <br> 3 Frontend Screens|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/4)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Brainwrite)
