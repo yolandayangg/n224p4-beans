@@ -162,6 +162,12 @@ def yolanda():
 @app.route('/mahima/')
 def mahima():
     return render_template("aboutme/mahima.html")
+
+@app.route('/calm1/')
+def calm1():
+    return render_template("Personal/calm1.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
 
