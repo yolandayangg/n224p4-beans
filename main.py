@@ -1,13 +1,13 @@
 
 # import "packages" from flask
-from flask import Flask, render_template
+from flask import render_template
+from __init__ import app
+from templates.CRUD.app_crud import app_crud
 from flask import request
-from pathlib import Path
-
-
 
 # create a Flask instance
-app = Flask(__name__)
+# app = Flask(__name__)
+app.register_blueprint(app_crud)
 
 
 # connects default URL to render index.html
@@ -158,9 +158,18 @@ def Shruti():
 @app.route('/yolanda/')
 def yolanda():
     return render_template("aboutme/yolanda.html")
+
 @app.route('/mahima/')
 def mahima():
     return render_template("aboutme/mahima.html")
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
+
+
+
+
+
+
+
+
 
