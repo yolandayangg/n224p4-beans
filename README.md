@@ -28,12 +28,12 @@ Personality parlor is a platform that allows for users to explore personality ty
 [Individual TPT Notes and Quizzes](https://github.com/yolandayangg/n224p4-beans/issues/22) <br>
 [Video Overview](https://drive.google.com/file/d/16tztvsZ2qZfGM1ziiCqOaCXgUZBQ1a8o/view?usp=sharing)
 |Name|Role|Task|
-|----|----|-------|----|
-|Mahima|Deployment Admin|Website Run from URL <br> Process for Updates|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/7)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Deployment-Guide)|
-|Natalie|Technical Officer|Asynchronous access to Database|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/8)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Technicals)|
-|Nayana|Design Manager|Bootstrap Layouts <br> 3 Frontend Screens|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/4)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Brainwrite)|
-|Shruti|Scrum Master|Overview of progress using README, Tickets, Wiki <br> Scrum Board Backlog|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/6) |[Link to Code](https://github.com/yolandayangg/n224p4-beans/projects/1)|
-|Yolanda|Github Admin|Individual Analysis (issue, commits, pull requests)|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/5)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/BOF-Github-Admins-policy-document:)|
+|----|----|-------|
+|Mahima|Deployment Admin|Website Run from URL <br> Process for Updates|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/7)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Deployment-Guide)
+|Natalie|Technical Officer|Asynchronous access to Database|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/8)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Technicals)
+|Nayana|Design Manager|Bootstrap Layouts <br> 3 Frontend Screens|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/4)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Brainwrite)
+|Shruti|Scrum Master|Overview of progress using README, Tickets, Wiki <br> Scrum Board Backlog|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/6) |[Link to Code](https://github.com/yolandayangg/n224p4-beans/projects/1)
+|Yolanda|Github Admin|Individual Analysis (issue, commits, pull requests)|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/5)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/BOF-Github-Admins-policy-document:)
 
 ## Week 2
 [Review Ticket](https://github.com/yolandayangg/n224p4-beans/issues/13)
