@@ -167,6 +167,10 @@ def mahima():
 def calm1():
     return render_template("Personal/calm1.html")
 
+@app.route('/calm2/')
+def calm2():
+    return render_template("Personal/calm2.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
