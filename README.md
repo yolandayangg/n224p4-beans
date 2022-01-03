@@ -21,7 +21,19 @@ Personality parlor is a platform that allows for users to explore personality ty
 ## Table of Contents
 [Week 1](https://github.com/yolandayangg/n224p4-beans#week-1) <br>
 [Week 2](https://github.com/yolandayangg/n224p4-beans#week-2) <br>
-[Week 3](https://github.com/yolandayangg/n224p4-beans#week-3)
+[Week 3](https://github.com/yolandayangg/n224p4-beans#week-3) <br>
+[Week 4](https://github.com/yolandayangg/n224p4-beans#week-4)
+
+## Week 4
+[Review Ticket]
+[Individual TPT Notes and Quizzes]
+|Name|Role|Task|
+|----|----|-------|
+|Mahima|Deployment Admin|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/7)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Deployment-Guide)
+|Natalie|Technical Officer|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/8)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Technicals)
+|Nayana|Design Manager|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/4)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Brainwrite)
+|Shruti|Scrum Master|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/6) |[Link to Code](https://github.com/yolandayangg/n224p4-beans/projects/1)
+|Yolanda|Github Admin|[Issue](https://github.com/yolandayangg/n224p4-beans/issues/5)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/BOF-Github-Admins-policy-document:)
 
 ## Week 3
 [Review Ticket](https://github.com/yolandayangg/n224p4-beans/issues/14) <br>
