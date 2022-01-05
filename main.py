@@ -163,6 +163,10 @@ def yolanda():
 def mahima():
     return render_template("aboutme/mahima.html")
 
+@app.route('/search/')
+def search():
+    return render_template("CRUD/templates/search.html")
+
 @app.route('/calm1/')
 def calm1():
     return render_template("Personal/calm1.html")
