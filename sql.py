@@ -21,7 +21,7 @@ def users_all_alc():
 
 # Native SQL extract all users from database
 def users_all_sql():
-    table = db.session.execute('select * from users')
+    table = app.session.execute('select * from users')
     json_ready = sqlquery_2_list(table)
     return json_ready
 
