@@ -79,62 +79,53 @@
     }
 </style>
 
-<html>
-<head>
-    <h2> About Personality Type B</h2>
-    <br>
-    <br>
-    <div style="color: darkgreen"
-    <h5>Type B personalities tend to be relationship-oriented, outgoing and enthusiastic. Type B personality people can be classified as extroverts. You may define yourself as a Type B personality if any of the pictures below bring you joy. </h5>
-    <br>
-    <br>
-    <br>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <title>Document</title>
-</head>
-<body>
-<section aria-label="Newest Photos">
-    <div class="carousel" data-carousel>
-        <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-        <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
-        <ul data-slides>
-            <li class="slide" data-active>
-                <img src="/static/nature1.jfif" alt="Nature Image #1">
-            </li>
-            <li class="slide">
-                <img src="/static/nature2.jfif" alt="Nature Image #2">
-            </li>
-            <li class="slide">
-                <img src="/static/nature%203.jfif" alt="Nature Image #3">
-            </li>
-        </ul>
-    </div>
-</section>
-</body>
-</html>
+    <html>
+    <head>
+        <h2> Fun Fact About Personality Type B</h2>
+        <br>
+        <br>
+        <div style="color: darkgreen"
+        <h5>Type B personalities tend to be relationship-oriented, outgoing and enthusiastic. Type B personality people can be classified as extroverts.</h5>
+        <br>
+        <br>
+        <br>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+        <title>Document</title>
+    </head>
+    <button onclick="funfact()">Get Fun Fact</button>
+    <h1 id="favorDisplay"></h1>
 
-<script>
-    const buttons = document.querySelectorAll("[data-carousel-button]")
+    <script>
+        function funfact() {
+            var i = [
+                "Type B is also known as an Intuitor by the Jung scale",
+                "Type B is also known as an helper or romantic by the Enneagram test",
+                "Type B is known to be similar to Tigger from Winnie the Pooh",
+                "Type B personalities are known for being self-confident individuals",
+                "Type B personalities are known for being easily liked by most people",
+                "Type B personalities are known for being dreamers",
+                "Type B personalities are known for being lighthearted",
+                "Type B personalities are known for being very persuasive",
+                "Type B personalities are known for being spontaneous",
+                "Type B personalities are known for being charismatic",
+                "Type B personalities are known for being impatient",
+                "Type B personalities are known for being arrogant or cocky",
+                "Type B personalities are known for being motivated by public recognition",
+                "Type B personalities are known for being motivated by acceptance, especially by peers",
+                "Type B personalities are known for being those who are outgoing or enthusiastic",
+                "Type B personalities are known for striving for social interaction",
 
-    buttons.forEach(button => {
-        button.addEventListener("click", () => {
-            const offset = button.dataset.carouselButton === "next" ? 1 : -1
-            const slides = button
-                .closest("[data-carousel]")
-                .querySelector("[data-slides]")
+            ];
+            var len = i.length;
+            var j = Math.floor(Math.random() * len);
+            document.getElementById('favorDisplay').innerHTML = i[j];
 
-            const activeSlide = slides.querySelector("[data-active]")
-            let newIndex = [...slides.children].indexOf(activeSlide) + offset
-            if (newIndex < 0) newIndex = slides.children.length - 1
-            if (newIndex >= slides.children.length) newIndex = 0
+        }
 
-            slides.children[newIndex].dataset.active = true
-            delete activeSlide.dataset.active
-        })
-    })
-</script>
+    </script>
+
 {% endblock %}
