@@ -87,6 +87,12 @@
 
 
             </div>
+            <div class="col-20">
+                <button onclick="alphaSort()">Sort Alphabetically</button>
+                <p id="demo" style="text-align: right; font-size: x-large"></p>
+
+            </div>
+
             <script>
                 let i = 0
                 function switchpic(){
@@ -101,6 +107,12 @@
                         i = 0
                     }
                 }
+                const points = ["Balance", "Relaxation", "Socialization", "Emotional", "Energetic", "Lofi"];
+                document.getElementById("order").innerHTML = points;
+
+                function alphaSort() {
+                    points.sort();
+                    document.getElementById("order").innerHTML = points;}
             </script>
             <a href="https://docs.google.com/document/d/1u8SX84sg8QsT7gzVuCX_T-uksLZDLLriqrIEiLrn0aw/edit?usp=sharing">Pair Journal</a>
             <a href="https://github.com/yolandayangg/n224p4-beans/commits?author=mahimak19">Commits</a>

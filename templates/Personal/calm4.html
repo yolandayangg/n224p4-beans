@@ -129,7 +129,7 @@
     </div>
     </body>
     </html>
-<canvas id = "canvas"> </canvas>
+
     <script>
         const buttons = document.querySelectorAll("[data-carousel-button]")
 
@@ -151,13 +151,11 @@
         })
 
         const points = ["Balance", "Relaxation", "Socialization", "Emotional", "Energetic", "Lofi"];
-        document.getElementById("order").innerHTML = points;
+        document.getElementById("demo").innerHTML = points;
 
         function alphaSort() {
             points.sort();
-            document.getElementById("order").innerHTML = points;
+            document.getElementById("demo").innerHTML = points;
         }
-
-
     </script>
 {% endblock %}
