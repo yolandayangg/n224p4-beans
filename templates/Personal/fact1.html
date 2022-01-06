@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+{% extends "layouts/base.html" %}
+
+{% block body %}
+<style>
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .carousel {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    .carousel > ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .slide {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        transition: 200ms opacity ease-in-out;
+        transition-delay: 200ms;
+    }
+
+    .slide > img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .slide[data-active] {
+        opacity: 1;
+        z-index: 1;
+        transition-delay: 0ms;
+    }
+
+    .carousel-button {
+        position: absolute;
+        z-index: 2;
+        background: none;
+        border: none;
+        font-size: 4rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba(255, 255, 255, .5);
+        cursor: pointer;
+        border-radius: .25rem;
+        padding: 0 .5rem;
+        background-color: rgba(0, 0, 0, .1);
+    }
+
+    .carousel-button:hover,
+    .carousel-button:focus {
+        color: white;
+        background-color: rgba(0, 0, 0, .2);
+    }
+
+    .carousel-button:focus {
+        outline: 1px solid black;
+    }
+
+    .carousel-button.prev {
+        left: 1rem;
+    }
+
+    .carousel-button.next {
+        right: 1rem;
+    }
+</style>
+
+<html>
+<head>
+    <h2> Fun Fact About Personality Type A</h2>
+    <br>
+    <br>
+    <div style="color: darkgreen"
+    <h5>Type A personalities are usually those who work well under stress. In the case they do face stress, the best way is to tune out the outside environment, connect, with the nature, and meditate. A few nature pictures are displayed below to help with this.</h5>
+    <br>
+    <br>
+    <br>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<button onclick="funfact()">Get Fun Fact</button>
+<h1 id="favorDisplay"></h1>
+
+<script>
+    function funfact() {
+        var i = [
+            "Type A is also known as a Sensor by the Jung scale",
+            "Type A is also known as an adventurer or achiever by the Enneagram test",
+            "Type A is known to be similar to Rabbit from Winnie the Pooh",
+            "Type A personalities are known for being able to embrace change",
+            "Type A personalities are known for being able to take-charge",
+            "Type A personalities are known for being ambitious",
+            "Type A personalities are known for being able to work well independently",
+            "Type A personalities are known for being very passionate",
+            "Type A personalities are known for being good at administrative skills",
+            "Type A personalities are known for having good delegation skills",
+            "Type A personalities are known for being stubborn",
+            "Type A personalities are known for being workaholics",
+            "Type A personalities are known for being motivated by money or opportunity",
+            "Type A personalities are known for being motivated by challenges or urgency",
+            "Type A personalities are known for being those who are goal-oriented",
+            "Type A personalities are known for being good at doing work under stress",
+
+        ];
+        var len = i.length;
+        var j = Math.floor(Math.random() * len);
+        document.getElementById('favorDisplay').innerHTML = i[j];
+
+    }
+
+</script>
+
+<body>
+{% endblock %}
