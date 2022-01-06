@@ -175,6 +175,14 @@ def calm1():
 def calm2():
     return render_template("Personal/calm2.html")
 
+@app.route('/calm4/')
+def calm4():
+    return render_template("Personal/calm4.html")
+
+@app.route('/game/')
+def game():
+    return render_template("Personal/game.html")
+
 @app.route('/fact1/')
 def fact1():
     return render_template("Personal/fact1.html")
