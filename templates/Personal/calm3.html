@@ -2,255 +2,229 @@
 {% extends "layouts/base.html" %}
 
 {% block body %}
-    <style>
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-        }
-
-        .carousel {
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-        }
-
-        .carousel > ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .slide {
-            position: absolute;
-            inset: 0;
-            opacity: 0;
-            transition: 200ms opacity ease-in-out;
-            transition-delay: 200ms;
-        }
-
-        .slide > img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-
-        .slide[data-active] {
-            opacity: 1;
-            z-index: 1;
-            transition-delay: 0ms;
-        }
-
-        .carousel-button {
-            position: absolute;
-            z-index: 2;
-            background: none;
-            border: none;
-            font-size: 4rem;
-            top: 50%;
-            transform: translateY(-50%);
-            color: rgba(255, 255, 255, .5);
-            cursor: pointer;
-            border-radius: .25rem;
-            padding: 0 .5rem;
-            background-color: rgba(0, 0, 0, .1);
-        }
-
-        .carousel-button:hover,
-        .carousel-button:focus {
-            color: white;
-            background-color: rgba(0, 0, 0, .2);
-        }
-
-        .carousel-button:focus {
-            outline: 1px solid black;
-        }
-
-        .carousel-button.prev {
-            left: 1rem;
-        }
-
-        .carousel-button.next {
-            right: 1rem;
-        }
-    </style>
-
-    <html>
-    <head>
-        <h2> About Personality Type C</h2>
-        <br>
-        <br>
-        <div style="color: darkgreen"></div>
-        <h5>Type C personalities tend to be objective, skeptical and logical in their daily behaviors. When it comes to solving problems, they like to be more analytical and be driven by facts. They are generally introverted and takes some time to open up to others. If any of the pictures below resonate with you, you might be a person with Type C personality.</h5>
-        <br>
-        <br>
-        <br>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js" defer></script>
-        <title>Document</title>
-    </head>
-    <body>
-    <section aria-label="Newest Photos">
-        <div class="carousel" data-carousel>
-            <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="/static/typec.jpeg" alt="Type C #1">
-                </li>
-                <li class="slide">
-                    <img src="/static/typec2.jpeg" alt="Type C #2">
-                </li>
-                <li class="slide">
-                    <img src="/static/typec3.jpeg" alt="Type C #3">
-                </li>
-            </ul>
-        </div>
-    </section>
-    </body>
-    </html>
-
-    <script>
-        const buttons = document.querySelectorAll("[data-carousel-button]")
-
-        buttons.forEach(button => {
-            button.addEventListener("click", () => {
-                const offset = button.dataset.carouselButton === "next" ? 1 : -1
-                const slides = button
-                    .closest("[data-carousel]")
-                    .querySelector("[data-slides]")
-
-                const activeSlide = slides.querySelector("[data-active]")
-                let newIndex = [...slides.children].indexOf(activeSlide) + offset
-                if (newIndex < 0) newIndex = slides.children.length - 1
-                if (newIndex >= slides.children.length) newIndex = 0
-
-                slides.children[newIndex].dataset.active = true
-                delete activeSlide.dataset.active
-            })
-        })
-    </script>
-{% endblock %}
-
-<!DOCTYPE html>
-{% extends "layouts/base.html" %}
-
-{% block body %}
 <style>
-    *, *::before, *::after {
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+    * {
+        padding: 0;
+        margin: 0;
         box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
     }
 
     body {
-        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* color: #fff; */
+        /* background: url("/bg.jpg"); */
+        background-size: cover;
     }
 
-    .carousel {
-        width: 100vw;
-        height: 100vh;
-        position: relative;
-    }
-
-    .carousel > ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    .slide {
+    body::after {
+        /* content: "";
         position: absolute;
-        inset: 0;
-        opacity: 0;
-        transition: 200ms opacity ease-in-out;
-        transition-delay: 200ms;
-    }
-
-    .slide > img {
-        display: block;
-        width: 100%;
         height: 100%;
-        object-fit: cover;
-        object-position: center;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: -1; */
     }
 
-    .slide[data-active] {
-        opacity: 1;
-        z-index: 1;
-        transition-delay: 0ms;
+    .input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
     }
 
-    .carousel-button {
-        position: absolute;
-        z-index: 2;
-        background: none;
+    .input label {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .input select {
         border: none;
-        font-size: 4rem;
-        top: 50%;
-        transform: translateY(-50%);
-        color: rgba(255, 255, 255, .5);
+        border-radius: 8px;
+        min-width: 300px;
+        font-size: 16px;
+        padding: 8px 4px;
+        background-color: #6236ff;
+        color: #fff;
+    }
+
+    .input select:focus {
+        outline: none;
+    }
+
+    .circle-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    .circle-outline {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 15px solid #f1f1f1;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    .circle-progress {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: #6236ff;
+        border-radius: 50%;
+        transition: 4s ease all;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    .circle-grow {
+        transform: scale(5.3);
+    }
+
+    .breaths {
+        text-align: center;
+        margin-bottom: 24px;
+        font-size: 24px;
+    }
+
+    .instructions {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    button {
+        padding: 8px 20px;
+        border-radius: 8px;
+        background-color: #6236ff;
+        color: #fff;
+        border: none;
         cursor: pointer;
-        border-radius: .25rem;
-        padding: 0 .5rem;
-        background-color: rgba(0, 0, 0, .1);
+        transition: 0.3s ease all;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     }
 
-    .carousel-button:hover,
-    .carousel-button:focus {
-        color: white;
-        background-color: rgba(0, 0, 0, .2);
+    button:hover {
+        background-color: #f1f1f1;
+        color: #6236ff;
     }
 
-    .carousel-button:focus {
-        outline: 1px solid black;
-    }
-
-    .carousel-button.prev {
-        left: 1rem;
-    }
-
-    .carousel-button.next {
-        right: 1rem;
+    .button-inactive {
+        pointer-events: none;
+        background-color: #969696;
     }
 </style>
 
-
-
 <html>
 <head>
-    <style>
-        a:link, a:visited {
-            background-color: #f44336;
-            color: white;
-            padding: 14px 25px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        a:hover, a:active {
-            background-color: red;
-        }
-    </style>
-</head>
+    <h2> About Personality Type C</h2>
+    <br>
+    <br>
+    <div style="color: darkgreen"
+    <h5>Type C personalities are those who are more logical-oriented and very analytical, meaning less of the emotional type. Therefore they need more help managing stress. The best way to manage it would be meditation and calm music.  </h5>
+    <br>
+    <br>
+    <br>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style.css" />
+        <title>Meditation App</title>
+    </head>
 <body>
-<a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2020.552740/full" target="_blank">1</a>
-<a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7525034/ target="_blank">2</a>
-<a href="https://www.e-counseling.com/mental-health/what-is-type-c-personality/" target="_blank">3</a>
-<a href="https://www.healthline.com/health/type-c-personality#:~:text=You're%20dedicated,of%20success%20with%20your%20goals." target="_blank">4</a>
-<a href="https://www.crystalknows.com/disc/c-personality-type" target="_blank">5</a>
-<a href="https://www.usnews.com/best-colleges/rankings/national-liberal-arts-colleges" target="_blank">6</a>
-<a href="https://liveboldandbloom.com/09/personality-types/type-c-personality" target="_blank">7</a>
-<a href="https://wizehire.com/disc/high-c-personality" target="_blank">8</a>
-<a href="https://www.psychologytoday.com/us/blog/fulfillment-any-age/202111/the-great-myth-the-type-and-type-c-personality-types" target="_blank">9</a>
-<a href="https://headway.media/16-best-psychology-books-on-human-behavior-read-for-successful-communication-2/" target="_blank">10</a>
-
-
+<div class="input">
+    <label>Select Breaths</label>
+    <select class="breath-input">
+        <option value="3">3 Breaths</option>
+        <option value="5">5 Breaths</option>
+        <option value="7">7 Breaths</option>
+    </select>
+</div>
+<div class="circle-wrap">
+    <div class="circle-outline"></div>
+    <div class="circle-progress"></div>
+</div>
+<p class="breaths">Breaths remaining: <span class="breaths-text">3</span></p>
+<p class="instructions">Are you ready to start breathing?</p>
+<button class="start">Begin</button>
+<script src="/app.js"></script>
 </body>
 </html>
+<body>
+
+
+<script>
+    const circleProgress = document.querySelector(".circle-progress");
+    const numberOfBreaths = document.querySelector(".breath-input");
+    const start = document.querySelector(".start");
+    const instructions = document.querySelector(".instructions");
+    const breathsText = document.querySelector(".breaths-text");
+    let breathsLeft = 3;
+
+    // Watching for selected breaths from user
+    numberOfBreaths.addEventListener("change", () => {
+        breathsLeft = numberOfBreaths.value;
+        breathsText.innerText = breathsLeft;
+    });
+
+    // Grow/Shrink Circle
+    const growCircle = () => {
+        circleProgress.classList.add("circle-grow");
+        setTimeout(() => {
+            circleProgress.classList.remove("circle-grow");
+        }, 8000);
+    };
+
+    // Breathing Instructs
+    const breathTextUpdate = () => {
+        breathsLeft--;
+        breathsText.innerText = breathsLeft;
+        instructions.innerText = "Breath in";
+        setTimeout(() => {
+            instructions.innerText = "Hold Breath";
+            setTimeout(() => {
+                instructions.innerText = "Exhale Breath Slowly";
+            }, 4000);
+        }, 4000);
+    };
+
+    // Breathing App Function
+    const breathingApp = () => {
+        const breathingAnimtaion = setInterval(() => {
+            if (breathsLeft === 0) {
+                clearInterval(breathingAnimtaion);
+                instructions.innerText = "Breathing session completed. Click 'Begin' to start another session!";
+                start.classList.remove("button-inactive");
+                breathsLeft = numberOfBreaths.value;
+                breathsText.innerText = breathsLeft;
+                return;
+            }
+            growCircle();
+            breathTextUpdate();
+        }, 12000);
+    };
+
+    // Start Breathing
+    start.addEventListener("click", () => {
+        start.classList.add("button-inactive");
+        instructions.innerText = "Get relaxed, and ready to begin breathing";
+        setTimeout(() => {
+            instructions.innerText = "Breathing is about to begin...";
+            setTimeout(() => {
+                breathingApp();
+                growCircle();
+                breathTextUpdate();
+            }, 2000);
+        }, 2000);
+    });
+</script>
+{% endblock %}

@@ -103,17 +103,30 @@
             <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
             <ul data-slides>
                 <li class="slide" data-active>
-                    <img src="/static/nature1.jfif" alt="Nature Image #1">
+                    <img src="/static/typex1.jpeg" alt="Type X Image #1">
                 </li>
                 <li class="slide">
-                    <img src="/static/nature2.jfif" alt="Nature Image #2">
+                    <img src="/static/typex2.jpeg" alt="Type X Image #2">
                 </li>
                 <li class="slide">
-                    <img src="/static/nature%203.jfif" alt="Nature Image #3">
+                    <img src="/static/typex3.jpeg" alt="Type X Image #3">
                 </li>
             </ul>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/62d2QvWAVt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
+    <br>
+    <div class="col-20">
+        <button onclick="alphaSort()">Sort Alphabetically</button>
+        <p id="demo" style="text-align: right; font-size: x-large"></p>
+
+    </div>
     </body>
     </html>
 
@@ -136,5 +149,13 @@
                 delete activeSlide.dataset.active
             })
         })
+
+        const points = ["Balance", "Relaxation", "Socialization", "Emotional", "Energetic", "Lofi"];
+        document.getElementById("demo").innerHTML = points;
+
+        function alphaSort() {
+            points.sort();
+            document.getElementById("demo").innerHTML = points;
+        }
     </script>
 {% endblock %}
