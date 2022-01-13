@@ -178,6 +178,15 @@ def calm2():
 def calm3():
     return render_template("Personal/calm3.html")
 
+@app.route('/calm4/')
+def calm4():
+    return render_template("Personal/calm4.html")
+
+@app.route('/game/')
+def game():
+    return render_template("Personal/game.html")
+
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
