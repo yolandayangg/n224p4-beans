@@ -1,0 +1,438 @@
+<html lang="en">
+<style>
+    * {
+        font-family: 'Arial', sans-serif;
+        font-size: 20px;
+    }
+
+    .prompt {
+        display: block;
+        font-size: 20px;
+    }
+
+    .btn {
+        margin: 0 20px 0 20px;
+    }
+    .btn-completely-agree {
+        color: #b049b0;
+        font-weight: bold;
+    }
+    /* active = activated by user, focus = selected, hover = mouse hovers */
+    .btn-completely-agree.active,
+    .btn-completely-agree:active,
+    .btn-completely-agree:focus,
+    .btn-completely-agree:active:focus,
+    .btn-completely-agree.active:focus,
+    .btn-completely-agree:hover
+    {
+        background-color: #89d298;
+    }
+
+    .btn-agree {
+        color: #d289aa;
+    }
+
+    .btn-agree.active,
+    .btn-agree:active,
+    .btn-agree:focus,
+    .btn-agree:active:focus,
+    .btn-agree.active:focus,
+    .btn-agree:hover {
+        background-color: rgba(137, 210, 152, 0.5);
+    }
+
+    .btn-disagree {
+        color: #e28181;
+    }
+
+    .btn-disagree.active,
+    .btn-disagree:active,
+    .btn-disagree:focus,
+    .btn-disagree:active:focus,
+    .btn-disagree.active:focus,
+    .btn-disagree:hover {
+        background-color: rgba(226, 129, 129, 0.5);
+    }
+
+    .btn-strongly-disagree {
+        color: #e28181;
+        font-weight: bold;
+    }
+
+    .btn-strongly-disagree.active,
+    .btn-strongly-disagree:active,
+    .btn-strongly-disagree:focus,
+    .btn-strongly-disagree:active:focus,
+    .btn-strongly-disagree.active:focus,
+    .btn-strongly-disagree:hover {
+        background-color: #e28181;
+    }
+
+    .bottom {
+        margin-bottom: 100px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+    /* RESULTS */
+    .results {
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+</style>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personality Test</title>
+    <!-- animations for CSS -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- CUSTOM -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<!-- BODY -->
+<body>
+
+<div class="container text-center">
+    <h1>Personality Test</h1>
+</div>
+<div class="container text-center">
+    <ul id="quiz" class="list-group">
+
+    </ul>
+</div>
+
+<div class="container text-center hide results">
+    <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results1.jpg" class="results col-md-4 col-sm-4 col-xs-4">
+    <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results2.jpg" class="results col-md-4 col-sm-4 col-xs-4">
+    <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results3.jpg" class="results col-md-4 col-sm-4 col-xs-4">
+</div>
+
+
+<div class="container text-center results hide">
+    <p id="results"></p>
+</div>
+
+<div class="container text-center bottom">
+    <button id="submit-btn" class="btn btn-primary btn-lg">Submit</button>
+
+    <button id="retake-btn" class="hide btn btn-primary btn-lg">Retake Quiz</button>
+</div>
+<!-- SCRIPTS -->
+
+<!-- JQUERY (js library to simplify programming); ajax = async http request and xml data as response, update web page without refreshing page -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<!-- BOOTSTRAP (loading CSS/js/images remotely from servers) -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- CUSTOM -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html><html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personality Test</title>
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- CUSTOM -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<!-- BODY -->
+<body>
+
+<div class="container text-center">
+    <ul id="quiz" class="list-group">
+
+    </ul>
+</div>
+
+<div class="container text-center hide results">
+    <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results1.jpg" class="results col-md-4 col-sm-4 col-xs-4">
+    <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results2.jpg" class="results col-md-4 col-sm-4 col-xs-4">
+    <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results3.jpg" class="results col-md-4 col-sm-4 col-xs-4">
+</div>
+
+<div class="container text-center results hide">
+    <p id="results"></p>
+</div>
+
+<!-- SCRIPTS -->
+
+<!-- JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<!-- BOOTSTRAP -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- CUSTOM -->
+<script>
+
+    // JS PERSONALITY QUIZ!
+
+    // Code uses array of objects, stores one of 3 personality traits based on user response and respective weight from prompt.
+    // Type C personality = negative weight.
+    // Type A personality = positive weight.
+    // Type B personality = middle.
+
+    var prompts = [
+        {
+            prompt: 'It is hard for me to approach people I do not know',
+            weight: -1,
+            class: 'group0'
+        },
+        {
+            prompt: 'I tend to get consumed by my thoughts and forget what is around me',
+            weight: -1,
+            class: 'group1'
+        },
+        {
+            prompt: 'I prefer not to start conversations with others',
+            weight: -1,
+            class: 'group2'
+        },
+        {
+            prompt: 'I prefer not to engage with people who seem angry or upset',
+            weight: -1,
+            class: 'group3'
+        },
+        {
+            prompt: 'I am careful when choosing my friends',
+            weight: -1,
+            class: 'group4'
+        },
+        {
+            prompt: 'I am often reluctant to tell stories about myself',
+            weight: -1,
+            class: 'group5'
+        },
+        {
+            prompt: 'My friends would describe me as highly energetic and passionate',
+            weight: 1,
+            class: 'group6'
+        },
+        {
+            prompt: 'I am comfortable walking up to a group of people and starting a conversation',
+            weight: 1,
+            class: 'group7'
+        },
+        {
+            prompt: 'It is more important to be adaptable than organized',
+            weight: 1,
+            class: 'group8'
+        },
+        {
+            prompt: 'I would rather protect the feelings of others than win a debate',
+            weight: 1,
+            class: 'group9'
+        },
+        {
+            prompt: 'People easily understand what I am saying without me having to justify my words',
+            weight: 1,
+            class: 'group10'
+        },
+        {
+            prompt: 'I would rather do things on a whim than have a detailed plan',
+            weight: 1,
+            class: 'group11'
+        }
+
+    ]
+
+    // Array: stores all possible values &  weight associated with respective value.
+    // "Completely agree/disagree" = higher the weight on the user's answer to  prompt.
+    var prompt_values = [
+        {
+            value: 'Completely Agree',
+            class: 'btn-default btn-strongly-agree',
+            weight: 5
+        },
+        {
+            value: 'Agree',
+            class: 'btn-default btn-agree',
+            weight: 3,
+        },
+        {
+            value: 'Neutral',
+            class: 'btn-default',
+            weight: 0
+        },
+        {
+            value: 'Disagree',
+            class: 'btn-default btn-disagree',
+            weight: -3
+        },
+        {
+            value: 'Completely Disagree',
+            class: 'btn-default btn-strongly-disagree',
+            weight: -5
+        }
+    ]
+
+    // For each prompt, list item created => list group; document refers to HTML, creates elements for block
+    function createPromptItems() {
+
+        for (var i = 0; i < prompts.length; i++) {
+            var prompt_li = document.createElement('li');
+            var prompt_p = document.createElement('p');
+            var prompt_text = document.createTextNode(prompts[i].prompt);
+
+            prompt_li.setAttribute('class', 'list-group-item prompt');
+            prompt_p.appendChild(prompt_text);
+            prompt_li.appendChild(prompt_p);
+
+            document.getElementById('quiz').appendChild(prompt_li);
+        }
+    }
+
+    // creates the buttons and puts text in the buttons
+    function createValueButtons() {
+        for (var li_index = 0; li_index < prompts.length; li_index++) {
+            var group = document.createElement('div');
+            group.className = 'btn-group btn-group-justified';
+
+            for (var i = 0; i < prompt_values.length; i++) {
+                var btn_group = document.createElement('div');
+                btn_group.className = 'btn-group';
+
+                var button = document.createElement('button');
+                var button_text = document.createTextNode(prompt_values[i].value);
+                button.className = 'group' + li_index + ' value-btn btn ' + prompt_values[i].class;
+                button.appendChild(button_text);
+
+                btn_group.appendChild(button);
+                group.appendChild(btn_group);
+
+                document.getElementsByClassName('prompt')[li_index].appendChild(group);
+            }
+        }
+    }
+
+    createPromptItems();
+    createValueButtons();
+
+    // Running total computed.
+    // Neg total = Type C. Pos total = Type A.
+    // Calculation: sum of all answers based on weight of  value * the weight of prompt.
+    var total = 0;
+
+    // Finding weight associated with prompt
+    function findPromptWeight(prompts, group) {
+        var weight = 0;
+
+        for (var i = 0; i < prompts.length; i++) {
+            if (prompts[i].class === group) {
+                weight = prompts[i].weight;
+            }
+        }
+
+        return weight;
+    }
+
+    // Finding weight associated with value
+    function findValueWeight(values, value) {
+        var weight = 0;
+
+        for (var i = 0; i < values.length; i++) {
+            if (values[i].value === value) {
+                weight = values[i].weight;
+            }
+        }
+
+        return weight;
+    }
+
+    // When user clicks a value to agree/disagree with the prompt, display to the user what they selected
+    $('.value-btn').mousedown(function () {
+        var classList = $(this).attr('class');
+        // console.log(classList);
+        var classArr = classList.split(" ");
+        // console.log(classArr);
+        var this_group = classArr[0];
+        // console.log(this_group);
+
+        // If button is already selected, de-select it when clicked and subtract any previously added values to the total
+        // Otherwise, de-select any selected buttons in group and select the one just clicked
+        // And subtract deselected weighted value and add the newly selected weighted value to the total
+        if($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            total -= (findPromptWeight(prompts, this_group) * findValueWeight(prompt_values, $(this).text()));
+        } else {
+            // $('[class='thisgroup).prop('checked', false);
+            total -= (findPromptWeight(prompts, this_group) * findValueWeight(prompt_values, $('.'+this_group+'.active').text()));
+            // console.log($('.'+this_group+'.active').text());
+            $('.'+this_group).removeClass('active');
+
+            // console.log('group' + findValueWeight(prompt_values, $('.'+this_group).text()));
+            // $(this).prop('checked', true);
+            $(this).addClass('active');
+            total += (findPromptWeight(prompts, this_group) * findValueWeight(prompt_values, $(this).text()));
+        }
+
+        console.log(total);
+    })
+
+    $('#submit-btn').click(function () {
+        // After clicking submit, add up the totals from answers
+        // For each group, find the value that is active
+        $('.results').removeClass('hide');
+        $('.results').addClass('show');
+
+        if(total < 0) {
+            // document.getElementById('intro-bar').innerHTML= ((total / 60) * 100) + '%';
+            document.getElementById('results').innerHTML = '<b>You have Type C Personality!</b><br><br>\
+            Type C personalities are known for being detail-oriented, logical, and prepared people. \n\
+            <br><br>\
+             They are motivated by control, opportunities to be independent, challenges,and problem-solving:\n\
+            <br><br>\
+            Some jobs that align with this personality type includes critics, investigators, engineers, and research scientists.\n\n\
+            ';
+        } else if(total > 0) {
+            document.getElementById('results').innerHTML = '<b>You have Type A Personality!</b><br><br>\
+		    Type A personalities are known for being people who are goal-oriented, risk-takers, and good under stress.\
+            <br><br>\
+            They tend to embrace change, take-charge, work well independently, and have good delegation skills. :\
+            <br><br>\
+            While they can be stubborn or impatient, they are known for being successful and natural leaders.';
+        } else {
+            document.getElementById('results').innerHTML = '<b>You have Type B personality!</b><br><br>\
+		    Type B personalities are know for being people who are enthusiastic, persuasive, charismatic, and spontaneous.\
+            <br><br>\
+            They tend to be people who are impatient, impulsive, and procrastinate to avoid completing their commitments.\
+            <br><br>\
+            Type B personalities are outgoing and enthusiastic and therefore tend to succeed in jobs in public relations, sales, politics, or customer service .'
+        }
+
+        // Hide after results submitted
+        $('#quiz').addClass('hide');
+        $('#submit-btn').addClass('hide');
+        $('#retake-btn').removeClass('hide');
+    })
+
+    // Refresh the screen to show a new quiz retake button is clicked
+    $('#retake-btn').click(function () {
+        $('#quiz').removeClass('hide');
+        $('#submit-btn').removeClass('hide');
+        $('#retake-btn').addClass('hide');
+
+        $('.results').addClass('hide');
+        $('.results').removeClass('show');
+    })
+</script>
+</body>
+</html>
