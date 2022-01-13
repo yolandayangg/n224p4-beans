@@ -178,6 +178,17 @@ def calm2():
 def calm3():
     return render_template("Personal/calm3.html")
 
+@app.route('/fact1/')
+def fact1():
+    return render_template("Personal/fact1.html")
+
+@app.route('/fact2/')
+def fact2():
+    return render_template("Personal/fact2.html")
+
+@app.route('/quiz/')
+def quiz():
+    return render_template("Personal/quiz.html")
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
