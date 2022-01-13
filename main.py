@@ -194,6 +194,10 @@ def fact1():
 def fact2():
     return render_template("Personal/fact2.html")
 
+@app.route('/fact3/')
+def fact3():
+    return render_template("Personal/fact3.html")
+
 @app.route('/quiz/')
 def quiz():
     return render_template("Personal/quiz.html")
