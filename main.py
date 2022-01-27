@@ -4,6 +4,16 @@ from flask import render_template
 from __init__ import app
 from flask import request
 
+from mahima import app_mahima
+from yolanda import app_yolanda
+from Natalie import app_Natalie
+
+
+app.register_blueprint(app_mahima)
+app.register_blueprint(app_yolanda)
+app.register_blueprint(app_Natalie)
+
+
 # create a Flask instance
 # app = Flask(__name__)
 
@@ -142,9 +152,7 @@ def clothing():
 
     return render_template("Personal/clothing.html")
 
-@app.route('/Natalie/')
-def Natalie():
-    return render_template("aboutme/Natalie.html")
+
 
 @app.route('/nayana/')
 def nayana():
@@ -154,13 +162,7 @@ def nayana():
 def Shruti():
     return render_template("aboutme/Shruti.html")
 
-@app.route('/yolanda/')
-def yolanda():
-    return render_template("aboutme/yolanda.html")
 
-@app.route('/mahima/')
-def mahima():
-    return render_template("aboutme/mahima.html")
 
 @app.route('/search/')
 def search():
