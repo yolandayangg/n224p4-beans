@@ -1,15 +1,19 @@
-from __init__ import app
+from __init__ import db
 from model import Users
-import random
+# import random
 
 
 # this is method called by frontend, it has been randomized between Alchemy and Native SQL for fun
 def users_all():
+    """  May have some problems with sql in deployment
     if random.randint(0, 1) == 0:
         table = users_all_alc()
     else:
         table = users_all_sql()
     return table
+    """
+
+    return users_all_alc()
 
 
 # SQLAlchemy extract all users from database
@@ -21,7 +25,7 @@ def users_all_alc():
 
 # Native SQL extract all users from database
 def users_all_sql():
-    table = app.session.execute('select * from users')
+    table = db.session.execute('select * from users')
     json_ready = sqlquery_2_list(table)
     return json_ready
 
