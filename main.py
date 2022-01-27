@@ -4,14 +4,8 @@ from flask import render_template
 from __init__ import app
 from flask import request
 
-from mahima import app_mahima
-from yolanda import app_yolanda
-from Natalie import app_Natalie
-
-
-app.register_blueprint(app_mahima)
-app.register_blueprint(app_yolanda)
-app.register_blueprint(app_Natalie)
+from aboutme import app_aboutme
+app.register_blueprint(app_aboutme)
 
 
 # create a Flask instance
