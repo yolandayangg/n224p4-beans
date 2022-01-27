@@ -10,6 +10,13 @@ app.register_blueprint(app_aboutme)
 
 # create a Flask instance
 # app = Flask(__name__)
+from facts import app_facts
+from calm import app_calm
+
+
+app.register_blueprint(app_facts)
+app.register_blueprint(app_calm)
+
 
 
 
@@ -181,18 +188,6 @@ def calm4():
 @app.route('/game/')
 def game():
     return render_template("Personal/game.html")
-
-@app.route('/fact1/')
-def fact1():
-    return render_template("Personal/fact1.html")
-
-@app.route('/fact2/')
-def fact2():
-    return render_template("Personal/fact2.html")
-
-@app.route('/fact3/')
-def fact3():
-    return render_template("Personal/fact3.html")
 
 @app.route('/quiz/')
 def quiz():
