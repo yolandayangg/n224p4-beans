@@ -79,53 +79,50 @@
         }
     </style>
 
+    <div class="col-12">
+        <label for="name"><h2 style="font-family:'Courier New'">Click the button to display a random number between 1 and 10. When you get your number, click on the button that corresponds.</h2></label>
+        <button onclick="myFunction()">Try it</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+                var x = Math.floor((Math.random() * 10) + 1);
+                document.getElementById("demo").innerHTML = x;
+            }
+        </script>
+        </form>
+    </div>
+
     <html>
     <head>
-        <h2> Fun Fact About Personality Type C</h2>
-        <br>
-        <br>
-        <div style="color: darkgreen"
-        <h5>Type C personalities tend to be relationship-oriented, outgoing and enthusiastic. Type B personality people can be classified as extroverts.</h5>
-        <br>
-        <br>
-        <br>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js" defer></script>
-        <title>Document</title>
+        <style>
+            a:link, a:visited {
+                background-color: #f44336;
+                color: white;
+                padding: 14px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            a:hover, a:active {
+                background-color: white;
+            }
+        </style>
     </head>
-    <button onclick="funfact()">Get Fun Fact</button>
-    <h1 id="favorDisplay"></h1>
+    <body>
+    <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2020.552740/full" target="_blank">1</a>
+    <a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7525034/ target="_blank">2</a>
+    <a href="https://www.e-counseling.com/mental-health/what-is-type-c-personality/" target="_blank">3</a>
+    <a href="https://www.healthline.com/health/type-c-personality#:~:text=You're%20dedicated,of%20success%20with%20your%20goals." target="_blank">4</a>
+    <a href="https://www.crystalknows.com/disc/c-personality-type" target="_blank">5</a>
+    <a href="https://www.usnews.com/best-colleges/rankings/national-liberal-arts-colleges" target="_blank">6</a>
+    <a href="https://liveboldandbloom.com/09/personality-types/type-c-personality" target="_blank">7</a>
+    <a href="https://wizehire.com/disc/high-c-personality" target="_blank">8</a>
+    <a href="https://www.psychologytoday.com/us/blog/fulfillment-any-age/202111/the-great-myth-the-type-and-type-c-personality-types" target="_blank">9</a>
+    <a href="https://headway.media/16-best-psychology-books-on-human-behavior-read-for-successful-communication-2/" target="_blank">10</a>
 
-    <script>
-        function funfact() {
-            var i = [
-                "Type C take time to think things through when making decisions",
-                "Type C explain things with emotional, expressive language",
-                "Type C leave their schedule open and flexible for spontaneous meetings throughout the day",
-                "Type C personalities are known for being self-confident individuals",
-                "Type C personalities are known for being easily liked by most people",
-                "Type C personalities are known for being dreamers",
-                "Type C personalities are known for being lighthearted",
-                "Type C personalities are known for being very persuasive",
-                "Type C personalities are known for being spontaneous",
-                "Type C personalities are known for being charismatic",
-                "Type C personalities are known for being impatient",
-                "Type C personalities are known for being arrogant or cocky",
-                "Type C personalities are known for being motivated by public recognition",
-                "Type C personalities are known for being motivated by acceptance, especially by peers",
-                "Type C personalities are known for being those who are outgoing or enthusiastic",
-                "Type C personalities are known for striving for social interaction",
 
-            ];
-            var len = i.length;
-            var j = Math.floor(Math.random() * len);
-            document.getElementById('favorDisplay').innerHTML = i[j];
-
-        }
-
-    </script>
+    </body>
+    </html>
 
 {% endblock %}
