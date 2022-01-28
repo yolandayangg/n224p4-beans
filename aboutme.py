@@ -13,7 +13,3 @@ def Shruti():
 @app_aboutme.route('/Mahima/')
 def mahima():
     return render_template("aboutme/Mahima.html")
-
-@app_aboutme.route('/natalie/')
-def natalie():
-    return render_template("aboutme/natalie.html")

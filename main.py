@@ -1,21 +1,29 @@
 
-# import "packages" from flask
-from flask import render_template
-from __init__ import app
+from flask import Flask, render_template
+
 from flask import request
-from templates.CRUD.app_crud import app_crud
-from templates.CRUD.app_crud_api import app_crud_api
-from templates.PERSONALITY.app_personality import app_personality
-from templates.PERSONALITY.app_personality_api import app_personality_api
+
+
+
 
 # create a Flask instance
-# app = Flask(__name__)
-app.register_blueprint(app_crud)
-app.register_blueprint(app_crud_api)
-app.register_blueprint(app_personality)
-app.register_blueprint(app_personality_api)
+app = Flask(__name__)
+from facts import app_facts
+from calm import app_calm
+
+
+app.register_blueprint(app_facts)
+app.register_blueprint(app_calm)
+
+
+from other import app_other
+app.register_blueprint(app_other)
+
+from aboutme import app_aboutme
+app.register_blueprint(app_aboutme)
 
 # connects default URL to render index.html
+
 @app.route('/')
 def index():
     return render_template("index.html")
@@ -30,6 +38,8 @@ def kangaroos():
 @app.route('/signup/')
 def walruses():
     return render_template("Personal/signup.html")
+
+
 
 
 @app.route('/outreach/')
@@ -148,9 +158,7 @@ def clothing():
 
     return render_template("Personal/clothing.html")
 
-@app.route('/Natalie/')
-def Natalie():
-    return render_template("aboutme/Natalie.html")
+
 
 @app.route('/nayana/')
 def nayana():
@@ -160,57 +168,38 @@ def nayana():
 def Shruti():
     return render_template("aboutme/Shruti.html")
 
-@app.route('/yolanda/')
-def yolanda():
-    return render_template("aboutme/yolanda.html")
 
-@app.route('/mahima/')
-def mahima():
-    return render_template("aboutme/mahima.html")
 
 @app.route('/search/')
 def search():
     return render_template("CRUD/templates/search.html")
 
-@app.route('/crud/')
-def crud():
-    return render_template("CRUD/templates/crud.html")
-
-@app.route('/crud_async/')
-def crud_async():
-    return render_template("CRUD/templates/crud_async.html")
-
-@app.route('/personalitysearch/')
-def personalitysearch():
-    return render_template("PERSONALITY/templates/personalitysearch.html")
-
-@app.route('/personality/')
-def personality():
-    return render_template("PERSONALITY/templates/personality.html.html")
-
-@app.route('/personality_async/')
-def personality_async():
-    return render_template("PERSONALITY/templates/personality_async.html")
+@app.route('/calm2/')
+def calm2():
+    return render_template("Personal/calm2.html")
 
 @app.route('/calm1/')
 def calm1():
     return render_template("Personal/calm1.html")
 
-@app.route('/calm2/')
-def calm2():
-    return render_template("Personal/calm2.html")
-
 @app.route('/calm3/')
 def calm3():
     return render_template("Personal/calm3.html")
 
-@app.route('/poll/')
-def poll():
-    return render_template("Personal/poll.html")
+@app.route('/calm4/')
+def calm4():
+    return render_template("Personal/calm4.html")
 
-@app.route('/natquiz/')
-def natquiz():
-    return render_template("Personal/natquiz.html")
+@app.route('/game/')
+def game():
+    return render_template("Personal/game.html")
+
+
+
+@app.route('/poe/')
+def poe():
+    return render_template("Personal/poe.py")
+
 
 
 
