@@ -1,15 +1,13 @@
 
-# import "packages" from flask
-from flask import render_template
-from __init__ import app
+from flask import Flask, render_template
+
 from flask import request
 
-from aboutme import app_aboutme
-app.register_blueprint(app_aboutme)
+
 
 
 # create a Flask instance
-# app = Flask(__name__)
+app = Flask(__name__)
 from facts import app_facts
 from calm import app_calm
 
@@ -18,9 +16,14 @@ app.register_blueprint(app_facts)
 app.register_blueprint(app_calm)
 
 
+from other import app_other
+app.register_blueprint(app_other)
 
+from aboutme import app_aboutme
+app.register_blueprint(app_aboutme)
 
 # connects default URL to render index.html
+
 @app.route('/')
 def index():
     return render_template("index.html")
@@ -35,6 +38,8 @@ def kangaroos():
 @app.route('/signup/')
 def walruses():
     return render_template("Personal/signup.html")
+
+
 
 
 @app.route('/outreach/')
@@ -163,13 +168,13 @@ def jeopardy():
 def search():
     return render_template("CRUD/templates/search.html")
 
-@app.route('/calm1/')
-def calm1():
-    return render_template("Personal/calm1.html")
-
 @app.route('/calm2/')
 def calm2():
     return render_template("Personal/calm2.html")
+
+@app.route('/calm1/')
+def calm1():
+    return render_template("Personal/calm1.html")
 
 @app.route('/calm3/')
 def calm3():
@@ -183,9 +188,11 @@ def calm4():
 def game():
     return render_template("Personal/game.html")
 
-@app.route('/quiz/')
-def quiz():
-    return render_template("Personal/quiz.html")
+
+
+@app.route('/poe/')
+def poe():
+    return render_template("Personal/poe.py")
 
 @app.route('/smiley/')
 def smiley():
