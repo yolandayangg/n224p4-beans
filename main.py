@@ -208,6 +208,10 @@ def calm3():
 def poll():
     return render_template("Personal/poll.html")
 
+@app.route('/natquiz/')
+def natquiz():
+    return render_template("Personal/natquiz.html")
+
 
 
 if __name__ == "__main__":
