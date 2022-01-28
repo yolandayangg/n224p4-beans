@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+{% block body %}
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <time></time>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                /* Here mainly the body background color,
+            height, width, position, size of fonts etc
+            fixed*/
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                height: 100%;
+                width: 100%;
+                background-repeat: unset;
+                font-size: 50px;
+            }
+            /*In this part we will make the round shape
+        of the face,and the basic structure of face
+            like add some color of face,height,width etc*/
+            .face {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background: yellow;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .face::before {
+                /*In this part we will make
+            the mouth of the face*/
+                content: "";
+                position: absolute;
+                top: 120px;
+                width: 150px;
+                height: 70px;
+                background: blue;
+                border-bottom-left-radius: 70px;
+                border-bottom-right-radius: 70px;
+                transition: 0.5s;
+            }
+            .face:hover::before {
+                /*Here we will add the hover effects.
+            Like when the cursor will came on the mouth the
+            mouth will closed that means is radius
+            will be decreased*/
+                top: 120px;
+                width: 150px;
+                height: 20px;
+                background: yellow;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+            /*In this part we will make
+        the eyes of the face*/
+            .eyes {
+                position: relative;
+                top: -30px;
+                display: flex;
+            }
+            .eyes .eye {
+                position: relative;
+                width: 60px;
+                height: 60px;
+                display: block;
+                background: #fff;
+                margin: 0 15px;
+                border-radius: 50%;
+            }
+            .eyes .eye::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 25%;
+                transform: translate(-50%, -50%);
+                width: 40px;
+                height: 40px;
+                background: #000;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+    <!-- In this divs take separate classes named eye,
+        face which will help to make the animation,
+        because the whole animation will be
+        made by using css-->
+    <div class="face">
+        <div class="eyes">
+            <div class="eye"></div>
+            <div class="eye"></div>
+        </div>
+    </div>
+    <div class="face">
+        <div class="eyes">
+            <div class="eye"></div>
+            <div class="eye"></div>
+        </div>
+    </div>
+    <!-- Here the div ends.That
+        means the face part ends-->
+    <script>
+        document.querySelector(
+            "body").addEventListener("mousemove", eyeball);
+        function eyeball() {
+            var eye = document.querySelectorAll(".eye");
+            eye.forEach(function (eye) {
+                let x =
+                    eye.getBoundingClientRect().left + eye.clientWidth / 2;
+                let y =
+                    eye.getBoundingClientRect().top + eye.clientHeight / 2;
+                let radian =
+                    Math.atan2(event.pageX - x, event.pageY - y);
+                let rot =
+                    radian * (180 / Math.PI) * -1 + 270;
+                eye.style.transform =
+                    "rotate(" + rot + "deg)";
+            });
+        }
+    </script>
+    </body>
+    </html>
+
+
+
+{% endblock %}
