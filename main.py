@@ -3,11 +3,17 @@
 from flask import render_template
 from __init__ import app
 from flask import request
+from templates.CRUD.app_crud import app_crud
+from templates.CRUD.app_crud_api import app_crud_api
+from templates.PERSONALITY.app_personality import app_personality
+from templates.PERSONALITY.app_personality_api import app_personality_api
 
 # create a Flask instance
 # app = Flask(__name__)
-
-
+app.register_blueprint(app_crud)
+app.register_blueprint(app_crud_api)
+app.register_blueprint(app_personality)
+app.register_blueprint(app_personality_api)
 
 # connects default URL to render index.html
 @app.route('/')
@@ -166,6 +172,26 @@ def mahima():
 def search():
     return render_template("CRUD/templates/search.html")
 
+@app.route('/crud/')
+def crud():
+    return render_template("CRUD/templates/crud.html")
+
+@app.route('/crud_async/')
+def crud_async():
+    return render_template("CRUD/templates/crud_async.html")
+
+@app.route('/personalitysearch/')
+def personalitysearch():
+    return render_template("PERSONALITY/templates/personalitysearch.html")
+
+@app.route('/personality/')
+def personality():
+    return render_template("PERSONALITY/templates/personality.html.html")
+
+@app.route('/personality_async/')
+def personality_async():
+    return render_template("PERSONALITY/templates/personality_async.html")
+
 @app.route('/calm1/')
 def calm1():
     return render_template("Personal/calm1.html")
@@ -177,6 +203,11 @@ def calm2():
 @app.route('/calm3/')
 def calm3():
     return render_template("Personal/calm3.html")
+
+@app.route('/poll/')
+def poll():
+    return render_template("Personal/poll.html")
+
 
 
 if __name__ == "__main__":

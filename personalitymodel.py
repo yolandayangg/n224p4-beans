@@ -21,18 +21,18 @@ Migrate(app, db)
 # -- a.) db.Model is like an inner layer of the onion in ORM
 # -- b.) Users represents data we want to store, something that is built on db.Model
 # -- c.) SQLAlchemy ORM is layer on top of SQLAlchemy Core, then SQLAlchemy engine, SQL
-class Person(db.Model):
+class Users(db.Model):
     # define the Users schema
     userID = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), unique=False, nullable=False)
-    email = db.Column(db.String(255), unique=True, nullable=False)
+    type = db.Column(db.String(255), unique=True, nullable=False)
     password = db.Column(db.String(255), unique=False, nullable=False)
     phone = db.Column(db.String(255), unique=False, nullable=False)
 
     # constructor of a User object, initializes of instance variables within object
-    def __init__(self, name, email, password, phone):
+    def __init__(self, name, type, password, phone):
         self.name = name
-        self.email = email
+        self.type = type
         self.password = password
         self.phone = phone
 
@@ -54,7 +54,7 @@ class Person(db.Model):
         return {
             "userID": self.userID,
             "name": self.name,
-            "email": self.email,
+            "type": self.type,
             "password": self.password,
             "phone": self.phone
         }
@@ -89,14 +89,14 @@ def model_tester():
     print("--------------------------")
     db.create_all()
     """Tester data for table"""
-    u1 = Users(name='Thomas Edison', email='tedison@example.com', password='123toby', phone="1111111111")
-    u2 = Users(name='Nicholas Tesla', email='ntesla@example.com', password='123niko', phone="1111112222")
-    u3 = Users(name='Alexander Graham Bell', email='agbell@example.com', password='123lex', phone="1111113333")
-    u4 = Users(name='Eli Whitney', email='eliw@example.com', password='123whit', phone="1111114444")
-    u5 = Users(name='John Mortensen', email='jmort1021@gmail.com', password='123qwerty', phone="8587754956")
-    u6 = Users(name='John Mortensen', email='jmort1021@yahoo.com', password='123qwerty', phone="8587754956")
+    u1 = Users(name='Thomas Edison', type='A', password='10', phone="Gemini")
+    u2 = Users(name='Nicholas Tesla', type='B', password='12', phone="Aquarius")
+    u3 = Users(name='Alexander Graham Bell', type='C', password='23', phone="Leo")
+    u4 = Users(name='Eli Whitney', type='D', password='33', phone="Virgo")
+    u5 = Users(name='John Mortensen', type='X', password='25', phone="Saggitaruis")
+    u6 = Users(name='John Mortensen', type='A', password='2', phone="Capricorn")
     # U7 intended to fail as duplicate key
-    u7 = Users(name='John Mortensen', email='jmort1021@yahoo.com', password='123qwerty', phone="8586791294")
+    u7 = Users(name='John Mortensen', type='X', password='62', phone="Cancer")
     table = [u1, u2, u3, u4, u5, u6, u7]
     for row in table:
         try:
@@ -104,7 +104,7 @@ def model_tester():
             db.session.commit()
         except IntegrityError:
             db.session.remove()
-            print(f"Records exist, duplicate email, or error: {row.email}")
+            print(f"Records exist, duplicate type, or error: {row.type}")
 
 
 def model_printer():
