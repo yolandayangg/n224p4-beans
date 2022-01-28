@@ -2,6 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
+
 """This needs to be isolated to support blueprints and models"""
 app = Flask(__name__)
 dbURI = 'sqlite:///model/myDB.db'
