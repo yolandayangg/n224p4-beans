@@ -11,5 +11,5 @@ def Shruti():
     return render_template("aboutme/Shruti.html")
 
 @app_aboutme.route('/Mahima/')
-def mahima():
+def Mahima():
     return render_template("aboutme/Mahima.html")
