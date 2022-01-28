@@ -128,9 +128,7 @@ def logicgate():
 def minilabs():
     return render_template("minilabs.html")
 
-@app.route('/jeopardy/')
-def jeopardy():
-    return render_template("Personal/jeopardy.html")
+
 
 @app.route('/random/')
 def random():
@@ -154,14 +152,10 @@ def clothing():
     return render_template("Personal/clothing.html")
 
 
+@app.route('/jeopardy/')
+def jeopardy():
+    return render_template("Personal/jeopardy.html")
 
-@app.route('/nayana/')
-def nayana():
-    return render_template("aboutme/nayana.html")
-
-@app.route('/Shruti/')
-def Shruti():
-    return render_template("aboutme/Shruti.html")
 
 
 
@@ -193,7 +187,9 @@ def game():
 def quiz():
     return render_template("Personal/quiz.html")
 
-
+@app.route('/smiley/')
+def smiley():
+    return render_template("Personal/smiley.html")
 
 
 if __name__ == "__main__":
