@@ -39,6 +39,10 @@ def kangaroos():
 def walruses():
     return render_template("Personal/signup.html")
 
+@app.route('/music/')
+def music():
+    return render_template("Personal/music.html")
+
 
 
 
