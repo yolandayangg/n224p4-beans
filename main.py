@@ -190,9 +190,7 @@ def calm4():
 
 @app.route('/game/')
 def game():
-    return render_template("Personal/game.html")
-
-
+    return render_template("Personal/faq.html")
 
 @app.route('/poe/')
 def poe():
@@ -202,9 +200,18 @@ def poe():
 def smiley():
     return render_template("Personal/smiley.html")
 
+@app.route('/compatability/')
+def compatability():
+    return render_template("Personal/compatability.html")
+
+@app.route('/faq/')
+def faq():
+    return render_template("Personal/faq.html")
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
+
+
 
 
 
