@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+{% extends "layouts/base.html" %}
+
+{% block body %}
+<html>
+<head>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Frequently Asked Questions</h2>
+<p>Move the mouse over the text below to reveal answers.</p>
+
+<div class="dropdown">
+    <span>Q1: what is the purpose of this website?</span>
+    <div class="dropdown-content">
+        <p>A: we wanted to create a website that connects people together by sharing information about their personalities and how it connects to their everyday lives.</p>
+    </div>
+</div>
+
+<div class="dropdown">
+    <span>Q2: can we receive emails?</span>
+    <div class="dropdown-content">
+        <p>A: Yes! By signing up you will receive our emails.</p>
+    </div>
+</div>
+
+<div class="dropdown">
+    <span>Q3: Who are we?</span>
+    <div class="dropdown-content">
+        <p>A: We are Shruti, Yolanda, Mahima, Natalie and Nayana, the creators of the website and students of AP Computer Science Principles at DNHS.</p>
+    </div>
+</div>
+
+<div class="dropdown">
+    <span>Q4: Where is most of the coding done through?</span>
+    <div class="dropdown-content">
+        <p>A: We do most of our coding on inteliJ, but to work together we utilize github and share our progresses with one another.</p>
+    </div>
+</div>
+
+<div class="dropdown">
+    <span>Q5: is the website deployed</span>
+    <div class="dropdown-content">
+        <p>A: Yes! You are on it right now :)</p>
+    </div>
+</div>
+
+</body>
+</html>
+{% endblock %}

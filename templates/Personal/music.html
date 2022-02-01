@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% extends "layouts/base.html" %}
+
+{% block body %}
+
+<html>
+<head>
+    <title>Title of the document</title>
+</head>
+<body>
+<div class="container">
+    <h1>Music</h1> <!--The different questions being asked for the form, each name correlates to the answering portion in linked google form -->
+    <p>It has been scientifically proven that music can help one calm down. Click the music down below for your personality type!</p>
+<button style="background-color: #e28181" class="col-sm-2" onclick="window.location.href='https://youtu.be/62d2QvWAVt4' ;">
+    Calm Music: Personality A
+</button>
+<button style="background-color: #74d36b" class="col-sm-2" onclick="window.location.href='https://youtu.be/DGQwd1_dpuc';">
+    Calm Music: Personality B
+</button>
+<button style="background-color: chocolate" class="col-sm-2" onclick="window.location.href='https://youtu.be/mX2L_lVSkOY';">
+    Calm Music: Personality C
+</button>
+
+<button style="background-color: cornflowerblue" class="col-sm-2" onclick="window.location.href='https://youtu.be/5hYANNzFIc4';">
+     Calm Music: Personality D
+</button>
+
+
+    </style>
+
+    <br>
+    <br>
+    <br>
+    <div class="container" style="position: center">
+        <div class="row justify-content-center margins-autos">
+            <div id="n1" class="vImage col-sm"><img src="/static/music1.jpg" width="250" height="240"></div>
+            <div id="n2" class="vImage col-sm"><img src="/static/music 2.jpg" width="250" height="240"></div>
+            <div id="n3" class="vImage col-sm"><img src="/static/music3.jpg" width="250" height="240"></div>
+
+
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
+{% endblock %}
