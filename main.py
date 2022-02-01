@@ -29,21 +29,13 @@ def index():
     return render_template("index.html")
 
 
-# connects /kangaroos path to render volunteering.html
-@app.route('/volunteering/')
-def kangaroos():
-    return render_template("Personal/volunteering.html")
-
-
 @app.route('/signup/')
-def walruses():
+def signup():
     return render_template("Personal/signup.html")
 
 @app.route('/music/')
 def music():
     return render_template("Personal/music.html")
-
-
 
 
 @app.route('/outreach/')
