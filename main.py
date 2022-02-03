@@ -29,17 +29,13 @@ def index():
     return render_template("index.html")
 
 
-# connects /kangaroos path to render volunteering.html
-@app.route('/volunteering/')
-def kangaroos():
-    return render_template("Personal/volunteering.html")
-
-
 @app.route('/signup/')
-def walruses():
+def signup():
     return render_template("Personal/signup.html")
 
-
+@app.route('/music/')
+def music():
+    return render_template("Personal/music.html")
 
 
 @app.route('/outreach/')
@@ -186,9 +182,7 @@ def calm4():
 
 @app.route('/game/')
 def game():
-    return render_template("Personal/game.html")
-
-
+    return render_template("Personal/faq.html")
 
 @app.route('/poe/')
 def poe():
@@ -198,9 +192,18 @@ def poe():
 def smiley():
     return render_template("Personal/smiley.html")
 
+@app.route('/compatability/')
+def compatability():
+    return render_template("Personal/compatability.html")
+
+@app.route('/faq/')
+def faq():
+    return render_template("Personal/faq.html")
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
+
+
 
 
 
