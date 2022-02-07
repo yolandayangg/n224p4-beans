@@ -30,7 +30,7 @@ Personality parlor is a platform that allows for users to explore personality ty
 [Review Ticket](https://github.com/yolandayangg/n224p4-beans/issues/50) <br>
 |Name||Issue|
 |----|-------|
-|Nathan|Deployment Admin|[Async Operations](https://github.com/yolandayangg/n224p4-beans/issues/38)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Deployment-Guide)
+|Nathan|Deployment Admin|[ Operations](https://github.com/yolandayangg/n224p4-beans/issues/38)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Deployment-Guide)
 |Reem|Technical Officer|[CRUD in Database](https://github.com/yolandayangg/n224p4-beans/issues/39)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Technicals)
 |James|Design Manager|[Theme Using Sassy/Bootstrap](https://github.com/yolandayangg/n224p4-beans/issues/37)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Brainwrite)
 |Jacob|Scrum Master|[PBL Progress](https://github.com/yolandayangg/n224p4-beans/issues/24) <br> [Blueprint](https://github.com/yolandayangg/n224p4-beans/issues/43)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/projects/1)
