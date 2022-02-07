@@ -33,8 +33,7 @@ Personality parlor is a platform that allows for users to explore personality ty
 |Nathan|[ Operations](https://github.com/yolandayangg/n224p4-beans/issues/38)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Deployment-Guide)
 |Reem|[CRUD in Database](https://github.com/yolandayangg/n224p4-beans/issues/39)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Technicals)
 |James|[Theme Using Sassy/Bootstrap](https://github.com/yolandayangg/n224p4-beans/issues/37)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Brainwrite)
-|Jacob|[PBL Progress](https://github.com/yolandayangg/n224p4-beans/issues/24) <br> [Blueprint](https://github.com/yolandayangg/n224p4-beans/issues/43)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/projects/1)
-|Daniel|[Jekyll](https://github.com/yolandayangg/n224p4-beans/issues/36) <br> [PBL](https://github.com/yolandayangg/n224p4-beans/issues/44) <br> [Snake Game](https://github.com/yolandayangg/n224p4-beans/issues/45)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/BOF-Github-Admins-policy-document:)
+|Jacob|[PBL Progress](https://github.com/yolandayangg/n224p4-beans/issues/24)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/projects/1)
 
 
 ## Week 5-7
