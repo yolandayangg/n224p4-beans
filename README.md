@@ -28,7 +28,7 @@ Personality parlor is a platform that allows for users to explore personality ty
 
 ## Week 8 Crossover Coding
 [Review Ticket](https://github.com/yolandayangg/n224p4-beans/issues/50) <br>
-|Name||Issue|
+|Name|Issue|
 |----|-------|
 |Nathan|[ Operations](https://github.com/yolandayangg/n224p4-beans/issues/38)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Deployment-Guide)
 |Reem|[CRUD in Database](https://github.com/yolandayangg/n224p4-beans/issues/39)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Technicals)
