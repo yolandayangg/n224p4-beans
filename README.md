@@ -24,6 +24,16 @@ Personality parlor is a platform that allows for users to explore personality ty
 [Week 3](https://github.com/yolandayangg/n224p4-beans#week-3) <br>
 [Week 4](https://github.com/yolandayangg/n224p4-beans#week-4) <br>
 [Week 5-7](https://github.com/yolandayangg/n224p4-beans#week-5) <br>
+[Week 8](https://github.com/yolandayangg/n224p4-beans#week-5) <br>
+
+## Week 8 Crossover Coding
+[Review Ticket](https://github.com/yolandayangg/n224p4-beans/issues/50) <br>
+|Name|Issue|
+|----|-------|
+|Nathan|[ Operations](https://github.com/yolandayangg/n224p4-beans/issues/38)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Deployment-Guide)
+|Reem|[CRUD in Database](https://github.com/yolandayangg/n224p4-beans/issues/39)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Technicals)
+|James|[Theme Using Sassy/Bootstrap](https://github.com/yolandayangg/n224p4-beans/issues/37)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Brainwrite)
+|Jacob|[PBL Progress](https://github.com/yolandayangg/n224p4-beans/issues/24)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/projects/1)
 
 
 ## Week 5-7
@@ -34,8 +44,8 @@ Personality parlor is a platform that allows for users to explore personality ty
 |Mahima|Deployment Admin|[Async Operations](https://github.com/yolandayangg/n224p4-beans/issues/38)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Deployment-Guide)
 |Natalie|Technical Officer|[CRUD in Database](https://github.com/yolandayangg/n224p4-beans/issues/39)| [Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Technicals)
 |Nayana|Design Manager|[Theme Using Sassy/Bootstrap](https://github.com/yolandayangg/n224p4-beans/issues/37)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/Brainwrite)
-|Shruti|Scrum Master|[PBL Progress](https://github.com/yolandayangg/n224p4-beans/issues/24) [Blueprint](https://github.com/yolandayangg/n224p4-beans/issues/43)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/projects/1)
-|Yolanda|Github Admin|[Jekyll](https://github.com/yolandayangg/n224p4-beans/issues/36)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/BOF-Github-Admins-policy-document:)
+|Shruti|Scrum Master|[PBL Progress](https://github.com/yolandayangg/n224p4-beans/issues/24) <br> [Blueprint](https://github.com/yolandayangg/n224p4-beans/issues/43)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/projects/1)
+|Yolanda|Github Admin|[Jekyll](https://github.com/yolandayangg/n224p4-beans/issues/36) <br> [PBL](https://github.com/yolandayangg/n224p4-beans/issues/44) <br> [Snake Game](https://github.com/yolandayangg/n224p4-beans/issues/45)|[Link to Code](https://github.com/yolandayangg/n224p4-beans/wiki/BOF-Github-Admins-policy-document:)
 
 ## Week 4
 [Individual TPT Notes and Quizzes](https://github.com/yolandayangg/n224p4-beans/issues/15)

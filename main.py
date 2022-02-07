@@ -1,8 +1,7 @@
 
 from flask import Flask, render_template
+
 from flask import request
-import requests
-import json
 
 
 
@@ -89,6 +88,8 @@ def gabriel():
 def platformer():
     return render_template("Personal/platformer.html")
 
+
+
 @app.route('/binary/')
 def binary():
     if request.form:
@@ -113,6 +114,8 @@ def binary():
 def aboutme():
     return render_template("Minilabs/aboutme.html")
 
+
+
 @app.route('/colorcode/')
 def colorcode():
     return render_template('Minilabs/colorcode.html')
@@ -121,9 +124,12 @@ def colorcode():
 def logicgate():
     return render_template('Minilabs/logicgate.html')
 
+
 @app.route('/minilabs/')
 def minilabs():
     return render_template("minilabs.html")
+
+
 
 @app.route('/random/')
 def random():
@@ -150,6 +156,9 @@ def clothing():
 @app.route('/jeopardy/')
 def jeopardy():
     return render_template("Personal/jeopardy.html")
+
+
+
 
 @app.route('/search/')
 def search():
@@ -190,23 +199,6 @@ def compatability():
 @app.route('/faq/')
 def faq():
     return render_template("Personal/faq.html")
-
-@app.route('/RelaxingGames', methods=['GET', 'POST'])
-def RelaxingGames():
-    url = "https://free-to-play-games-database.p.rapidapi.com/api/games"
-
-    querystring = {"sort-by":"alphabetical"}
-
-    headers = {
-        'x-rapidapi-host': "free-to-play-games-database.p.rapidapi.com",
-        'x-rapidapi-key': "810c60410fmshe6c6bf953125c9ep188957jsn0e6dd57091ec"
-    }
-
-    response = requests.request("GET", url, headers=headers, params=querystring)
-
-    output = json.loads(response.text)
-
-    return render_template("Personal/RelaxingGames.html", Games=output)
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)

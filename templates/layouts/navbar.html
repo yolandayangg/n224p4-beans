@@ -36,7 +36,6 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                 <a class="dropdown-item" href="/calm3">Personality C</a>
                 <a class="dropdown-item" href="/calm4">Personality X</a>
                 <a class="dropdown-item" href="/compatability">Compatability quiz</a>
-                <a class="dropdown-item" href="/RelaxingGames">Relaxing Games</a>
                 <a class="dropdown-item" href="/smiley">Mood Game</a>
             </div>
         </li>
@@ -74,15 +73,5 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                 <a class="dropdown-item" href="/crud_async">CRUD Async</a>
             </div>
         </li>
-        <div class="float-right">
-            <div class="form-group">
-                <input type="text" class="form-control" id="search" placeholder="Search Bar">
-                <label></label> <!-- used for spacer -->
-            </div>
-        </div>
-    {% block navbar_script %}
-        <!-- Navigation bar JavaScript support -->
-        <script src={{  url_for("static", filename="/navbar.js", version='140') }}></script>
-    {% endblock %}
     </div>
 </nav>
