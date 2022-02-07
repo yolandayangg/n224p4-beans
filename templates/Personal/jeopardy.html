@@ -2,14 +2,14 @@
 <html>
 
   {% include "layouts/navbar.html" %}
-  <head style="background-color: darkslateblue; color: aliceblue">
+  <head style="background-color: lightgoldenrodyellow; color: lightgoldenrodyellow">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   </head>
 
-  <body style="background-color: darkslateblue; color: aliceblue">
+  <body style="background-color: lightgoldenrodyellow; color: darkgreen">
     <style>
 
       #header {
@@ -43,31 +43,31 @@
           selected = id;
           switch(selected) {
             case "t1p100":
-              document.getElementById("questionText").innerHTML = "Pregnancy can increase the risk of which condition in younger women?";
+              document.getElementById("questionText").innerHTML = "Which personality type works well under stress?";
               points = 100;
             break;
             case "t1p200":
-              document.getElementById("questionText").innerHTML = "What form of depression can a woman get as a result of pregnancy?";
+              document.getElementById("questionText").innerHTML = "What are Personality Type A people known for?";
               points = 200;
             break;
             case "t1p300":
-              document.getElementById("questionText").innerHTML = "What do you call the type of care a woman must receive before giving birth?";
+              document.getElementById("questionText").innerHTML = "Are Type B people extroverts?";
               points = 300;
             break;
             case "t2p100":
-              document.getElementById("questionText").innerHTML = "On average, how often do women get their periods?";
+              document.getElementById("questionText").innerHTML = "What is a negative trait of Type B?";
               points = 100;
             break;
             case "t2p200":
-              document.getElementById("questionText").innerHTML = "How much is spent on menstrual products every year in the U.S.?";
+              document.getElementById("questionText").innerHTML = "What is Type B known as on the Jung scale?";
               points = 200;
             break;
             case "t2p300":
-              document.getElementById("questionText").innerHTML = "What is the period-associated problem a woman faces where the uterine tissue grows outside the uterus?";
+              document.getElementById("questionText").innerHTML = "What are Type C drawn to?";
               points = 300;
             break;
             case "t3p100":
-              document.getElementById("questionText").innerHTML = "What kind of arthritis is more prevalent in women?";
+              document.getElementById("questionText").innerHTML = "What are Type C people great at?";
               points = 100;
             break;
             case "t3p200":
@@ -97,78 +97,78 @@
           userInput = userInput.toLowerCase();
           switch(selected) {
             case "t1p100":
-              if (userInput == "stroke") {
+              if (userInput == "Personality A") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Stroke";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Personality A";
               }
               selected = null;
               userInput = null;
             break;
             case "t1p200":
-              if (userInput == "postpartum depression") {
+              if (userInput == "Being passionate") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Obesity";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Being passionate";
               }
               selected = null;
               userInput = null;
             break;
             case "t1p300":
-              if (userInput == "prenatal care") {
+              if (userInput == "Yes") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Estrogen";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Yes";
               }
               selected = null;
               userInput = null;
             break;
             case "t2p100":
-              if (userInput == "every 21-35 days") {
+              if (userInput == "Arrogance") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Mammogram";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Arrogance";
               }
               selected = null;
               userInput = null;
             break;
             case "t2p200":
-              if (userInput == "$2 billion a year") {
+              if (userInput == "Intuitor") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Calcium";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Intuitor";
               }
               selected = null;
               userInput = null;
             break;
             case "t2p300":
-              if (userInput == "endometriosis") {
+              if (userInput == "facts") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Vitamin D";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: facts";
               }
               selected = null;
               userInput = null;
             break;
             case "t3p100":
-              if (userInput == "rheumatoid arthritis") {
+              if (userInput == "solving problems") {
                 document.getElementById("questionText").innerHTML = "You are correct !";
                 totalPoints = totalPoints + points;
                 document.getElementById("totalPoints").innerHTML = totalPoints;
               } else {
-                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Oil";
+                document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: solving problems";
               }
               selected = null;
               userInput = null;
@@ -235,36 +235,36 @@
     <div class="container">
 
       <div class="row justify-content-center margins-autos">
-        <h1 id="header">Trivia Game Show</h1>
+        <h1 id="header">Personality Type Game Show!</h1>
       </div>
       
       <div class="row justify-content-center margins-autos">
-        <p id="questionText">Pick a question !</p>
+        <p id="questionText">Pick a question!</p>
       </div>
 
       <div class="row justify-content-center margins-autos">
-        <p class="topicHeader">Pregnancy</p>
+        <p class="topicHeader">Row 1</p>
             <button type="button" id="t1p100" class="button" onclick="displayQ(id)">100</button>
             <button type="button" id="t1p200" class="button" onclick="displayQ(id)">200</button>
             <button type="button" id="t1p300" class="button" onclick="displayQ(id)">300</button>
       </div>
 
       <div class="row justify-content-center margins-autos">
-        <p class="topicHeader">Menstruation</p>
+        <p class="topicHeader">Row 2</p>
             <button type="button" id="t2p100" class="button" onclick="displayQ(id)">100</button>
             <button type="button" id="t2p200" class="button" onclick="displayQ(id)">200</button>
             <button type="button" id="t2p300" class="button" onclick="displayQ(id)">300</button>
       </div>
 
       <div class="row justify-content-center margins-autos">
-        <p class="topicHeader">Bone Health</p>
+        <p class="topicHeader">Row 3</p>
             <button type="button" id="t3p100" class="button" onclick="displayQ(id)">100</button>
             <button type="button" id="t3p200" class="button" onclick="displayQ(id)">200</button>
             <button type="button" id="t3p300" class="button" onclick="displayQ(id)">300</button>
       </div>
 
       <div class="row justify-content-center margins-autos">
-        <p class="topicHeader">Mental Health</p>
+        <p class="topicHeader">Row 4</p>
             <button type="button" id="t4p100" class="button" onclick="displayQ(id)">100</button>
             <button type="button" id="t4p200" class="button" onclick="displayQ(id)">200</button>
             <button type="button" id="t4p300" class="button" onclick="displayQ(id)">300</button>

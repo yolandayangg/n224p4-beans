@@ -1,21 +1,13 @@
 
-# import "packages" from flask
-from flask import render_template
-from __init__ import app
+from flask import Flask, render_template
+
 from flask import request
 
-from mahima import app_mahima
-from yolanda import app_yolanda
-from Natalie import app_Natalie
 
-
-app.register_blueprint(app_mahima)
-app.register_blueprint(app_yolanda)
-app.register_blueprint(app_Natalie)
 
 
 # create a Flask instance
-# app = Flask(__name__)
+app = Flask(__name__)
 from facts import app_facts
 from calm import app_calm
 
@@ -24,23 +16,26 @@ app.register_blueprint(app_facts)
 app.register_blueprint(app_calm)
 
 
+from other import app_other
+app.register_blueprint(app_other)
 
+from aboutme import app_aboutme
+app.register_blueprint(app_aboutme)
 
 # connects default URL to render index.html
+
 @app.route('/')
 def index():
     return render_template("index.html")
 
 
-# connects /kangaroos path to render volunteering.html
-@app.route('/volunteering/')
-def kangaroos():
-    return render_template("Personal/volunteering.html")
-
-
 @app.route('/signup/')
-def walruses():
+def signup():
     return render_template("Personal/signup.html")
+
+@app.route('/music/')
+def music():
+    return render_template("Personal/music.html")
 
 
 @app.route('/outreach/')
@@ -134,9 +129,7 @@ def logicgate():
 def minilabs():
     return render_template("minilabs.html")
 
-@app.route('/jeopardy/')
-def jeopardy():
-    return render_template("Personal/jeopardy.html")
+
 
 @app.route('/random/')
 def random():
@@ -160,14 +153,10 @@ def clothing():
     return render_template("Personal/clothing.html")
 
 
+@app.route('/jeopardy/')
+def jeopardy():
+    return render_template("Personal/jeopardy.html")
 
-@app.route('/nayana/')
-def nayana():
-    return render_template("aboutme/nayana.html")
-
-@app.route('/Shruti/')
-def Shruti():
-    return render_template("aboutme/Shruti.html")
 
 
 
@@ -175,13 +164,13 @@ def Shruti():
 def search():
     return render_template("CRUD/templates/search.html")
 
-@app.route('/calm1/')
-def calm1():
-    return render_template("Personal/calm1.html")
-
 @app.route('/calm2/')
 def calm2():
     return render_template("Personal/calm2.html")
+
+@app.route('/calm1/')
+def calm1():
+    return render_template("Personal/calm1.html")
 
 @app.route('/calm3/')
 def calm3():
@@ -193,17 +182,28 @@ def calm4():
 
 @app.route('/game/')
 def game():
-    return render_template("Personal/game.html")
+    return render_template("Personal/faq.html")
 
-@app.route('/quiz/')
-def quiz():
-    return render_template("Personal/quiz.html")
+@app.route('/poe/')
+def poe():
+    return render_template("Personal/poe.py")
 
+@app.route('/smiley/')
+def smiley():
+    return render_template("Personal/smiley.html")
 
+@app.route('/compatability/')
+def compatability():
+    return render_template("Personal/compatability.html")
 
+@app.route('/faq/')
+def faq():
+    return render_template("Personal/faq.html")
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
+
+
 
 
 
