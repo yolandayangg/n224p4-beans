@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+{% extends "layouts/base.html" %}
+{% block body %}
+    <head style="background-color: lightgoldenrodyellow; color: lightgoldenrodyellow">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <script>
+        var selected;
+        var points = 0;
+        var totalPoints = 0;
+
+        function displayQ(id) {
+            selected = id;
+            switch(selected) {
+                case "t1p100":
+                    document.getElementById("questionText").innerHTML = "Which personality type works well under stress?";
+                    points = 100;
+                    break;
+                case "t1p200":
+                    document.getElementById("questionText").innerHTML = "What are Personality Type A people known for?";
+                    points = 200;
+                    break;
+                case "t1p300":
+                    document.getElementById("questionText").innerHTML = "Are Type B people extroverts?";
+                    points = 300;
+                    break;
+                case "t2p100":
+                    document.getElementById("questionText").innerHTML = "What is a negative trait of Type B?";
+                    points = 100;
+                    break;
+                case "t2p200":
+                    document.getElementById("questionText").innerHTML = "What is Type B known as on the Jung scale?";
+                    points = 200;
+                    break;
+                case "t2p300":
+                    document.getElementById("questionText").innerHTML = "What are Type C drawn to?";
+                    points = 300;
+                    break;
+                case "t3p100":
+                    document.getElementById("questionText").innerHTML = "What are Type C people great at?";
+                    points = 100;
+                    break;
+                case "t3p200":
+                    document.getElementById("questionText").innerHTML = "What is an important supplement to take to prevent osteoporosis?";
+                    points = 200;
+                    break;
+                case "t3p300":
+                    document.getElementById("questionText").innerHTML = "Which hormone protects women against bone loss?";
+                    points = 300;
+                    break;
+                case "t4p100":
+                    document.getElementById("questionText").innerHTML = "Women are much more likely than men to develop which mental health condition?";
+                    points = 100;
+                    break;
+                case "t4p200":
+                    document.getElementById("questionText").innerHTML = "How many times more likely is a woman likely to develop PTSD after a major, traumatic event?";
+                    points = 200;
+                    break;
+                case "t4p300":
+                    document.getElementById("questionText").innerHTML = "---";
+                    points = 300;
+                    break;
+            }
+        }
+        function checkAnswer() {
+            let userInput = document.getElementById('answer').value;
+            switch(selected) {
+                case "t1p100":
+                    if (userInput === "Personality A") {
+                        document.getElementById("questionText").innerHTML = "You are correct !";
+                        totalPoints = totalPoints + points;
+                        document.getElementById("totalPoints").innerHTML = totalPoints;
+                    } else {
+                        document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Personality A";
+                    }
+                    selected = null;
+                    userInput = null;
+                    break;
+                case "t1p200":
+                    if (userInput == "Being passionate") {
+                        document.getElementById("questionText").innerHTML = "You are correct !";
+                        totalPoints = totalPoints + points;
+                        document.getElementById("totalPoints").innerHTML = totalPoints;
+                    } else {
+                        document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Being passionate";
+                    }
+                    selected = null;
+                    userInput = null;
+                    break;
+                case "t1p300":
+                    if (userInput == "Yes") {
+                        document.getElementById("questionText").innerHTML = "You are correct !";
+                        totalPoints = totalPoints + points;
+                        document.getElementById("totalPoints").innerHTML = totalPoints;
+                    } else {
+                        document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Yes";
+                    }
+                    selected = null;
+                    userInput = null;
+                    break;
+                case "t2p100":
+                    if (userInput == "Arrogance") {
+                        document.getElementById("questionText").innerHTML = "You are correct !";
+                        totalPoints = totalPoints + points;
+                        document.getElementById("totalPoints").innerHTML = totalPoints;
+                    } else {
+                        document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Arrogance";
+                    }
+                    selected = null;
+                    userInput = null;
+                    break;
+                case "t2p200":
+                    if (userInput == "Intuitor") {
+                        document.getElementById("questionText").innerHTML = "You are correct !";
+                        totalPoints = totalPoints + points;
+                        document.getElementById("totalPoints").innerHTML = totalPoints;
+                    } else {
+                        document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Intuitor";
+                    }
+                    selected = null;
+                    userInput = null;
+                    break;
+                case "t2p300":
+                    if (userInput == "facts") {
+                        document.getElementById("questionText").innerHTML = "You are correct !";
+                        totalPoints = totalPoints + points;
+                        document.getElementById("totalPoints").innerHTML = totalPoints;
+                    } else {
+                        document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: facts";
+                    }
+                    selected = null;
+                    userInput = null;
+                    break;
+                case "t3p100":
+                    if (userInput == "solving problems") {
+                        document.getElementById("questionText").innerHTML = "You are correct !";
+                        totalPoints = totalPoints + points;
+                        document.getElementById("totalPoints").innerHTML = totalPoints;
+                    } else {
+                        document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: solving problems";
+                    }
+                    selected = null;
+                    userInput = null;
+                    break;
+                case "t3p200":
+                    if (userInput == "vitamin d") {
+                        document.getElementById("questionText").innerHTML = "You are correct !";
+                        totalPoints = totalPoints + points;
+                        document.getElementById("totalPoints").innerHTML = totalPoints;
+                    } else {
+                        document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Oxidized Melanin";
+                    }
+                    selected = null;
+                    userInput = null;
+                    break;
+                case "t3p300":
+                    if (userInput == "estrogen") {
+                        document.getElementById("questionText").innerHTML = "You are correct !";
+                        totalPoints = totalPoints + points;
+                        document.getElementById("totalPoints").innerHTML = totalPoints;
+                    } else {
+                        document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Hormones";
+                    }
+                    selected = null;
+                    userInput = null;
+                    break;
+                case "t4p100":
+                    if (userInput == "depression") {
+                        document.getElementById("questionText").innerHTML = "You are correct !";
+                        totalPoints = totalPoints + points;
+                        document.getElementById("totalPoints").innerHTML = totalPoints;
+                    } else {
+                        document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: 11";
+                    }
+                    selected = null;
+                    userInput = null;
+                    break;
+                case "t4p200":
+                    if (userInput == "anorexia and bulmia nervosa") {
+                        document.getElementById("questionText").innerHTML = "You are correct !";
+                        totalPoints = totalPoints + points;
+                        document.getElementById("totalPoints").innerHTML = totalPoints;
+                    } else {
+                        document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Depression";
+                    }
+                    selected = null;
+                    userInput = null;
+                    break;
+                case "t4p300":
+                    if (userInput == "2x") {
+                        document.getElementById("questionText").innerHTML = "You are correct !";
+                        totalPoints = totalPoints + points;
+                        document.getElementById("totalPoints").innerHTML = totalPoints;
+                    } else {
+                        document.getElementById("questionText").innerHTML = "You are incorrect. Correct answer: Osteoarthritis";
+                    }
+                    selected = null;
+                    userInput = null;
+                    break;
+            }
+        }
+    </script>
+
+    <div class="container">
+
+        <div class="row justify-content-center margins-autos">
+            <h3>Personality Type Game Show!</h3>
+        </div>
+
+        <div class="row justify-content-center margins-autos">
+            <p id="questionText" style="color: hotpink;">Pick a question!</p>
+        </div>
+        <div class="col-sm">
+            <a class="topicHeader" style="width:auto; margin-left:42%">Row 1</a>
+            <a class="topicHeader" style="width:auto">Row 2</a>
+            <a class="topicHeader" style="width:auto">Row 3</a>
+        </div>
+        <div class="col-sm">
+            <div class="row justify-content-center margins-autos">
+                <button type="button" id="t1p100" class="button" onclick="displayQ(id)">100</button>
+                <button type="button" id="t1p200" class="button" onclick="displayQ(id)">200</button>
+                <button type="button" id="t1p300" class="button" onclick="displayQ(id)">300</button>
+            </div>
+            <div class="row justify-content-center margins-autos">
+                <button type="button" id="t2p100" class="button" onclick="displayQ(id)">100</button>
+                <button type="button" id="t2p200" class="button" onclick="displayQ(id)">200</button>
+                <button type="button" id="t2p300" class="button" onclick="displayQ(id)">300</button>
+            </div>
+            <div class="row justify-content-center margins-autos">
+                <button type="button" id="t3p100" class="button" onclick="displayQ(id)">100</button>
+                <button type="button" id="t3p200" class="button" onclick="displayQ(id)">200</button>
+                <button type="button" id="t3p300" class="button" onclick="displayQ(id)">300</button>
+            </div>
+            <div class="row justify-content-center margins-autos">
+                <button type="button" id="t4p100" class="button" onclick="displayQ(id)">100</button>
+                <button type="button" id="t4p200" class="button" onclick="displayQ(id)">200</button>
+                <button type="button" id="t4p300" class="button" onclick="displayQ(id)">300</button>
+            </div>
+        </div>
+
+        <br>
+        <div class="row justify-content-center margins-autos">
+            <label for="answer" class="button">Your answer: </label>
+            <input name="answer" id="answer">
+            <button class="button" onclick="checkAnswer()">Submit</button>
+        </div>
+
+        <div class="row justify-content-center margins-autos">
+            <p>Points:</p><p id="totalPoints">0</p>
+        </div>
+
+    </div>
+{% endblock %}
+</body>
+
+</html>
