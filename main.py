@@ -88,7 +88,13 @@ def gabriel():
 def platformer():
     return render_template("Personal/platformer.html")
 
+@app.route('/personalitygame')
+def personalitygame():
+    return render_template("Personal/personalitygame.html")
 
+@app.route('/personalitygame2')
+def personalitygame2():
+    return render_template("Personal/personalitygame2.html")
 
 @app.route('/binary/')
 def binary():
