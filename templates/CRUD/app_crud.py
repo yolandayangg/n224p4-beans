@@ -3,12 +3,12 @@ from flask import Blueprint, render_template, request, url_for, redirect, jsonif
 from flask_restful import Api, Resource
 import requests
 
-from model import Person
+from model import Users
 
 # blueprint defaults https://flask.palletsprojects.com/en/2.0.x/api/#blueprint-objects
 app_crud = Blueprint('crud', __name__,
                      url_prefix='/crud',
-                     template_folder='templates',
+                     template_folder='templates/',
                      static_folder='static',
                      static_url_path='assets')
 
@@ -22,7 +22,7 @@ api = Api(app_crud)
     4.) API testing
 """
 
-""" Users table queries"""
+"""   table queries"""
 
 
 # User/Users extraction from SQL
@@ -57,7 +57,7 @@ def user_by_email(email):
 @app_crud.route('/')
 def crud():
     """obtains all Users from table and loads Admin Form"""
-    return render_template("personality.html", table=users_all())
+    return render_template("crud.html", table=users_all())
 
 
 # CRUD create/add
@@ -85,7 +85,7 @@ def read():
         po = user_by_id(userid)
         if po is not None:
             table = [po.read()]  # placed in list for easier/consistent use within HTML
-    return render_template("personality.html", table=table)
+    return render_template("crud.html", table=table)
 
 
 # CRUD update
@@ -117,7 +117,7 @@ def delete():
 @app_crud.route('/search/')
 def search():
     """loads form to search Users data"""
-    return render_template("personalitysearch.html")
+    return render_template("search.html")
 
 
 # Search request and response
@@ -126,7 +126,9 @@ def search_term():
     """ obtain term/search request """
     req = request.get_json()
     term = req['term']
-    response = make_response(jsonify(users_ilike(term)), 200)
+    result = users_ilike(term)
+    result.sort(key=lambda x: x["name"])
+    response = make_response(jsonify(result), 200)
     return response
 
 
@@ -196,7 +198,6 @@ def api_tester():
     # local host URL for model
     url = 'http://127.0.0.1:5000/crud'
 
-
     # test conditions
     API = 0
     METHOD = 1
@@ -246,3 +247,21 @@ def api_printer():
 if __name__ == "__main__":
     api_tester()
     api_printer()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

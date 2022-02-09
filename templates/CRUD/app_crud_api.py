@@ -11,7 +11,7 @@ app_crud_api = Blueprint('crud_api', __name__,
                          url_prefix='/crud_api',
                          template_folder='templates/crud/',
                          static_folder='static',
-                         static_url_path='../../static')
+                         static_url_path='static')
 
 # API generator https://flask-restful.readthedocs.io/en/latest/api.html#id1
 api = Api(app_crud_api)
@@ -21,17 +21,17 @@ api = Api(app_crud_api)
 @app_crud_api.route('/')
 def crud_api():
     """obtains all Users from table and loads Admin Form"""
-    return render_template("personality_async.html", table=users_all())
+    return render_template("crud_async.html", table=users_all())
 
 
 """ API routes section """
 
 
-class PersonAPI:
+class UsersAPI:
     # class for create/post
     class _Create(Resource):
         def post(self, name, email, password, phone):
-            po = Person(name, email, password, phone)
+            po = Users(name, email, password, phone)
             person = po.create()
             if person:
                 return person.read()
@@ -40,12 +40,12 @@ class PersonAPI:
     # class for read/get
     class _Read(Resource):
         def get(self):
-            return person_all()
+            return users_all()
 
     # class for delete
     class _ReadID(Resource):
         def get(self, userid):
-            po = person_by_id(userid)
+            po = user_by_id(userid)
             if po is None:
                 return {'message': f"{userid} is not found"}, 210
             data = po.read()

@@ -1,13 +1,18 @@
-
+# import "packages" from flask
 from flask import Flask, render_template
-
 from flask import request
+from __init__ import app
+import requests, random
 
 
-
+from templates.CRUD.app_crud_api import app_crud_api
+app.register_blueprint(app_crud_api)
 
 # create a Flask instance
-app = Flask(__name__)
+# app = Flask(__name__)
+from templates.CRUD.app_crud import app_crud
+app.register_blueprint(app_crud)
+
 from facts import app_facts
 from calm import app_calm
 
@@ -208,8 +213,13 @@ def compatability():
 def faq():
     return render_template("Personal/faq.html")
 
+@app.route('/celeb/')
+def celeb():
+    return render_template("Personal/celeb.html")
+
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
+
 
 
 

@@ -1,12 +1,180 @@
+
 <!DOCTYPE html>
-<head>
-    <title>Simple Search Engine</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-</head>
-<body>
+{% extends "layouts/base.html" %}
 
-<?php if (isset($_GET['form_submitted'])): ?>
+{% block body %}
+    <head>
+        <h1 style="text-align: center">Test your knowledge of Women's Health!</h1>
+    </head>
+    <br>
+    <br>
 
-<h2>Search Results For <?php echo $_GET['search_term']; ?> </h2>
-<?php if ($_GET['search_term'] == "GET"): ?>
+<div id="quiz" style="text-align: center; font-family: 'Kohinoor Telugu'; color: indigo">
 
+</div>
+<button id="submit" >Submit Quiz</button>
+<div id="results"></div>
+
+    <script>
+        function buildQuiz(){
+            const myQuestions = [
+            {
+                question: "How many women in the world suffer each year with Breast Cancer?",
+                answers: {
+                    a: "200,000",
+                    b: "50,000",
+                    c: "1000"
+                },
+                correctAnswer: "a"
+            },
+
+            {
+                question: " Faulty versions of the BRCA1 gene can cause an increased risk of which of the following cancer types?",
+                answers: {
+                    a: "Ovarian Cancer",
+                    b: "Breast Cancer",
+                    c: "Both a & b"
+                },
+                correctAnswer: "c"
+            },
+            {
+                question: "What is one symptom of menstruation?",
+                answers: {
+                    a: "Sneezing",
+                    b: "Abdominal Cramps",
+                    c: "Neck stiffness",
+                    d: "Coughing"
+                },
+                correctAnswer: "b"
+            }
+        ];
+
+            const output = [];
+// for each question...
+            myQuestions.forEach(
+                (currentQuestion, questionNumber) => {
+
+                    // variable to store the list of possible answers
+                    const answers = [];
+
+                    // and for each available answer...
+                    for(letter in currentQuestion.answers){
+
+                        // ...add an HTML radio button
+                        answers.push(
+                            `<label>
+            <input type="radio" name="question${questionNumber}" value="${letter}">
+            ${letter} :
+            ${currentQuestion.answers[letter]}
+          </label>`
+                        );
+                    }
+
+                    // add this question and its answers to the output
+                    output.push(
+                        `<div class="question"> ${currentQuestion.question} </div>
+        <div class="answers"> ${answers.join('')} </div>`
+                    );
+                }
+            );
+
+            // finally combine  output list into one string of HTML and put it on the page
+            quizContainer.innerHTML = output.join('');
+
+
+
+        }
+
+    function showResults(){
+
+// gather answer containers from our quiz
+        const answerContainers = quizContainer.querySelectorAll('.answers');
+
+        // keep track of answers
+        let numCorrect = 0;
+
+        // for each question, get the answer that they have put
+        myQuestions.forEach( (currentQuestion, questionNumber) => {
+
+            // find selected answer
+            const answerContainer = answerContainers[questionNumber];
+            const selector = `input[name=question${questionNumber}]:checked`;
+            const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+            // if answer is correct
+            if(userAnswer === currentQuestion.correctAnswer){
+                // add to the number of correct answers
+                numCorrect++;
+
+                // color the answers green
+                answerContainers[questionNumber].style.color = 'lightgreen';
+            }
+            // if answer is wrong or blank
+            else{
+                // color the answers red
+                answerContainers[questionNumber].style.color = 'red';
+            }
+        });
+
+        // show number of correct answers out of total
+        resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+
+
+
+
+    }
+
+
+
+
+
+
+    const quizContainer = document.getElementById('quiz');
+    const resultsContainer = document.getElementById('results');
+    const submitButton = document.getElementById('submit');
+
+
+
+    // display quiz right away
+    buildQuiz();
+
+    // on submit, show results
+    submitButton.addEventListener('click', showResults);
+
+    const myQuestions = [
+        {
+            question: "How many women in the world suffer each year with Breast Cancer?",
+            answers: {
+                a: "200,000",
+                b: "50,000",
+                c: "1000"
+            },
+            correctAnswer: "a"
+        },
+
+        {
+            question: " Faulty versions of the BRCA1 gene can cause an increased risk of which of the following cancer types?",
+            answers: {
+                a: "Ovarian Cancer",
+                b: "Breast Cancer",
+                c: "Both a & b"
+            },
+            correctAnswer: "c"
+        },
+        {
+            question: "What is one symptom of menstruation?",
+            answers: {
+                a: "Sneezing",
+                b: "Abdominal Cramps",
+                c: "Neck stiffness",
+                d: "Coughing"
+            },
+            correctAnswer: "b"
+        }
+    ];
+
+</script>
+
+
+{% endblock %}
+</html>

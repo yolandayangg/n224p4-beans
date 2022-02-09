@@ -3,7 +3,7 @@ from flask import Blueprint, render_template, request, url_for, redirect, jsonif
 from flask_restful import Api, Resource
 import requests
 
-from model import Person
+from model import Users
 
 # blueprint defaults https://flask.palletsprojects.com/en/2.0.x/api/#blueprint-objects
 app_personality = Blueprint('personality', __name__,
@@ -26,28 +26,28 @@ api = Api(app_personality)
 
 
 # User/Users extraction from SQL
-def person_all():
+def user_all():
     """converts Users table into JSON list """
-    return [peep.read() for peep in Person.query.all()]
+    return [peep.read() for peep in Users.query.all()]
 
 
-def person_ilike(term):
+def user_ilike(term):
     """filter Users table by term into JSON list """
     term = "%{}%".format(term)  # "ilike" is case insensitive and requires wrapped  %term%
-    table = Person.query.filter((Person.name.ilike(term)) | (Person.type.ilike(term)))
+    table = Users.query.filter((Users.name.ilike(term)) | (Users.type.ilike(term)))
     return [peep.read() for peep in table]
 
 
 # User extraction from SQL
 def user_by_id(userid):
     """finds User in table matching userid """
-    return Person.query.filter_by(userID=userid).first()
+    return Users.query.filter_by(userID=userid).first()
 
 
 # User extraction from SQL
 def user_by_type(type):
     """finds User in table matching email """
-    return Person.query.filter_by(type=type).first()
+    return Users.query.filter_by(type=type).first()
 
 
 """ app route section """
@@ -57,7 +57,7 @@ def user_by_type(type):
 @app_personality.route('/')
 def personality():
     """obtains all Users from table and loads Admin Form"""
-    return render_template("personality.html", table=person_all())
+    return render_template("personality.html", table=Users_all())
 
 
 # CRUD create/add
@@ -65,7 +65,7 @@ def personality():
 def create():
     """gets data from form and add it to Users table"""
     if request.form:
-        po = Person(
+        po = Users(
             request.form.get("name"),
             request.form.get("type"),
             request.form.get("password"),
