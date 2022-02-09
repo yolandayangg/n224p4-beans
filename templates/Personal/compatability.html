@@ -2,103 +2,103 @@
 {% extends "layouts/base.html" %}
 
 {% block body %}
-<script LANGUAGE="JavaScript">
+    <script>
 
-    function calc() {
-        first = document.loveform.name1.value.toUpperCase();
-        firstlength = document.loveform.name1.value.length;
-        second = document.loveform.name2.value.toUpperCase();
-        secondlength = document.loveform.name2.value.length;
-        var LoveCount=0;
+        function calc() {
+            first = document.loveform.name1.value.toUpperCase();
+            firstlength = document.loveform.name1.value.length;
+            second = document.loveform.name2.value.toUpperCase();
+            secondlength = document.loveform.name2.value.length;
+            var LoveCount=0;
 
-        for (Count=0; Count < firstlength; Count++) {
+            for (Count=0; Count < firstlength; Count++) {
 
 
 
-            letter1=first.substring(Count,Count+1);
+                letter1=first.substring(Count,Count+1);
 
-            if (letter1=='L') LoveCount+=2;
-            if (letter1=='O') LoveCount+=2;
-            if (letter1=='V') LoveCount+=2;
-            if (letter1=='E') LoveCount+=2;
-            if (letter1=='Y') LoveCount+=3;
-            if (letter1=='O') LoveCount+=1;
-            if (letter1=='U') LoveCount+=3;
+                if (letter1=='L') LoveCount+=2;
+                if (letter1=='O') LoveCount+=2;
+                if (letter1=='V') LoveCount+=2;
+                if (letter1=='E') LoveCount+=2;
+                if (letter1=='Y') LoveCount+=3;
+                if (letter1=='O') LoveCount+=1;
+                if (letter1=='U') LoveCount+=3;
+            }
+
+
+            for (Count=0; Count < secondlength; Count++) {
+                letter2=second.substring(Count,Count+1);
+                if (letter2=='L') LoveCount+=2;
+                if (letter2=='O') LoveCount+=2;
+                if (letter2=='V') LoveCount+=2;
+                if (letter2=='E') LoveCount+=2;
+                if (letter2=='Y') LoveCount+=3;
+                if (letter2=='O') LoveCount+=1;
+                if (letter2=='U') LoveCount+=3;
+            }
+
+            amount=0;
+
+            if (LoveCount> 0) amount=  5-((firstlength+secondlength)/2)
+            if (LoveCount> 2) amount= 10-((firstlength+secondlength)/2)
+            if (LoveCount> 4) amount= 20-((firstlength+secondlength)/2)
+            if (LoveCount> 6) amount= 30-((firstlength+secondlength)/2)
+            if (LoveCount> 8) amount= 40-((firstlength+secondlength)/2)
+
+            if (LoveCount>10) amount= 50-((firstlength+secondlength)/2)
+
+            if (LoveCount>12) amount= 60-((firstlength+secondlength)/2)
+            if (LoveCount>14) amount= 70-((firstlength+secondlength)/2)
+            if (LoveCount>16) amount= 80-((firstlength+secondlength)/2)
+            if (LoveCount>18) amount= 90-((firstlength+secondlength)/2)
+            if (LoveCount>20) amount=100-((firstlength+secondlength)/2)
+            if (LoveCount>22) amount=110-((firstlength+secondlength)/2)
+            if (firstlength==0 || secondlength==0) amount= "Err";
+            if (amount < 0) amount= 0;
+            if (amount >99) amount=99;
+
+            document.loveform.output.value=amount+"%";
+
+
+
         }
 
 
-        for (Count=0; Count < secondlength; Count++) {
-            letter2=second.substring(Count,Count+1);
-            if (letter2=='L') LoveCount+=2;
-            if (letter2=='O') LoveCount+=2;
-            if (letter2=='V') LoveCount+=2;
-            if (letter2=='E') LoveCount+=2;
-            if (letter2=='Y') LoveCount+=3;
-            if (letter2=='O') LoveCount+=1;
-            if (letter2=='U') LoveCount+=3;
-        }
-
-        amount=0;
-
-        if (LoveCount> 0) amount=  5-((firstlength+secondlength)/2)
-        if (LoveCount> 2) amount= 10-((firstlength+secondlength)/2)
-        if (LoveCount> 4) amount= 20-((firstlength+secondlength)/2)
-        if (LoveCount> 6) amount= 30-((firstlength+secondlength)/2)
-        if (LoveCount> 8) amount= 40-((firstlength+secondlength)/2)
-
-        if (LoveCount>10) amount= 50-((firstlength+secondlength)/2)
-
-        if (LoveCount>12) amount= 60-((firstlength+secondlength)/2)
-        if (LoveCount>14) amount= 70-((firstlength+secondlength)/2)
-        if (LoveCount>16) amount= 80-((firstlength+secondlength)/2)
-        if (LoveCount>18) amount= 90-((firstlength+secondlength)/2)
-        if (LoveCount>20) amount=100-((firstlength+secondlength)/2)
-        if (LoveCount>22) amount=110-((firstlength+secondlength)/2)
-        if (firstlength==0 || secondlength==0) amount= "Err";
-        if (amount < 0) amount= 0;
-        if (amount >99) amount=99;
-
-        document.loveform.output.value=amount+"%";
+    </script>
 
 
+    <center><table width=600 cellpadding=1 cellspacing=0 border=0><tr>
+        <td align=center valign=top>
+        </TD>
+    </tr></table>
+    </center>
 
-    }
-
-
-</script>
-
-
-<center><table width=600 cellpadding=1 cellspacing=0 border=0><tr>
-    <td align=center valign=top>
-    </TD>
-</TR></table>
-</center>
-
-<DIV align="center"><CENTER>
-    <h2><STRONG>The Personality Compatability Test</h2>
+    <div align="center"><CENTER>
+        <h2><STRONG>Check your compatability!<STRONG>/h2>
 
 
-    Test the compatability between two people by entering their names below and then calculate their compatibility.
+        Test the compatability between two people by entering their names below!
 
-    <FORM name="loveform">
+        <FORM name="loveform">
 
-        <h3><INPUT value="Name 1" name="name1" type="text" size="20">  + <INPUT
+            <h3><input value="Name 1" name="name1" type="text" size="20">  + <input
 
-                value="Name 2" name="name2" type="text" size="20">  = <INPUT value name="output" type="text" size="6"> <BR>
+                    value="Name 2" name="name2" type="text" size="20">  = <input value name="output" type="text" size="6"> <BR>
 
-            <BR>
+                <br>
 
-            <INPUT value="Calculate!" name="calculate" type="button" value="calculate"
+                <INPUT value="Calculate!" name="calculate" type="button" value="calculate"
 
-                   onclick="calc()"> </h3>
+                       onclick="calc()"> </h3>
 
-        <h3> 0-25%: Better luck next time </h3>
-    <div id="n1" class="vImage col-sm"><img src="/static/0-25.jpeg" width="500" height="350"></div>
-        <h3> 25-50%: Little compatibility, but not impossible </h3>
-    <div id="n1" class="vImage col-sm"><img src="/static/25-50.jpeg" width="500" height="350"></div>
-        <h3> 50-75%: Solid match! </h3>
-    <div id="n1" class="vImage col-sm"><img src="/static/50-75.jpeg" width="500" height="350"></div>
-        <h3> 75-100%: Match made in heaven! </h3>
-    <div id="n1" class="vImage col-sm"><img src="/static/75-100.jpeg" width="500" height="350"></div>
+            <h3> 0-25%: Better luck next time </h3>
+            <div id="n1" class="vImage col-sm"><img src="/static/0-25.jpeg" width="500" height="350"></div>
+            <h3> 25-50%: Little compatibility, but not impossible </h3>
+            <div id="n1" class="vImage col-sm"><img src="/static/25-50.jpeg" width="500" height="350"></div>
+            <h3> 50-75%: Solid match! </h3>
+            <div id="n1" class="vImage col-sm"><img src="/static/50-75.jpeg" width="500" height="350"></div>
+            <h3> 75-100%: Match made in heaven! </h3>
+            <div id="n1" class="vImage col-sm"><img src="/static/75-100.jpeg" width="500" height="350"></div>
 
 {% endblock %}
