@@ -1,5 +1,5 @@
 
-print ("Which vacation spot is right for you based on your personality?")
+print ("Which vacation spot is right for you?")
 
 pt = input("Enter your Personality Type!!: ")
 age = int(input ("Enter your age!: "))
