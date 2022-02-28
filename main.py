@@ -5,6 +5,7 @@ import json
 import requests
 from __init__ import app
 import requests, random
+from createtaskmnn import BubbleSort
 
 
 from templates.CRUD.app_crud_api import app_crud_api
@@ -210,6 +211,14 @@ def faq():
 @app.route('/celeb/')
 def celeb():
     return render_template("Personal/celeb.html")
+
+@app.route('/createtaskmnn/')
+def createtaskmnn():
+    if request.method == 'POST':
+        pt = request.form.get('pt')
+        age = request.form.get('age')
+        return render_template("Personal/createtaskmnn.html", bubbles=Vacation(pt, age))
+    return render_template("Personal/createtaskmnn.html", bubbles=Vacation("A",2))
 
 @app.route('/RelaxingGames', methods=['GET', 'POST'])
 def RelaxingGames():
