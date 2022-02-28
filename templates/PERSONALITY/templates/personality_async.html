@@ -6,7 +6,7 @@
 <!-- CONTENT (in <head>), content for this page -->
 {% block head %}
     <title>Async CRUD page</title>
-    <script src={{  url_for("crud.static", filename="javascript/validation.js", version='101') }}></script>
+    <script src={{  url_for("personality.static", filename="javascript/validation.js", version='101') }}></script>
 
     <script>
         function create_User(){
@@ -24,7 +24,7 @@
                 },
             };
             //url for Create API
-            const url='/crud_api/create/' + name + '/' + email+ '/' + password + '/' + phone;
+            const url='/personality_api/create/' + name + '/' + email+ '/' + password + '/' + phone;
             //Asynch fetch API call to the database to create a new user
             fetch(url, requestOptions).then(response => {
                 // prepare HTML search result container for new output
@@ -81,7 +81,7 @@
             const get_userid = document.getElementById("read_userid");
             const userID = get_userid.value;
             //url for Read API
-            const url='/crud_api/read/' + userID;
+            const url='/personality_api/read/' + userID;
             const requestOptions = {
                 method: 'GET',
             };
@@ -128,7 +128,7 @@
             const username = document.getElementById("update_name").value;
             const userid = document.getElementById("update_userid").value;
             //url for Update API
-            const url = '/crud_api/update/' + userid + '/' + username;
+            const url = '/personality_api/update/' + userid + '/' + username;
             const requestOptions = {
                 method: 'PUT',
                 headers: {
@@ -173,7 +173,7 @@
         function delete_User(){
             const userid = document.getElementById("delete_userid").value;
             //url for Delete API
-            const url = '/crud_api/delete/' + userid;
+            const url = '/personality_api/delete/' + userid;
             const requestOptions = {
                 method: 'DELETE',
                 headers: {
@@ -234,7 +234,7 @@
                         <tr>
                             <td></td>
                             <td></td>
-                            <td><a href={{url_for('crud_api.crud_api')}}>Full Table </a></td>
+                            <td><a href={{url_for('personality_api.personality_api')}}>Full Table </a></td>
                             <td><a href="https://github.com/nighthawkcoders/nighthawk_csp/tree/master/crud">GitHub Source</a></td>
                         </tr>
                         </tbody>
